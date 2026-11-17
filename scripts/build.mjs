@@ -50,6 +50,44 @@ function dateNavLabel(isoDate) {
   return `${m} 月 ${d} 日 ${wd}`;
 }
 
+function weekdayLong(isoDate) {
+  return new Intl.DateTimeFormat("zh-Hans", {
+    timeZone: "Asia/Shanghai",
+    weekday: "long",
+  }).format(parseYmdRetention(isoDate));
+}
+
+function buildEditionMast(date, todayYmd) {
+  const isToday = date === todayYmd;
+  const [y, m, d] = date.split("-").map(Number);
+  const wd = weekdayLong(date);
+  const todayMark = isToday
+    ? `<p class="edition__today" aria-hidden="true">今天</p>`
+    : "";
+  return `
+    <header class="edition__mast${isToday ? " edition__mast--today" : ""}">
+      ${todayMark}
+      <h2 class="edition__title">
+        <a class="edition__title-link" href="${BASE}/${date}/">${escapeHtml(`${m} 月 ${d} 日`)} · ${escapeHtml(wd)}</a>
+      </h2>
+      <p class="edition__meta">
+        <span class="edition__year">${y} 年</span>
+        <span class="edition__sep" aria-hidden="true">·</span>
+        <a class="edition__digest" href="${BASE}/${date}/x/">X</a>
+        <span class="edition__sep" aria-hidden="true">/</span>
+        <a class="edition__digest" href="${BASE}/${date}/ai/">AI</a>
+      </p>
+    </header>`;
+}
+
+function buildNavDateContent(date, todayYmd) {
+  const label = dateNavLabel(date);
+  if (date === todayYmd) {
+    return `<span class="date-nav__today">今天</span><span class="date-nav__text">${escapeHtml(label)}</span>`;
+  }
+  return `<span class="date-nav__text">${escapeHtml(label)}</span>`;
+}
+
 function parseYmdRetention(ymd) {
   return new Date(`${ymd}T12:00:00+08:00`);
 }
@@ -394,7 +432,7 @@ function buildFeatured(featured, media, date) {
   </section>`;
 }
 
-function buildEditionSection(date, dayItems, meta, { showFeatured = false } = {}) {
+function buildEditionSection(date, dayItems, meta, { showFeatured = false, todayYmd } = {}) {
   const featured = dayItems.items.find((i) => i.id === dayItems.featured);
   const rest = dayItems.items.filter((i) => i.id !== dayItems.featured);
   const grid = rest
@@ -406,26 +444,27 @@ function buildEditionSection(date, dayItems, meta, { showFeatured = false } = {}
     showFeatured && featured
       ? buildFeatured(featured, resolveCardMedia(featured, meta, date, dayItems), date)
       : "";
+  const todayAttr = date === todayYmd ? ' data-is-today="true"' : "";
   return `
-    <section class="edition" id="${date}" data-date="${date}">
-      <h2 class="edition__date"><a href="${BASE}/${date}/">${formatDateLabel(date)}</a> · <a href="${BASE}/${date}/x/">X</a> / <a href="${BASE}/${date}/ai/">AI</a></h2>
+    <section class="edition" id="${date}" data-date="${date}"${todayAttr}>
+      ${buildEditionMast(date, todayYmd)}
       ${hero}
       <div class="mag-grid">${grid}</div>
     </section>`;
 }
 
-function buildDateSidebar(dates) {
+function buildDateSidebar(dates, todayYmd) {
   const links = dates
-    .map(
-      (d) =>
-        `<a class="date-nav__link" href="${BASE}/#${d}" data-date="${d}">${escapeHtml(dateNavLabel(d))}</a>`
-    )
+    .map((d) => {
+      const todayCls = d === todayYmd ? " date-nav__link--today" : "";
+      return `<a class="date-nav__link${todayCls}" href="${BASE}/#${d}" data-date="${d}">${buildNavDateContent(d, todayYmd)}</a>`;
+    })
     .join("");
   const chips = dates
-    .map(
-      (d) =>
-        `<a class="date-rail__chip" href="${BASE}/#${d}" data-date="${d}">${escapeHtml(dateNavLabel(d))}</a>`
-    )
+    .map((d) => {
+      const todayCls = d === todayYmd ? " date-rail__chip--today" : "";
+      return `<a class="date-rail__chip${todayCls}" href="${BASE}/#${d}" data-date="${d}">${buildNavDateContent(d, todayYmd)}</a>`;
+    })
     .join("");
   return {
     aside: `
@@ -441,16 +480,20 @@ function buildDateSidebar(dates) {
 
 function buildHomeIndex(visibleDates, loader) {
   const retentionDays = getRetentionDays();
+  const todayYmd = todayShanghai();
   const sections = visibleDates
     .map((date, index) => {
       const dayItems = loader.loadDayItems(date);
       if (!dayItems) return "";
       const meta = loader.loadMediaMeta(date);
-      return buildEditionSection(date, dayItems, meta, { showFeatured: index === 0 });
+      return buildEditionSection(date, dayItems, meta, {
+        showFeatured: index === 0,
+        todayYmd,
+      });
     })
     .filter(Boolean)
     .join("\n");
-  const { aside, rail } = buildDateSidebar(visibleDates);
+  const { aside, rail } = buildDateSidebar(visibleDates, todayYmd);
   const body = `
     <p class="retention-note">首页展示近 ${retentionDays} 天</p>
     <div class="home-layout">
