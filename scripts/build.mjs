@@ -351,12 +351,11 @@ function buildDetailPage(detail, cardItem, meta, ordered, dayItems) {
 
 function buildMagazineCard(item, media, date) {
   const href = itemPermalink(date, item.id);
-  const aspect = item.cardAspect || "4/3";
   let visual = "";
   if (media.typographic) {
     visual = `<div class="mag-card__visual mag-card__visual--type"><span aria-hidden="true">Aa</span></div>`;
   } else if (media.cover) {
-    visual = `<div class="mag-card__visual" style="--ar:${aspect}"><img src="${media.cover}" alt="${escapeHtml(item.title)}" loading="lazy" decoding="async"></div>`;
+    visual = `<div class="mag-card__visual"><img src="${media.cover}" alt="${escapeHtml(item.title)}" loading="lazy" decoding="async"></div>`;
   }
   return `<article class="mag-card" data-category="${item.category}">
     <a class="mag-card__link" href="${href}">

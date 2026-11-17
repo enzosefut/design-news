@@ -299,9 +299,15 @@ video {
   overflow: hidden;
 }
 
+.feature-hero__media {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #eeece7;
+  min-height: 0;
+}
+
 .feature-hero__media .story-figure--hero {
   height: 100%;
-  min-height: 260px;
 }
 
 .feature-hero__media img,
@@ -309,13 +315,16 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  min-height: 260px;
+  object-position: center;
+  display: block;
 }
 
 .feature-hero__placeholder {
   display: grid;
   place-items: center;
-  min-height: 260px;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
   background: var(--rule);
   color: var(--ink-faint);
   font-size: 2.5rem;
@@ -382,7 +391,7 @@ video {
 }
 
 .mag-card__visual {
-  aspect-ratio: var(--ar, 4/3);
+  aspect-ratio: 4 / 3;
   background: #eeece7;
   overflow: hidden;
 }
@@ -391,6 +400,8 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .mag-card__visual--type {
@@ -959,5 +970,5 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  min-height: 260px;
+  object-position: center;
 }
