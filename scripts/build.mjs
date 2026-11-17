@@ -41,6 +41,19 @@ function formatDateLabel(isoDate) {
   return `${y} 年 ${m} 月 ${d} 日`;
 }
 
+function dateNavLabel(isoDate) {
+  const wd = new Intl.DateTimeFormat("zh-Hans", {
+    timeZone: "Asia/Shanghai",
+    weekday: "short",
+  }).format(parseYmdRetention(isoDate));
+  const [, m, d] = isoDate.split("-").map(Number);
+  return `${m} 月 ${d} 日 ${wd}`;
+}
+
+function parseYmdRetention(ymd) {
+  return new Date(`${ymd}T12:00:00+08:00`);
+}
+
 function escapeHtml(s) {
   return String(s)
     .replace(/&/g, "&amp;")
@@ -382,7 +395,7 @@ function buildFeatured(featured, media, date) {
   </section>`;
 }
 
-function buildEditionSection(date, dayItems, meta) {
+function buildEditionSection(date, dayItems, meta, { showFeatured = false } = {}) {
   const featured = dayItems.items.find((i) => i.id === dayItems.featured);
   const rest = dayItems.items.filter((i) => i.id !== dayItems.featured);
   const grid = rest
@@ -390,36 +403,63 @@ function buildEditionSection(date, dayItems, meta) {
       buildMagazineCard(item, resolveCardMedia(item, meta, date, dayItems), date)
     )
     .join("");
-  const hero = featured
-    ? buildFeatured(featured, resolveCardMedia(featured, meta, date, dayItems), date)
-    : "";
+  const hero =
+    showFeatured && featured
+      ? buildFeatured(featured, resolveCardMedia(featured, meta, date, dayItems), date)
+      : "";
   return `
-    <section class="edition" data-date="${date}">
+    <section class="edition" id="${date}" data-date="${date}">
       <h2 class="edition__date"><a href="${BASE}/${date}/">${formatDateLabel(date)}</a> · <a href="${BASE}/${date}/x/">X</a> / <a href="${BASE}/${date}/ai/">AI</a></h2>
       ${hero}
       <div class="mag-grid">${grid}</div>
     </section>`;
 }
 
+function buildDateSidebar(dates) {
+  const links = dates
+    .map(
+      (d) =>
+        `<a class="date-nav__link" href="${BASE}/#${d}" data-date="${d}">${escapeHtml(dateNavLabel(d))}</a>`
+    )
+    .join("");
+  const chips = dates
+    .map(
+      (d) =>
+        `<a class="date-rail__chip" href="${BASE}/#${d}" data-date="${d}">${escapeHtml(dateNavLabel(d))}</a>`
+    )
+    .join("");
+  return `
+    <nav class="date-sidebar" aria-label="日期导航">
+      <p class="date-sidebar__label">日期</p>
+      <div class="date-nav">${links}</div>
+    </nav>
+    <nav class="date-rail" aria-label="日期">${chips}</nav>`;
+}
+
 function buildHomeIndex(visibleDates, loader) {
   const retentionDays = getRetentionDays();
   const sections = visibleDates
-    .map((date) => {
+    .map((date, index) => {
       const dayItems = loader.loadDayItems(date);
       if (!dayItems) return "";
       const meta = loader.loadMediaMeta(date);
-      return buildEditionSection(date, dayItems, meta);
+      return buildEditionSection(date, dayItems, meta, { showFeatured: index === 0 });
     })
     .filter(Boolean)
     .join("\n");
   const body = `
     <p class="retention-note">首页展示近 ${retentionDays} 天</p>
-    <nav class="filter-bar" aria-label="栏目筛选">
-      <button type="button" class="is-active" data-filter="all">全部</button>
-      <button type="button" data-filter="x">X 设计动态</button>
-      <button type="button" data-filter="ai">AI 辅助设计日报</button>
-    </nav>
-    ${sections}`;
+    <div class="home-layout">
+      ${buildDateSidebar(visibleDates)}
+      <div class="home-main">
+        <nav class="filter-bar" aria-label="栏目筛选">
+          <button type="button" class="is-active" data-filter="all">全部</button>
+          <button type="button" data-filter="x">X 设计动态</button>
+          <button type="button" data-filter="ai">AI 辅助设计日报</button>
+        </nav>
+        ${sections}
+      </div>
+    </div>`;
   return layout({ title: "首页", body, extraScripts: `<script src="${BASE}/assets/home.js" defer></script>` });
 }
 

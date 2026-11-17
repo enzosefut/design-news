@@ -93,6 +93,128 @@ video {
   padding: 1.5rem var(--gutter) 4rem;
 }
 
+.home-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.home-main {
+  min-width: 0;
+}
+
+.date-sidebar {
+  display: none;
+}
+
+.date-rail {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.25rem 0 0.75rem;
+  margin: 0 0 0.5rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.date-rail__chip {
+  flex: 0 0 auto;
+  font-size: 0.78rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  color: var(--ink-muted);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  letter-spacing: 0.02em;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.date-rail__chip:hover {
+  border-color: var(--ink-faint);
+  color: var(--ink);
+}
+
+.date-rail__chip.is-active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+}
+
+.date-rail__chip.date-nav__link--muted {
+  opacity: 0.45;
+}
+
+@media (min-width: 960px) {
+  .home-layout {
+    grid-template-columns: 9.5rem minmax(0, 1fr);
+    gap: 2.25rem;
+  }
+
+  .date-rail {
+    display: none;
+  }
+
+  .date-sidebar {
+    display: block;
+    position: sticky;
+    top: 1.25rem;
+    padding-top: 0.25rem;
+  }
+
+  .date-sidebar__label {
+    margin: 0 0 0.75rem;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-faint);
+    font-family: var(--font-sans);
+  }
+
+  .date-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    border-left: 1px solid var(--rule);
+    padding-left: 0.85rem;
+  }
+
+  .date-nav__link {
+    display: block;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: var(--ink-muted);
+    text-decoration: none;
+    font-family: var(--font-sans);
+    padding: 0.2rem 0;
+    transition: color 0.15s;
+  }
+
+  .date-nav__link:hover {
+    color: var(--ink);
+  }
+
+  .date-nav__link.is-active {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .date-nav__link--muted {
+    opacity: 0.4;
+  }
+}
+
+.edition {
+  scroll-margin-top: 1.5rem;
+}
+
+.edition--muted {
+  opacity: 0.35;
+}
+
 .site-footer {
   border-top: 1px solid var(--rule);
   text-align: center;

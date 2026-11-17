@@ -1,0 +1,252 @@
+{
+  "date": "2026-11-16",
+  "featured": "almeida-dale-porto-rocha",
+  "items": [
+    {
+      "id": "almeida-dale-porto-rocha",
+      "category": "x",
+      "title": "Almeida & Dale 识别",
+      "author": "abduzeedo",
+      "cardAspect": "4/3",
+      "tweetId": "2121367149818323407",
+      "deck": "定制 Diakritik AD，葡语变音按全字重绘制，一记强蓝贯穿。"
+    },
+    {
+      "id": "nubank-koto",
+      "category": "x",
+      "title": "Nubank 品牌刷新",
+      "author": "abduzeedo",
+      "cardAspect": "4/3",
+      "tweetId": "2121302737719787866"
+    },
+    {
+      "id": "tso-underline",
+      "category": "x",
+      "title": "TSO 识别",
+      "author": "abduzeedo",
+      "cardAspect": "4/3",
+      "tweetId": "2121711976631988513"
+    },
+    {
+      "id": "inventure-bedow",
+      "category": "x",
+      "title": "Inventure 识别",
+      "author": "abduzeedo",
+      "cardAspect": "4/3",
+      "tweetId": "2121984708640739423"
+    },
+    {
+      "id": "julia-hey-studio",
+      "category": "x",
+      "title": "Julia 丝带字标",
+      "author": "abduzeedo",
+      "cardAspect": "4/3",
+      "tweetId": "2121730348237406649"
+    },
+    {
+      "id": "philadelphia-gretel",
+      "category": "x",
+      "title": "费城美术馆狮鹫",
+      "author": "abduzeedo",
+      "cardAspect": "4/3",
+      "tweetId": "2121672195671835117"
+    },
+    {
+      "id": "nzz-unfolded",
+      "category": "x",
+      "title": "Die neue Polis 书系",
+      "author": "abduzeedo",
+      "cardAspect": "4/3",
+      "tweetId": "2121638914863644999"
+    },
+    {
+      "id": "twice-shy-tula",
+      "category": "x",
+      "title": "Twice Shy 肥皂包装",
+      "author": "abduzeedo",
+      "cardAspect": "4/3",
+      "tweetId": "2121259243534012508"
+    },
+    {
+      "id": "ahmed-cowrk",
+      "category": "x",
+      "title": "Cowrk logo 探索",
+      "author": "Ahmedcreatives",
+      "cardAspect": "4/3",
+      "tweetId": "2121217707005845963"
+    },
+    {
+      "id": "jhey-impossible-toggle",
+      "category": "x",
+      "title": "the impossible toggle",
+      "author": "jh3yy",
+      "cardAspect": "4/3",
+      "tweetId": "2121374199709052991",
+      "videoAutoplay": true
+    },
+    {
+      "id": "jhey-make-it-pop-003",
+      "category": "x",
+      "title": "make it pop: 003 glazed",
+      "author": "jh3yy",
+      "cardAspect": "4/3",
+      "tweetId": "2122118204667670621",
+      "videoAutoplay": true
+    },
+    {
+      "id": "daniela-johnny-mnemonic",
+      "category": "x",
+      "title": "Johnny Mnemonic UI 实验",
+      "author": "daniela_muntyan",
+      "cardAspect": "4/3",
+      "tweetId": "2122062763077910852",
+      "videoAutoplay": true
+    },
+    {
+      "id": "miggi-shader-3d",
+      "category": "x",
+      "title": "3D 叠着色器动效",
+      "author": "miggi",
+      "cardAspect": "4/3",
+      "tweetId": "2121731624790524068",
+      "videoAutoplay": true
+    },
+    {
+      "id": "miggi-3d-array",
+      "category": "x",
+      "title": "Command+D 3D 阵列",
+      "author": "miggi",
+      "cardAspect": "4/3",
+      "tweetId": "2121377261048021230"
+    },
+    {
+      "id": "zazzy-superside-90s",
+      "category": "x",
+      "title": "Superside 90s spec 片",
+      "author": "zazzygfx",
+      "cardAspect": "4/3",
+      "tweetId": "2121652119174353378"
+    },
+    {
+      "id": "penguindsgn-web-components",
+      "category": "x",
+      "title": "Web components 设计",
+      "author": "penguindsgn",
+      "cardAspect": "4/3",
+      "tweetId": "2121630160076304750"
+    },
+    {
+      "id": "penguindsgn-dark-mode-ui",
+      "category": "x",
+      "title": "暗色模式 UI 细节",
+      "author": "penguindsgn",
+      "cardAspect": "4/3",
+      "tweetId": "2121275003467653336",
+      "typographic": true
+    },
+    {
+      "id": "rettuce-harmonic-tide",
+      "category": "x",
+      "title": "Harmonic Tide",
+      "author": "rettuce",
+      "cardAspect": "4/3",
+      "tweetId": "2121045583423218033",
+      "videoAutoplay": true
+    },
+    {
+      "id": "rettuce-one-way-collapse",
+      "category": "x",
+      "title": "One-Way Collapse",
+      "author": "rettuce",
+      "cardAspect": "4/3",
+      "tweetId": "2122133008732069940",
+      "videoAutoplay": true
+    },
+    {
+      "id": "ramin-diamond-crow",
+      "category": "x",
+      "title": "Diamond Crow 识别",
+      "author": "RaminNasibov",
+      "cardAspect": "4/3",
+      "tweetId": "2122000547381194819",
+      "videoAutoplay": true
+    },
+    {
+      "id": "ramin-logo-55",
+      "category": "x",
+      "title": "55 logo",
+      "author": "RaminNasibov",
+      "cardAspect": "4/3",
+      "tweetId": "2122025595466912231"
+    },
+    {
+      "id": "ramin-bench-life",
+      "category": "x",
+      "title": "bench life",
+      "author": "RaminNasibov",
+      "cardAspect": "4/3",
+      "tweetId": "2121674572873322907"
+    },
+    {
+      "id": "ramin-catzilla",
+      "category": "x",
+      "title": "catzilla",
+      "author": "RaminNasibov",
+      "cardAspect": "4/3",
+      "tweetId": "2121770009726791876"
+    },
+    {
+      "id": "catherine-creative-uncut",
+      "category": "x",
+      "title": "《凯瑟琳》宣传图",
+      "author": "creativeuncut",
+      "cardAspect": "4/3",
+      "tweetId": "2121863887628931203"
+    },
+    {
+      "id": "ffxiv-endwalker",
+      "category": "x",
+      "title": "FFXIV Endwalker 芝诺斯",
+      "author": "creativeuncut",
+      "cardAspect": "4/3",
+      "tweetId": "2121592829520884210"
+    },
+    {
+      "id": "persona-3-creative-uncut",
+      "category": "x",
+      "title": "P3 主视觉与 Orpheus",
+      "author": "creativeuncut",
+      "cardAspect": "4/3",
+      "tweetId": "2121316975267942881"
+    },
+    {
+      "id": "framer-shader-generation",
+      "category": "ai",
+      "title": "Framer 图像与 Shader",
+      "author": "Framer",
+      "cardAspect": "4/3",
+      "tweetId": "2122067743956459529",
+      "coverKey": "framer-shader-generation-og"
+    },
+    {
+      "id": "sysgears-figma-playwright",
+      "category": "ai",
+      "title": "Figma + Playwright MCP",
+      "author": "SysGears",
+      "cardAspect": "4/3",
+      "coverKey": "sysgears-figma-playwright-og"
+    },
+    {
+      "id": "a2ui-playground",
+      "category": "ai",
+      "title": "A2UI Playground",
+      "author": "Atai Barkai",
+      "cardAspect": "4/3",
+      "tweetId": "2122034672448545148"
+    }
+  ],
+  "extras": {
+    "sysgears-figma-playwright-og": "sysgears-figma-playwright-og.jpg",
+    "framer-shader-generation-og": "framer-shader-generation-og.jpg"
+  }
+}

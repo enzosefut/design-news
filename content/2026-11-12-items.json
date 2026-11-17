@@ -1,0 +1,151 @@
+{
+  "date": "2026-11-12",
+  "featured": "special-esc-menu",
+  "items": [
+    {
+      "id": "special-esc-menu",
+      "category": "x",
+      "title": "ESC 菜单与调酒 UI",
+      "author": "SpecialS3241",
+      "cardAspect": "4/3",
+      "tweetId": "2120410249450701099",
+      "videoAutoplay": true,
+      "deck": "俯视日期 HUD 克制，调酒吧台动效；公开试玩明天上线。"
+    },
+    {
+      "id": "ramin-split-receipt",
+      "category": "x",
+      "title": "撕开收据分账",
+      "author": "RaminNasibov",
+      "cardAspect": "4/3",
+      "tweetId": "2120479012409467168",
+      "videoAutoplay": true
+    },
+    {
+      "id": "ramin-shredder",
+      "category": "x",
+      "title": "桌面碎纸机",
+      "author": "RaminNasibov",
+      "cardAspect": "4/3",
+      "tweetId": "2120605025277800620",
+      "videoAutoplay": true
+    },
+    {
+      "id": "ramin-hamster-wallet",
+      "category": "x",
+      "title": "仓鼠零钱包",
+      "author": "RaminNasibov",
+      "cardAspect": "4/3",
+      "tweetId": "2120317495869325570"
+    },
+    {
+      "id": "rettuce-accordion-clock",
+      "category": "x",
+      "title": "Accordion Clock",
+      "author": "rettuce",
+      "cardAspect": "4/3",
+      "tweetId": "2120320722723844458",
+      "videoAutoplay": true
+    },
+    {
+      "id": "dneg-designstudio",
+      "category": "x",
+      "title": "DNEG 识别刷新",
+      "author": "abduzeedo",
+      "cardAspect": "4/3",
+      "tweetId": "2120643591370637489"
+    },
+    {
+      "id": "soft-labor",
+      "category": "x",
+      "title": "Soft Labor 网站",
+      "author": "abduzeedo",
+      "cardAspect": "4/3",
+      "tweetId": "2120534426111140315"
+    },
+    {
+      "id": "bass-x-machina",
+      "category": "x",
+      "title": "Bass X Machina 片头",
+      "author": "abduzeedo",
+      "cardAspect": "4/3",
+      "tweetId": "2120582281765040368"
+    },
+    {
+      "id": "ahmed-sigmaai",
+      "category": "x",
+      "title": "SigmaAi 品牌卡片",
+      "author": "Ahmedcreatives",
+      "cardAspect": "4/3",
+      "tweetId": "2120479427557752939"
+    },
+    {
+      "id": "nick-lab-posters",
+      "category": "x",
+      "title": "实验室 AI 海报",
+      "author": "nickbakeddesign",
+      "cardAspect": "4/3",
+      "tweetId": "2120667287904759824",
+      "videoAutoplay": true
+    },
+    {
+      "id": "nick-inkbox",
+      "category": "x",
+      "title": "Inkbox 十二天世界",
+      "author": "nickbakeddesign",
+      "cardAspect": "4/3",
+      "tweetId": "2120613885132812569",
+      "videoAutoplay": true
+    },
+    {
+      "id": "ffxi-jobs",
+      "category": "x",
+      "title": "FFXI 职业设定",
+      "author": "creativeuncut",
+      "cardAspect": "4/3",
+      "tweetId": "2120636434616926554"
+    },
+    {
+      "id": "fantasian-kina",
+      "category": "x",
+      "title": "Fantasian 角色",
+      "author": "creativeuncut",
+      "cardAspect": "4/3",
+      "tweetId": "2120612778792652817"
+    },
+    {
+      "id": "persona-4-chie-yukiko",
+      "category": "x",
+      "title": "P4 雪子与千枝",
+      "author": "creativeuncut",
+      "cardAspect": "4/3",
+      "tweetId": "2120661349118169358"
+    },
+    {
+      "id": "meng-fable-trailer",
+      "category": "x",
+      "title": "Fable 游戏预告",
+      "author": "MengTo",
+      "cardAspect": "4/3",
+      "tweetId": "2120501283304153438"
+    },
+    {
+      "id": "google-a2ui-1",
+      "category": "ai",
+      "title": "A2UI 1.0 稳定版",
+      "author": "Google",
+      "cardAspect": "4/3"
+    },
+    {
+      "id": "gemini-4-carbon",
+      "category": "ai",
+      "title": "Gemini 4 Carbon",
+      "author": "Google",
+      "cardAspect": "4/3",
+      "coverKey": "gemini-4-carbon-og"
+    }
+  ],
+  "extras": {
+    "gemini-4-carbon-og": "gemini-4-carbon-og.jpg"
+  }
+}

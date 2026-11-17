@@ -1,0 +1,169 @@
+{
+  "date": "2026-11-13",
+  "featured": "figma-3d-transforms",
+  "items": [
+    {
+      "id": "ink-sweater",
+      "category": "x",
+      "title": "ink sweater",
+      "author": "RaminNasibov",
+      "cardAspect": "4/3",
+      "tweetId": "2120775859762057422"
+    },
+    {
+      "id": "hedgehog-wallet",
+      "category": "x",
+      "title": "hedgehog wallet",
+      "author": "RaminNasibov",
+      "cardAspect": "4/3",
+      "tweetId": "2120782403840917944"
+    },
+    {
+      "id": "ramin-aubergine-lamp",
+      "category": "x",
+      "title": "茄子灯产品卡",
+      "author": "RaminNasibov",
+      "cardAspect": "4/3",
+      "tweetId": "2120885610088890410",
+      "videoAutoplay": true
+    },
+    {
+      "id": "nick-cognition",
+      "category": "x",
+      "title": "Cognition 海报探索",
+      "author": "nickbakeddesign",
+      "cardAspect": "4/3",
+      "tweetId": "2121013058705445354"
+    },
+    {
+      "id": "anagram-pact",
+      "category": "x",
+      "title": "Anagram 识别",
+      "author": "abduzeedo",
+      "cardAspect": "4/3",
+      "tweetId": "2121006258115444919"
+    },
+    {
+      "id": "zellerfeld-dumbar",
+      "category": "x",
+      "title": "Zellerfeld 品牌",
+      "author": "abduzeedo",
+      "cardAspect": "4/3",
+      "tweetId": "2120716934828425415"
+    },
+    {
+      "id": "ahmed-atome",
+      "category": "x",
+      "title": "Atome 风格探索",
+      "author": "Ahmedcreatives",
+      "cardAspect": "4/3",
+      "tweetId": "2120859335152824350"
+    },
+    {
+      "id": "ahmed-ripple-reject",
+      "category": "x",
+      "title": "Ripple 落选方向",
+      "author": "Ahmedcreatives",
+      "cardAspect": "4/3",
+      "tweetId": "2120836684891996341"
+    },
+    {
+      "id": "penguindsgn-otherwise",
+      "category": "x",
+      "title": "Otherwise 决策 UI",
+      "author": "penguindsgn",
+      "cardAspect": "4/3",
+      "tweetId": "2120844024818893068"
+    },
+    {
+      "id": "jhey-make-it-pop-002",
+      "category": "x",
+      "title": "make it pop: 002",
+      "author": "jh3yy",
+      "cardAspect": "4/3",
+      "tweetId": "2120984619621269553",
+      "videoAutoplay": true
+    },
+    {
+      "id": "jhey-spoke-highlight",
+      "category": "x",
+      "title": "spoke highlight",
+      "author": "jh3yy",
+      "cardAspect": "4/3",
+      "tweetId": "2120933642084012214",
+      "videoAutoplay": true
+    },
+    {
+      "id": "miggi-3d-walkthrough",
+      "category": "x",
+      "title": "3D 社区文件走查",
+      "author": "miggi",
+      "cardAspect": "4/3",
+      "tweetId": "2120961675209896009"
+    },
+    {
+      "id": "rettuce-relief-contour",
+      "category": "x",
+      "title": "Relief Contour",
+      "author": "rettuce",
+      "cardAspect": "4/3",
+      "tweetId": "2120683237551100339",
+      "videoAutoplay": true
+    },
+    {
+      "id": "meng-halden-heygen",
+      "category": "x",
+      "title": "Halden 滚动长镜头",
+      "author": "MengTo",
+      "cardAspect": "4/3",
+      "tweetId": "2120896116711727557"
+    },
+    {
+      "id": "dmc5-creative-uncut",
+      "category": "x",
+      "title": "DMC5 角色设定",
+      "author": "creativeuncut",
+      "cardAspect": "4/3",
+      "tweetId": "2120826436592542015"
+    },
+    {
+      "id": "ffxii-fran-balthier",
+      "category": "x",
+      "title": "FFXII Fran 与 Balthier",
+      "author": "creativeuncut",
+      "cardAspect": "4/3",
+      "tweetId": "2120900151325987211"
+    },
+    {
+      "id": "figma-3d-transforms",
+      "category": "ai",
+      "title": "Figma 3D Transforms",
+      "author": "Figma",
+      "cardAspect": "4/3",
+      "tweetId": "2120926665790681354",
+      "deck": "开放测试含透视、Agent 排版与 Dev Mode / MCP 交付。",
+      "coverKey": "figma-3d-transforms-og"
+    },
+    {
+      "id": "vercel-ui-sdk",
+      "category": "ai",
+      "title": "Vercel UI SDK",
+      "author": "Vercel",
+      "cardAspect": "4/3",
+      "tweetId": "2120950020249895314",
+      "coverKey": "vercel-ui-sdk-og"
+    },
+    {
+      "id": "copilotkit-open-intelligent-ui",
+      "category": "ai",
+      "title": "Open Intelligent UI",
+      "author": "CopilotKit",
+      "cardAspect": "4/3",
+      "tweetId": "2120958749980639561"
+    }
+  ],
+  "extras": {
+    "figma-3d-transforms-og": "figma-3d-transforms-og.jpg",
+    "vercel-ui-sdk-og": "vercel-ui-sdk-og.jpg"
+  }
+}
