@@ -107,46 +107,59 @@ function resolveCardMedia(item, meta, date) {
 }
 
 function resolveDetailMedia(detail, meta, date, cardItem) {
-  const files = new Set();
-  const videos = [];
+  const order = [];
+  const add = (f) => {
+    if (f && !order.includes(f)) order.push(f);
+  };
 
-  if (detail.gallery?.length) {
-    detail.gallery.forEach((f) => files.add(f));
-  }
+  (detail.gallery ?? []).forEach(add);
+
   if (detail.tweetId && meta.tweets[detail.tweetId]) {
     const t = meta.tweets[detail.tweetId];
-    (t.images ?? []).forEach((f) => files.add(f));
-    if (t.poster) files.add(t.poster);
+    if (!detail.gallery?.length) {
+      (t.images ?? []).forEach(add);
+      if (t.poster) add(t.poster);
+    }
     if (t.video) {
-      videos.push({
-        src: mediaUrl(date, t.video),
-        poster: t.poster ? mediaUrl(date, t.poster) : null,
-        autoplay: cardItem?.videoAutoplay,
-      });
+      /* video handled below */
     }
-  }
-  if (detail.extraVideos?.length) {
-    for (const v of detail.extraVideos) {
-      videos.push({
-        src: mediaUrl(date, v.file),
-        poster: v.poster ? mediaUrl(date, v.poster) : null,
-        autoplay: v.autoplay,
-      });
-    }
-  }
-  if (cardItem?.coverKey && meta.extras?.[cardItem.coverKey]) {
-    files.add(meta.extras[cardItem.coverKey]);
+  } else if (cardItem?.coverKey && meta.extras?.[cardItem.coverKey]) {
+    add(meta.extras[cardItem.coverKey]);
   }
 
-  const images = [...files].map((f) => mediaUrl(date, f));
-  const hero = videos[0] || images[0];
-  return { images, videos, hero, heroIsVideo: Boolean(videos[0]) };
+  const videos = [];
+  if (detail.tweetId && meta.tweets[detail.tweetId]?.video) {
+    const t = meta.tweets[detail.tweetId];
+    videos.push({
+      src: mediaUrl(date, t.video),
+      poster: t.poster ? mediaUrl(date, t.poster) : null,
+      autoplay: cardItem?.videoAutoplay,
+    });
+  }
+  for (const v of detail.extraVideos ?? []) {
+    videos.push({
+      src: mediaUrl(date, v.file),
+      poster: v.poster ? mediaUrl(date, v.poster) : null,
+      autoplay: v.autoplay,
+    });
+  }
+
+  const images = order.map((f) => mediaUrl(date, f));
+  const preferStill = detail.preferStillHero !== false;
+  const heroStill = images[0];
+  const hero = preferStill && heroStill ? heroStill : videos[0]?.src || heroStill;
+  return {
+    images,
+    videos,
+    hero,
+    heroIsVideo: !preferStill && Boolean(videos[0]),
+  };
 }
 
 function renderVideo(v) {
   const loop = v.autoplay ? ' data-autoplay-loop="true" loop' : "";
-  return `<figure class="detail-hero__video">
-    <video class="story-video" poster="${v.poster || ""}" muted playsinline controls preload="metadata"${loop}>
+  return `<figure class="detail-hero__video detail-hero__video--lead">
+    <video class="story-video story-video--large" poster="${v.poster || ""}" muted playsinline controls preload="metadata"${loop}>
       <source src="${v.src}" type="video/mp4">
     </video>
   </figure>`;
@@ -165,62 +178,54 @@ function detailTypographic(title) {
   return title.includes("490") || title.includes("Underlay");
 }
 
-function buildFacts(facts) {
-  if (!facts?.length) return "";
-  const rows = facts
-    .map(
-      (f) =>
-        `<div class="detail-facts__row"><dt>${escapeHtml(f.label)}</dt><dd>${escapeHtml(f.value)}</dd></div>`
-    )
-    .join("");
-  return `<dl class="detail-facts">${rows}</dl>`;
+function buildTag(tag) {
+  if (!tag) return "";
+  return `<p class="detail-tag">${escapeHtml(tag)}</p>`;
 }
 
-function buildGallery(images, title, skipFirst) {
-  const list = skipFirst ? images.slice(1) : images;
-  if (!list.length) return "";
-  return `<section class="detail-gallery" aria-label="图集">
-    <h2 class="detail-section-title">图集</h2>
-    <div class="detail-gallery__grid">${list
+function buildPrimaryCta(detail) {
+  const primaryUrl = detail.official || detail.tweet;
+  if (!primaryUrl) return "";
+  const label = detail.official
+    ? detail.primaryLabel || "打开官方项目"
+    : "查看原帖";
+  const secondary =
+    detail.official && detail.tweet
+      ? `<a class="detail-cta__secondary" href="${escapeHtml(detail.tweet)}" rel="noopener noreferrer">查看 X 原帖</a>`
+      : "";
+  return `<div class="detail-cta">
+    <a class="detail-cta__primary" href="${escapeHtml(primaryUrl)}" rel="noopener noreferrer">${escapeHtml(label)}</a>
+    ${secondary}
+  </div>`;
+}
+
+function buildGalleryLarge(images, title) {
+  const unique = [...new Set(images)];
+  if (!unique.length) return "";
+  return `<section class="detail-gallery detail-gallery--large" aria-label="图集">
+    <div class="detail-gallery__stack">${unique
       .map(
         (src, i) =>
-          `<figure><img src="${src}" alt="${escapeHtml(title)} ${i + 2}" loading="lazy" decoding="async"></figure>`
+          `<figure class="detail-gallery__frame"><img src="${src}" alt="${escapeHtml(title)} · ${i + 1}" loading="${i < 2 ? "eager" : "lazy"}" decoding="async"></figure>`
       )
       .join("")}</div>
   </section>`;
 }
 
-function buildExtraVideos(videos, skipFirst) {
-  const list = skipFirst ? videos.slice(1) : videos;
-  if (!list.length) return "";
-  return list
-    .map((v) => {
-      const loop = v.autoplay ? ' data-autoplay-loop="true" loop' : "";
-      return `<figure class="detail-gallery__video">
-      <video class="story-video" poster="${v.poster || ""}" muted playsinline controls preload="metadata"${loop}>
-        <source src="${v.src}" type="video/mp4">
-      </video>
-    </figure>`;
-    })
-    .join("");
-}
-
-function buildLinks(sources, official, tweet) {
-  const items = [];
-  if (tweet) items.push({ label: "X 原帖", url: tweet });
-  if (official) items.push({ label: "官方页面", url: official });
-  (sources ?? []).forEach((s) => items.push(s));
-  if (!items.length) return "";
-  return `<section class="detail-links">
-    <h2 class="detail-section-title">延伸阅读</h2>
-    <ul>${items.map((l) => `<li><a href="${escapeHtml(l.url)}" rel="noopener noreferrer">${escapeHtml(l.label)}</a></li>`).join("")}</ul>
+function buildVideosLarge(videos) {
+  if (!videos?.length) return "";
+  return `<section class="detail-videos" aria-label="视频">
+    ${videos
+      .map((v) => {
+        const loop = v.autoplay ? ' data-autoplay-loop="true" loop' : "";
+        return `<figure class="detail-videos__item">
+        <video class="story-video story-video--large" poster="${v.poster || ""}" muted playsinline controls preload="metadata"${loop}>
+          <source src="${v.src}" type="video/mp4">
+        </video>
+      </figure>`;
+      })
+      .join("")}
   </section>`;
-}
-
-function buildQuote(quote) {
-  if (!quote?.text) return "";
-  const cite = quote.url ? `<footer><a href="${escapeHtml(quote.url)}">原帖</a></footer>` : "";
-  return `<blockquote class="detail-quote"><p>${escapeHtml(quote.text)}</p>${cite}</blockquote>`;
 }
 
 function buildNav(date, slug, ordered) {
@@ -263,35 +268,35 @@ function layout({ title, body, extraScripts = "" }) {
 function buildDetailPage(detail, cardItem, meta, ordered) {
   const media = resolveDetailMedia(detail, meta, detail.date, cardItem);
   const cat = detail.category;
-  const isType =
-    cardItem?.typographic && !detail.tweetId && !media.hero;
+  const isType = cardItem?.typographic && !media.images.length && !media.videos.length;
 
-  let hero = "";
-  if (isType) {
-    hero = `<div class="detail-hero__type" role="img" aria-label="${escapeHtml(detail.title)}"><span>Aa</span><p>${escapeHtml(detail.title)}</p></div>`;
-  } else if (media.heroIsVideo) {
-    hero = `<div class="detail-hero">${renderVideo(media.videos[0])}</div>`;
-  } else if (media.hero) {
-    hero = `<div class="detail-hero"><figure class="detail-hero__image"><img src="${media.hero}" alt="${escapeHtml(detail.title)}" decoding="async" fetchpriority="high"></figure></div>`;
-  }
+  const intro = `<div class="detail-intro magazine-article">${detail.bodyHtml}</div>`;
+
+  const galleryImages = media.images.length > 1 ? media.images.slice(1) : [];
+  const heroBlock = isType
+    ? `<div class="detail-hero detail-hero--type" role="img" aria-label="${escapeHtml(detail.title)}"><span>Aa</span></div>`
+    : media.images[0]
+      ? `<figure class="detail-hero detail-hero--lead"><img src="${media.images[0]}" alt="${escapeHtml(detail.title)}" decoding="async" fetchpriority="high"></figure>`
+      : media.videos[0]
+        ? `<div class="detail-hero detail-hero--lead">${renderVideo(media.videos[0])}</div>`
+        : "";
+  const heroBlockFixed = heroBlock;
 
   const body = `
-  <article class="detail-page">
-    <header class="detail-mast">
+  <article class="detail-page detail-page--gallery">
+    <header class="detail-mast detail-mast--compact">
       <a class="article-back" href="${BASE}/">← 返回首页</a>
       <p class="article-series article-series--${cat}">${SERIES_LABEL[cat]}</p>
       <p class="article-date">${formatDateLabel(detail.date)}</p>
       <h1 class="detail-title">${escapeHtml(detail.title)}</h1>
       <p class="detail-author">${escapeHtml(detail.author)}</p>
-      ${detail.deck ? `<p class="detail-deck">${escapeHtml(detail.deck)}</p>` : ""}
     </header>
-    ${hero}
-    ${buildFacts(detail.facts)}
-    <div class="detail-body magazine-article">${detail.bodyHtml}</div>
-    ${buildGallery(media.images, detail.title, true)}
-    ${buildExtraVideos(media.videos, true)}
-    ${buildQuote(detail.quote)}
-    ${buildLinks(detail.sources, detail.official, detail.tweet)}
+    ${intro}
+    ${buildTag(detail.tag)}
+    ${buildPrimaryCta(detail)}
+    ${heroBlockFixed}
+    ${buildGalleryLarge(galleryImages, detail.title)}
+    ${buildVideosLarge(media.videos)}
     ${buildNav(detail.date, detail.slug, ordered)}
   </article>`;
 

@@ -479,8 +479,117 @@ video {
 
 /* Detail pages */
 .detail-page {
-  max-width: 46rem;
+  max-width: min(56rem, 100%);
   margin: 0 auto;
+}
+
+.detail-page--gallery {
+  max-width: min(64rem, 100%);
+}
+
+.detail-mast--compact {
+  margin-bottom: 1rem;
+}
+
+.detail-intro {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.detail-intro p {
+  margin: 0;
+}
+
+.detail-tag {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  margin: 0 0 1.25rem;
+  padding: 0.35rem 0.65rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.detail-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail-cta__primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.35rem;
+  background: var(--ink);
+  color: #fff !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  font-size: 0.92rem;
+  border-radius: 999px;
+}
+
+.detail-cta__primary:hover {
+  opacity: 0.92;
+}
+
+.detail-cta__secondary {
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+}
+
+.detail-hero--lead {
+  margin: 0 0 0.75rem;
+  border: none;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.detail-hero--lead img,
+.detail-hero--lead video,
+.story-video--large {
+  width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  background: #111;
+}
+
+.detail-gallery--large .detail-gallery__stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.detail-gallery__frame {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  background: #f0efec;
+}
+
+.detail-gallery__frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.detail-videos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.detail-videos__item {
+  margin: 0;
 }
 
 .detail-title {
