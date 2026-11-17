@@ -24,7 +24,16 @@ title: X 设计动态
 
 3. front matter 下方写正文（标准 Markdown，链接会原样保留）。
 
-4. 推送到 `main` 分支。GitHub Actions 会自动构建并发布到 GitHub Pages。
+4. 推送到 `main` 分支。GitHub Actions 会构建站点，并将静态文件推送到 `gh-pages` 分支。
+
+## GitHub Pages 首次启用
+
+在仓库 [Settings → Pages](https://github.com/enzosefut/design-news/settings/pages) 任选其一（推荐方案 A）：
+
+- **A. GitHub Actions**：Build and deployment → Source 选 **GitHub Actions**（与 `.github/workflows/pages.yml` 中的 `deploy-pages` 步骤配合）。
+- **B. 分支发布**：Source 选分支 **`gh-pages`**、目录 **`/`**（每次 push 到 `main` 后工作流会更新该分支）。
+
+启用后约 1 分钟可访问：**https://enzosefut.github.io/design-news/**
 
 ## 本地预览
 
