@@ -1,1 +1,43 @@
-# design-news
+# 设计动态
+
+**公开地址：** https://enzosefut.github.io/design-news/
+
+面向设计团队的工作日笔记：「X 设计动态」与「AI 辅助设计日报」。静态站点，无需登录。
+
+## 新增一天的稿件
+
+1. 在 `content/` 下添加两个 Markdown 文件（文件名固定格式）：
+   - `content/YYYY-MM-DD-x.md` — X 设计动态
+   - `content/YYYY-MM-DD-ai.md` — AI 辅助设计日报
+
+2. 每个文件顶部使用 YAML front matter：
+
+```yaml
+---
+date: 2026-11-17
+category: x
+title: X 设计动态
+---
+```
+
+`category` 只能是 `x` 或 `ai`；`date` 为 `YYYY-MM-DD`（Asia/Shanghai 语境下的刊发日）；`title` 为栏目标题。
+
+3. front matter 下方写正文（标准 Markdown，链接会原样保留）。
+
+4. 推送到 `main` 分支。GitHub Actions 会自动构建并发布到 GitHub Pages。
+
+## 本地预览
+
+```bash
+npm install
+npm run build
+npx serve dist
+```
+
+站点使用项目路径前缀 `/design-news/`（与 GitHub Pages 项目站一致）。本地用 `serve` 时需在能处理该 base 的方式下访问，或直接用构建产物中的路径结构打开 `dist/index.html` 做粗略检查。
+
+## permalink
+
+- 首页：`/design-news/`
+- 某日 X 栏：`/design-news/YYYY-MM-DD/x/`
+- 某日 AI 栏：`/design-news/YYYY-MM-DD/ai/`
