@@ -40,6 +40,16 @@ title: X 设计动态
 
 启用后约 1 分钟可访问：**https://enzosefut.github.io/design-news/**
 
+## 媒体保留（60 天）
+
+首页仅展示近 60 天的刊期（Asia/Shanghai）。更早的稿件仍保留 Markdown 与 permalink，但本地 `media/` 会在归档后移除；详情页显示「本期图片已归档」。详见 [RETENTION.md](./RETENTION.md)。
+
+```bash
+npm run archive              # 打包过期日 zip → archive/（无过期则无操作）
+npm run archive -- --prune   # 打包后删除过期媒体并标记 mediaArchived
+npm run test:archive         # 仅用临时数据验证归档逻辑
+```
+
 ## 本地预览
 
 ```bash

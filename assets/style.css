@@ -102,6 +102,13 @@ video {
 }
 
 /* Filters */
+.retention-note {
+  margin: 0 0 1.25rem;
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.02em;
+}
+
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -181,6 +188,16 @@ video {
   height: 100%;
   object-fit: cover;
   min-height: 260px;
+}
+
+.feature-hero__placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 260px;
+  background: var(--rule);
+  color: var(--ink-faint);
+  font-size: 2.5rem;
+  font-family: var(--font-serif);
 }
 
 .feature-hero__text {
@@ -501,6 +518,13 @@ video {
 
 .detail-intro p {
   margin: 0;
+}
+
+.detail-archived-note {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+  font-family: var(--font-sans);
 }
 
 .detail-tag {

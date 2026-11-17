@@ -3,6 +3,12 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
 import { marked } from "marked";
+import {
+  discoverContentDates,
+  getRetentionDays,
+  isWithinRetention,
+  todayShanghai,
+} from "./lib/retention.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -83,7 +89,14 @@ function loadItemDetails(date) {
     });
 }
 
-function resolveCardMedia(item, meta, date) {
+function mediaIsArchived(item, dayItems) {
+  return Boolean(item?.mediaArchived || dayItems?.mediaArchived);
+}
+
+function resolveCardMedia(item, meta, date, dayItems) {
+  if (mediaIsArchived(item, dayItems)) {
+    return { typographic: true, archived: true };
+  }
   if (item.typographic && !item.tweetId) {
     return { typographic: true };
   }
@@ -106,7 +119,16 @@ function resolveCardMedia(item, meta, date) {
   return { typographic: true };
 }
 
-function resolveDetailMedia(detail, meta, date, cardItem) {
+function resolveDetailMedia(detail, meta, date, cardItem, dayItems) {
+  if (mediaIsArchived(detail, dayItems) || mediaIsArchived(cardItem, dayItems)) {
+    return {
+      images: [],
+      videos: [],
+      hero: null,
+      heroIsVideo: false,
+      archived: true,
+    };
+  }
   const order = [];
   const add = (f) => {
     if (f && !order.includes(f)) order.push(f);
@@ -265,12 +287,18 @@ function layout({ title, body, extraScripts = "" }) {
 </html>`;
 }
 
-function buildDetailPage(detail, cardItem, meta, ordered) {
-  const media = resolveDetailMedia(detail, meta, detail.date, cardItem);
+function buildArchivedMediaNote() {
+  return `<p class="detail-archived-note">本期图片已归档</p>`;
+}
+
+function buildDetailPage(detail, cardItem, meta, ordered, dayItems) {
+  const media = resolveDetailMedia(detail, meta, detail.date, cardItem, dayItems);
   const cat = detail.category;
-  const isType = cardItem?.typographic && !media.images.length && !media.videos.length;
+  const isType =
+    (cardItem?.typographic || media.archived) && !media.images.length && !media.videos.length;
 
   const intro = `<div class="detail-intro magazine-article">${detail.bodyHtml}</div>`;
+  const archivedNote = media.archived ? buildArchivedMediaNote() : "";
 
   const galleryImages = media.images.length > 1 ? media.images.slice(1) : [];
   const heroBlock = isType
@@ -292,6 +320,7 @@ function buildDetailPage(detail, cardItem, meta, ordered) {
       <p class="detail-author">${escapeHtml(detail.author)}</p>
     </header>
     ${intro}
+    ${archivedNote}
     ${buildTag(detail.tag)}
     ${buildPrimaryCta(detail)}
     ${heroBlockFixed}
@@ -332,7 +361,9 @@ function buildFeatured(featured, media, date) {
   const href = itemPermalink(date, featured.id);
   const deck = featured.deck ? `<p class="feature-hero__deck">${escapeHtml(featured.deck)}</p>` : "";
   let mediaInner = "";
-  if (media.video) {
+  if (media.archived) {
+    mediaInner = `<div class="feature-hero__placeholder" aria-hidden="true"><span>Aa</span></div>`;
+  } else if (media.video) {
     mediaInner = `<video class="feature-hero__vid" poster="${media.poster || media.cover}" muted playsinline loop data-autoplay-loop playsinline><source src="${media.video}" type="video/mp4"></video>`;
   } else if (media.cover) {
     mediaInner = `<img src="${media.cover}" alt="" decoding="async">`;
@@ -351,31 +382,53 @@ function buildFeatured(featured, media, date) {
   </section>`;
 }
 
-function buildIndex(date, dayItems, meta) {
+function buildEditionSection(date, dayItems, meta) {
   const featured = dayItems.items.find((i) => i.id === dayItems.featured);
   const rest = dayItems.items.filter((i) => i.id !== dayItems.featured);
-  const grid = rest.map((item) => buildMagazineCard(item, resolveCardMedia(item, meta, date), date)).join("");
-  const hero = featured ? buildFeatured(featured, resolveCardMedia(featured, meta, date), date) : "";
-  const body = `
-    <nav class="filter-bar" aria-label="栏目筛选">
-      <button type="button" class="is-active" data-filter="all">全部</button>
-      <button type="button" data-filter="x">X 设计动态</button>
-      <button type="button" data-filter="ai">AI 辅助设计日报</button>
-    </nav>
+  const grid = rest
+    .map((item) =>
+      buildMagazineCard(item, resolveCardMedia(item, meta, date, dayItems), date)
+    )
+    .join("");
+  const hero = featured
+    ? buildFeatured(featured, resolveCardMedia(featured, meta, date, dayItems), date)
+    : "";
+  return `
     <section class="edition" data-date="${date}">
       <h2 class="edition__date"><a href="${BASE}/${date}/">${formatDateLabel(date)}</a> · <a href="${BASE}/${date}/x/">X</a> / <a href="${BASE}/${date}/ai/">AI</a></h2>
       ${hero}
       <div class="mag-grid">${grid}</div>
     </section>`;
+}
+
+function buildHomeIndex(visibleDates, loader) {
+  const retentionDays = getRetentionDays();
+  const sections = visibleDates
+    .map((date) => {
+      const dayItems = loader.loadDayItems(date);
+      if (!dayItems) return "";
+      const meta = loader.loadMediaMeta(date);
+      return buildEditionSection(date, dayItems, meta);
+    })
+    .filter(Boolean)
+    .join("\n");
+  const body = `
+    <p class="retention-note">首页展示近 ${retentionDays} 天</p>
+    <nav class="filter-bar" aria-label="栏目筛选">
+      <button type="button" class="is-active" data-filter="all">全部</button>
+      <button type="button" data-filter="x">X 设计动态</button>
+      <button type="button" data-filter="ai">AI 辅助设计日报</button>
+    </nav>
+    ${sections}`;
   return layout({ title: "首页", body, extraScripts: `<script src="${BASE}/assets/home.js" defer></script>` });
 }
 
-function buildDigest(date, category, items, details, meta) {
+function buildDigest(date, category, items, details, meta, dayItems) {
   const cards = items
     .filter((i) => i.category === category)
     .map((item) => {
       const d = details.find((x) => x.slug === item.id);
-      const media = resolveCardMedia(item, meta, date);
+      const media = resolveCardMedia(item, meta, date, dayItems);
       const href = itemPermalink(date, item.id);
       const thumb = media.cover
         ? `<img src="${media.cover}" alt="" loading="lazy">`
@@ -418,26 +471,59 @@ function writeFile(filePath, content) {
   fs.writeFileSync(filePath, content, "utf8");
 }
 
+function copyMediaForBuild() {
+  if (!fs.existsSync(MEDIA_SRC)) return;
+  const mediaDest = path.join(DIST, "media");
+  fs.mkdirSync(mediaDest, { recursive: true });
+  for (const date of fs.readdirSync(MEDIA_SRC)) {
+    const src = path.join(MEDIA_SRC, date);
+    if (!fs.statSync(src).isDirectory()) continue;
+    const dayItems = loadDayItems(date);
+    if (dayItems?.mediaArchived) continue;
+    copyDir(src, path.join(mediaDest, date));
+  }
+}
+
 function main() {
   if (fs.existsSync(DIST)) fs.rmSync(DIST, { recursive: true, force: true });
   fs.mkdirSync(DIST, { recursive: true });
 
-  const dates = [...new Set(loadItemDetails("2026-11-17").map((d) => d.date))];
-  if (!dates.length) dates.push("2026-11-17");
+  const today = todayShanghai();
+  const retentionDays = getRetentionDays();
+  const allDates = discoverContentDates(CONTENT_DIR);
+  const visibleDates = allDates.filter((d) => isWithinRetention(d, today, retentionDays));
+
+  const loader = { loadDayItems, loadMediaMeta };
+  if (visibleDates.length) {
+    writeFile(path.join(DIST, "index.html"), buildHomeIndex(visibleDates, loader));
+  } else {
+    writeFile(
+      path.join(DIST, "index.html"),
+      layout({
+        title: "首页",
+        body: `<p class="retention-note">首页展示近 ${retentionDays} 天</p><p class="empty-home">近期暂无新刊。</p>`,
+      })
+    );
+  }
 
   let totalDetails = 0;
-  for (const date of dates) {
+  for (const date of allDates) {
     const dayItems = loadDayItems(date);
     const meta = loadMediaMeta(date);
     const details = loadItemDetails(date).sort((a, b) => {
-      const order = dayItems.items.map((i) => i.id);
+      const order = dayItems?.items?.map((i) => i.id) ?? [];
       return order.indexOf(a.slug) - order.indexOf(b.slug);
     });
 
-    if (dayItems) {
-      writeFile(path.join(DIST, "index.html"), buildIndex(date, dayItems, meta));
-      writeFile(path.join(DIST, date, "x", "index.html"), buildDigest(date, "x", dayItems.items, details, meta));
-      writeFile(path.join(DIST, date, "ai", "index.html"), buildDigest(date, "ai", dayItems.items, details, meta));
+    if (dayItems && isWithinRetention(date, today, retentionDays)) {
+      writeFile(
+        path.join(DIST, date, "x", "index.html"),
+        buildDigest(date, "x", dayItems.items, details, meta, dayItems)
+      );
+      writeFile(
+        path.join(DIST, date, "ai", "index.html"),
+        buildDigest(date, "ai", dayItems.items, details, meta, dayItems)
+      );
     }
 
     totalDetails += details.length;
@@ -445,7 +531,7 @@ function main() {
       const cardItem = dayItems?.items?.find((i) => i.id === detail.slug);
       writeFile(
         path.join(DIST, date, detail.slug, "index.html"),
-        buildDetailPage(detail, cardItem, meta, details)
+        buildDetailPage(detail, cardItem, meta, details, dayItems)
       );
     }
   }
@@ -455,9 +541,11 @@ function main() {
   for (const file of fs.readdirSync(ASSETS_SRC)) {
     fs.copyFileSync(path.join(ASSETS_SRC, file), path.join(assetsDest, file));
   }
-  copyDir(MEDIA_SRC, path.join(DIST, "media"));
+  copyMediaForBuild();
 
-  console.log(`Built detail pages (${totalDetails}) → ${DIST}`);
+  console.log(
+    `Built detail pages (${totalDetails}), home editions (${visibleDates.length}) → ${DIST}`
+  );
 }
 
 main();

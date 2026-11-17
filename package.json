@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "media": "node scripts/download-media.mjs"
+    "media": "node scripts/download-media.mjs",
+    "archive": "node scripts/archive-expired.mjs",
+    "test:archive": "node scripts/test-archive-retention.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
