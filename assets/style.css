@@ -14,6 +14,7 @@
   --font-sans: "Noto Sans SC", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
   --font-serif: "Noto Serif SC", "Source Han Serif SC", Georgia, serif;
   --radius: 4px;
+  --home-sticky-top: 5.25rem;
 }
 
 *,
@@ -97,7 +98,11 @@ video {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 1.5rem;
-  align-items: start;
+  align-items: stretch;
+}
+
+.home-aside {
+  display: none;
 }
 
 .home-main {
@@ -113,10 +118,14 @@ video {
   flex-wrap: nowrap;
   gap: 0.5rem;
   overflow-x: auto;
-  padding: 0.25rem 0 0.75rem;
+  padding: 0.35rem 0 0.75rem;
   margin: 0 0 0.5rem;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
+  position: sticky;
+  top: var(--home-sticky-top);
+  z-index: 15;
+  background: var(--page);
 }
 
 .date-rail__chip {
@@ -154,15 +163,25 @@ video {
     gap: 2.25rem;
   }
 
-  .date-rail {
+  .home-aside {
+    display: block;
+    position: relative;
+    min-height: 100%;
+    align-self: stretch;
+  }
+
+  .home-main > .date-rail {
     display: none;
   }
 
   .date-sidebar {
     display: block;
     position: sticky;
-    top: 1.25rem;
+    top: var(--home-sticky-top);
     padding-top: 0.25rem;
+    max-height: calc(100vh - var(--home-sticky-top) - 1.25rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
 
   .date-sidebar__label {
@@ -208,7 +227,7 @@ video {
 }
 
 .edition {
-  scroll-margin-top: 1.5rem;
+  scroll-margin-top: calc(var(--home-sticky-top) + 0.5rem);
 }
 
 .edition--muted {

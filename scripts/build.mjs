@@ -427,12 +427,16 @@ function buildDateSidebar(dates) {
         `<a class="date-rail__chip" href="${BASE}/#${d}" data-date="${d}">${escapeHtml(dateNavLabel(d))}</a>`
     )
     .join("");
-  return `
-    <nav class="date-sidebar" aria-label="日期导航">
-      <p class="date-sidebar__label">日期</p>
-      <div class="date-nav">${links}</div>
-    </nav>
-    <nav class="date-rail" aria-label="日期">${chips}</nav>`;
+  return {
+    aside: `
+    <aside class="home-aside">
+      <nav class="date-sidebar" aria-label="日期导航">
+        <p class="date-sidebar__label">日期</p>
+        <div class="date-nav">${links}</div>
+      </nav>
+    </aside>`,
+    rail: `<nav class="date-rail" aria-label="日期">${chips}</nav>`,
+  };
 }
 
 function buildHomeIndex(visibleDates, loader) {
@@ -446,11 +450,13 @@ function buildHomeIndex(visibleDates, loader) {
     })
     .filter(Boolean)
     .join("\n");
+  const { aside, rail } = buildDateSidebar(visibleDates);
   const body = `
     <p class="retention-note">首页展示近 ${retentionDays} 天</p>
     <div class="home-layout">
-      ${buildDateSidebar(visibleDates)}
+      ${aside}
       <div class="home-main">
+        ${rail}
         <nav class="filter-bar" aria-label="栏目筛选">
           <button type="button" class="is-active" data-filter="all">全部</button>
           <button type="button" data-filter="x">X 设计动态</button>
