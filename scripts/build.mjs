@@ -22,6 +22,13 @@ const BASE = "/design-news";
 
 const SERIES_LABEL = { x: "X 设计动态", ai: "AI 辅助设计日报" };
 
+const X_LOGO_PATH =
+  "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z";
+
+function xLogoSvg(className = "site-logo__x", size = 26) {
+  return `<svg class="${className}" width="${size}" height="${size}" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="${X_LOGO_PATH}"/></svg>`;
+}
+
 marked.setOptions({ gfm: true, breaks: false });
 
 function normalizeDate(value) {
@@ -319,15 +326,12 @@ function layout({ title, body, extraScripts = "" }) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(title)} · 设计动态</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${BASE}/assets/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="site-header__inner">
-      <h1 class="site-title"><a href="${BASE}/">设计动态</a></h1>
+      <h1 class="site-title"><a class="site-wordmark" href="${BASE}/">${xLogoSvg()}<span class="site-wordmark__text">设计动态</span></a></h1>
       <p class="site-subtitle">前沿设计与 AI 辅助设计的工作日笔记</p>
     </div>
   </header>
@@ -500,10 +504,10 @@ function buildHomeIndex(visibleDates, loader) {
       ${aside}
       <div class="home-main">
         ${rail}
-        <nav class="filter-bar" aria-label="栏目筛选">
-          <button type="button" class="is-active" data-filter="all">全部</button>
-          <button type="button" data-filter="x">X 设计动态</button>
-          <button type="button" data-filter="ai">AI 辅助设计日报</button>
+        <nav class="filter-bar" role="tablist" aria-label="栏目筛选">
+          <button type="button" class="filter-tab is-active" role="tab" data-filter="all">全部</button>
+          <button type="button" class="filter-tab" role="tab" data-filter="x">${xLogoSvg("filter-tab__x", 15)}<span>X 设计动态</span></button>
+          <button type="button" class="filter-tab" role="tab" data-filter="ai">AI 辅助设计日报</button>
         </nav>
         ${sections}
       </div>
