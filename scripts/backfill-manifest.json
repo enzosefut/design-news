@@ -1,0 +1,780 @@
+{
+  "2026-11-11": {
+    "featured": "ramin-meetup-spot",
+    "items": [
+      {
+        "id": "ramin-meetup-spot",
+        "category": "x",
+        "title": "群组碰面选点 App",
+        "author": "RaminNasibov",
+        "tweetId": "2120151222065692729",
+        "tweet": "https://x.com/RaminNasibov/status/2120151222065692729",
+        "deck": "地图上投票、取中点、定地点三步走，底栏 Pizza / Bar 方案卡片。",
+        "intro": "Ramin Nasibov 做了一款群组碰面选点的 App 概念：浅色纽约地图上按「投票 / 取中点 / 定地点」三步走，底栏是 Pizza、Bar 等方案卡片。今天最完整的一款产品流程，不是单屏堆砌。"
+      },
+      {
+        "id": "figma-motion-update",
+        "category": "x",
+        "title": "Figma Motion 更新",
+        "author": "figma",
+        "tweetId": "2120200083992105008",
+        "tweet": "https://x.com/figma/status/2120200083992105008",
+        "intro": "Figma 官方更新 Motion：样式预览、物理弹簧、Lottie 导出预览。动效团队把预览与导出链路收进同一套面板，方便对照弹簧与 Lottie 结果。"
+      },
+      {
+        "id": "miggi-motion-deep-dive",
+        "category": "x",
+        "title": "Motion 细节走查",
+        "author": "miggi",
+        "tweetId": "2120204778344947762",
+        "tweet": "https://x.com/miggi/status/2120204778344947762",
+        "intro": "miggi 补了 Motion 细节：iOS/Android 弹簧数值、delay offset，以及导出面板上的 LottieFiles 预览。长走查视频以海报呈现，跳转原帖观看。"
+      },
+      {
+        "id": "zap-energy-rebrand",
+        "category": "x",
+        "title": "Zap Energy 识别",
+        "author": "rebrandgallery",
+        "tweetId": "2120184918349062144",
+        "tweet": "https://x.com/rebrandgallery/status/2120184918349062144",
+        "intro": "Manual 为 Zap Energy 做的视觉识别由 Rebrand 放出：ZAP 字标每个字母沿同一条斜线切开，切开后延伸成条纹语言，配技术衬线用于白皮书和实验室导视，电黄配钢色。"
+      },
+      {
+        "id": "zap-energy-abduzeedo",
+        "category": "x",
+        "title": "Zap Energy 工艺",
+        "author": "abduzeedo",
+        "tweetId": "2120221074378117193",
+        "tweet": "https://x.com/abduzeedo/status/2120221074378117193",
+        "intro": "abduzeedo 拆解 Manual 的 Zap Energy：斜切字标延伸为条纹系统，技术衬线承担白皮书与实验室导视，电黄压在钢灰底上，工艺文章配图很完整。"
+      },
+      {
+        "id": "ample-identity",
+        "category": "x",
+        "title": "Ample 视觉识别",
+        "author": "rebrandgallery",
+        "tweetId": "2120116970087407920",
+        "tweet": "https://x.com/rebrandgallery/status/2120116970087407920",
+        "videoAutoplay": true,
+        "intro": "Fiasco Design 的 Ample 视觉识别：叶形闪电标、温暖室内插画和橙/奶油色体系，调性是「Backing better energy」。"
+      },
+      {
+        "id": "orven-identity",
+        "category": "x",
+        "title": "Orven 完整识别",
+        "author": "penguindsgn",
+        "tweetId": "2117617801762640204",
+        "tweet": "https://x.com/penguindsgn/status/2117617801762640204",
+        "intro": "Alex 放出 Orven 完整识别：撕裂地形图上的字标与圆形网纹，配色克制（Ink Black、Warm Parchment、Forest Sage 等），定位是欧盟政策情报。"
+      },
+      {
+        "id": "ahmed-optical-alignment",
+        "category": "x",
+        "title": "光学对齐网格",
+        "author": "Ahmedcreatives",
+        "tweetId": "2120188630425862614",
+        "tweet": "https://x.com/Ahmedcreatives/status/2120188630425862614",
+        "intro": "Ahmed 用网格讲光学对齐：符号在数学上居中，视觉上仍可能偏，字重和字形会把平衡点推离中线。有时视觉平衡版会略偏离几何中线。"
+      },
+      {
+        "id": "gofundme-koto",
+        "category": "x",
+        "title": "GoFundMe 重做",
+        "author": "abduzeedo",
+        "tweetId": "2120294835538026908",
+        "tweet": "https://x.com/abduzeedo/status/2120294835538026908",
+        "intro": "abduzeedo 转 Koto 重做的 GoFundMe：把捐款进度条做成放射进度环，定制 GoFundMe Sans 沿着径向曲线走。刚发出，互动还很少，但概念很硬。"
+      },
+      {
+        "id": "cursor-identity-evolution",
+        "category": "x",
+        "title": "Cursor 进化识别",
+        "author": "rebrandgallery",
+        "tweetId": "2120245329312317616",
+        "tweet": "https://x.com/rebrandgallery/status/2120245329312317616",
+        "videoAutoplay": true,
+        "intro": "Rebrand 放出 Cursor 进化后的识别，PORTO ROCHA 与 Kimera 联手 Cursor 内部团队，围绕「Engineered Ambition」做定制字体和模块化图形。"
+      },
+      {
+        "id": "jhey-flip-to-tip-v2",
+        "category": "x",
+        "title": "flip to tip v2",
+        "author": "jh3yy",
+        "tweetId": "2120243978679321060",
+        "tweet": "https://x.com/jh3yy/status/2120243978679321060",
+        "videoAutoplay": true,
+        "intro": "jhey 的 flip to tip v2：按住按钮抛硬币，不用慢放，靠 easing 做出细节停顿。动效节奏全在缓曲线上完成。"
+      },
+      {
+        "id": "rettuce-evac-layer",
+        "category": "x",
+        "title": "EVAC LAYER",
+        "author": "rettuce",
+        "tweetId": "2120025032130978225",
+        "tweet": "https://x.com/rettuce/status/2120025032130978225",
+        "tag": "#claudejapan2026 决赛入围",
+        "intro": "you tanaka 的 EVAC LAYER：概念是「把每一块屏幕变成救命基础设施」，3D 大厅里原本装饰性的粒子屏，在灾时主动播报信息。和 Dot Kerning 不是同一件作品。"
+      },
+      {
+        "id": "ffx2-creative-uncut",
+        "category": "x",
+        "title": "FFX-2 角色图",
+        "author": "creativeuncut",
+        "tweetId": "2120162058864107577",
+        "tweet": "https://x.com/creativeuncut/status/2120162058864107577",
+        "intro": "Creative Uncut 放出野村哲也的 Final Fantasy X-2 角色图：Yuna、Rikku、Paine。同窗还有藤坂公彦的 Drakengard 2、梶本幸广的 Star Ocean 2 R 等。"
+      },
+      {
+        "id": "claude-interactive-connectors",
+        "category": "ai",
+        "title": "Interactive connectors 全工具",
+        "author": "Anthropic",
+        "tweetId": "2120206365759094857",
+        "tweet": "https://x.com/claudeai/status/2120206365759094857",
+        "official": "https://claude.com/resources/articles/interactive-connectors-full-tool",
+        "intro": "Anthropic 开始在 Web / Desktop 全计划推送 Interactive connectors：完整应用可嵌进对话旁或全屏，Claude 能直接在打开的工具里改内容。设计相关已点名 Canva、Adobe、Webflow；Figma 仍在建设集成。"
+      },
+      {
+        "id": "adobe-max-creative-agent",
+        "category": "ai",
+        "title": "Adobe MAX 与本地 MCP",
+        "author": "Adobe",
+        "official": "https://news.adobe.com/news/2026/11/adobe-transforms-creative-cloud-tools",
+        "intro": "Adobe 在 MAX 宣布 Creative Agent 铺开至多款创意应用，并预告本地 MCP：第三方 agent 将直接在本机工程文件里改图层与序列。官方写明 2027 年初 private beta；同场还有 Firefly Design、Graph 与 Builder。"
+      },
+      {
+        "id": "scenario-agent-skills",
+        "category": "ai",
+        "title": "Scenario Agent Skills",
+        "author": "DanKornas",
+        "tweetId": "2120327150901289082",
+        "tweet": "https://x.com/DanKornas/status/2120327150901289082",
+        "official": "https://mcp.scenario.com/docs/resources/agent-skills",
+        "intro": "Dan Kornas 分享 Scenario Agent Skills：给 coding agent 的资产生成工作流，教 agent 经 Scenario MCP 发现模型、核对 schema、跑生成并取回图像、视频、音频与 3D 结果。需要已连接的 Scenario MCP 和账号。"
+      }
+    ]
+  },
+  "2026-11-12": {
+    "featured": "special-esc-menu",
+    "items": [
+      {
+        "id": "special-esc-menu",
+        "category": "x",
+        "title": "ESC 菜单与调酒 UI",
+        "author": "SpecialS3241",
+        "tweetId": "2120410249450701099",
+        "tweet": "https://x.com/SpecialS3241/status/2120410249450701099",
+        "deck": "俯视日期 HUD 克制，调酒吧台动效；公开试玩明天上线。",
+        "videoAutoplay": true,
+        "intro": "Tonight's Special 发了 ESC 菜单和调酒吧台 UI 动效。俯视房间里的日期 HUD 很克制（Week 1 / Day 6 Fri / Morning），公开试玩预告明天上线，传播很广。"
+      },
+      {
+        "id": "ramin-split-receipt",
+        "category": "x",
+        "title": "撕开收据分账",
+        "author": "RaminNasibov",
+        "tweetId": "2120479012409467168",
+        "tweet": "https://x.com/RaminNasibov/status/2120479012409467168",
+        "videoAutoplay": true,
+        "intro": "Ramin Nasibov 的交互概念之一：撕开收据来分账。手势与纸张撕裂感把「平分账单」做成可感的物理隐喻。"
+      },
+      {
+        "id": "ramin-shredder",
+        "category": "x",
+        "title": "桌面碎纸机",
+        "author": "RaminNasibov",
+        "tweetId": "2120605025277800620",
+        "tweet": "https://x.com/RaminNasibov/status/2120605025277800620",
+        "videoAutoplay": true,
+        "intro": "把不想再看见的文件拖进桌面上一个米色大圆里的碎纸机。拖拽即销毁，界面只留一个大圆容器与文件动效。"
+      },
+      {
+        "id": "ramin-hamster-wallet",
+        "category": "x",
+        "title": "仓鼠零钱包",
+        "author": "RaminNasibov",
+        "tweetId": "2120317495869325570",
+        "tweet": "https://x.com/RaminNasibov/status/2120317495869325570",
+        "intro": "腮帮带拉链的仓鼠零钱包是物件设计，传得很开。造型把储存感做成小动物腮帮，拉链即开口。"
+      },
+      {
+        "id": "rettuce-accordion-clock",
+        "category": "x",
+        "title": "Accordion Clock",
+        "author": "rettuce",
+        "tweetId": "2120320722723844458",
+        "tweet": "https://x.com/rettuce/status/2120320722723844458",
+        "videoAutoplay": true,
+        "intro": "you tanaka 做了 Accordion Clock：印着时刻的蛇腹纸每 15 秒折叠再打开，数字位置和斜线、点、黑圆重新组合，周期里约六成会翻成黑纸。"
+      },
+      {
+        "id": "dneg-designstudio",
+        "category": "x",
+        "title": "DNEG 识别刷新",
+        "author": "abduzeedo",
+        "tweetId": "2120643591370637489",
+        "tweet": "https://x.com/abduzeedo/status/2120643591370637489",
+        "intro": "DesignStudio 给 DNEG 做的识别刷新，围绕动态，Lift Type 切了 DNEG Script，珊瑚红「BEYOND POSSIBLE」看板压在全黑环境里。"
+      },
+      {
+        "id": "soft-labor",
+        "category": "x",
+        "title": "Soft Labor 网站",
+        "author": "abduzeedo",
+        "tweetId": "2120534426111140315",
+        "tweet": "https://x.com/abduzeedo/status/2120534426111140315",
+        "intro": "Other Means 的 Soft Labor 网站：桃粉底，SVG 字像磨砂玻璃，默认发糊，悬停才锐化。模糊到清晰的交互承担整站气质。"
+      },
+      {
+        "id": "bass-x-machina",
+        "category": "x",
+        "title": "Bass X Machina 片头",
+        "author": "abduzeedo",
+        "tweetId": "2120582281765040368",
+        "tweet": "https://x.com/abduzeedo/status/2120582281765040368",
+        "intro": "BUCK 为 Netflix Bass X Machina 做的片头，做旧字标被一个巨大的 X 切开。每一帧都像宣传海报。"
+      },
+      {
+        "id": "ahmed-sigmaai",
+        "category": "x",
+        "title": "SigmaAi 品牌卡片",
+        "author": "Ahmedcreatives",
+        "tweetId": "2120479427557752939",
+        "tweet": "https://x.com/Ahmedcreatives/status/2120479427557752939",
+        "intro": "Ahmed 发了 SigmaAi 品牌卡片：同心圆框住人物，编号系列配「Think deeper / Read the research. Skip the noise.」"
+      },
+      {
+        "id": "nick-lab-posters",
+        "category": "x",
+        "title": "实验室 AI 海报",
+        "author": "nickbakeddesign",
+        "tweetId": "2120667287904759824",
+        "tweet": "https://x.com/nickbakeddesign/status/2120667287904759824",
+        "videoAutoplay": true,
+        "intro": "Nick 有一组实验室 AI 品牌海报，基因组扫描和分子式叠在人像轮廓上。概念围绕从真实实验学习的 AI，虽未中标但视觉完成度高。"
+      },
+      {
+        "id": "nick-inkbox",
+        "category": "x",
+        "title": "Inkbox 十二天世界",
+        "author": "nickbakeddesign",
+        "tweetId": "2120613885132812569",
+        "tweet": "https://x.com/nickbakeddesign/status/2120613885132812569",
+        "videoAutoplay": true,
+        "intro": "Nick 为 Inkbox 在 12 天里搭了整套世界：章鱼吉祥物、网站、web app、3D 角色和实物毛绒。种子轮发布与品牌一站式交付。"
+      },
+      {
+        "id": "ffxi-jobs",
+        "category": "x",
+        "title": "FFXI 职业设定",
+        "author": "creativeuncut",
+        "tweetId": "2120636434616926554",
+        "tweet": "https://x.com/creativeuncut/status/2120636434616926554",
+        "intro": "Creative Uncut 更新了 FFXI 赤魔、骑士、盗贼、暗黑职业设定图，职业服装与武器细节一并收录。"
+      },
+      {
+        "id": "fantasian-kina",
+        "category": "x",
+        "title": "Fantasian 角色",
+        "author": "creativeuncut",
+        "tweetId": "2120612778792652817",
+        "tweet": "https://x.com/creativeuncut/status/2120612778792652817",
+        "intro": "Fantasian 的 Kina、Cheryl 角色三视图和线稿，板垣伸设计的多角度与草稿并列展示。"
+      },
+      {
+        "id": "persona-4-chie-yukiko",
+        "category": "x",
+        "title": "P4 雪子与千枝",
+        "author": "creativeuncut",
+        "tweetId": "2120661349118169358",
+        "tweet": "https://x.com/creativeuncut/status/2120661349118169358",
+        "intro": "副岛成记的 Persona 4 天城雪子与里中千枝，带发型、体态草稿。设定图强调角色体态与发型迭代。"
+      },
+      {
+        "id": "meng-fable-trailer",
+        "category": "x",
+        "title": "Fable 游戏预告",
+        "author": "MengTo",
+        "tweetId": "2120501283304153438",
+        "tweet": "https://x.com/MengTo/status/2120501283304153438",
+        "intro": "Meng To 用 Fable 5.2 把自己的 three.js 游戏做成了预告片。长片以海报呈现，详见原帖工作流。"
+      },
+      {
+        "id": "google-a2ui-1",
+        "category": "ai",
+        "title": "A2UI 1.0 稳定版",
+        "author": "Google",
+        "official": "https://developers.googleblog.com/en/a2ui-10-build-delightful-fast-reliable-agentic-experiences/",
+        "intro": "Google 发布 A2UI 1.0：智能体只描述「要出示什么」，应用用自有原生组件渲染，表单与图表进对话且走各家设计系统。1.0 加入双向函数调用与无障碍扩展；Web 有 React、Angular、Lit 渲染器，文档在 a2ui.org。"
+      },
+      {
+        "id": "gemini-4-carbon",
+        "category": "ai",
+        "title": "Gemini 4 Carbon",
+        "author": "Google",
+        "official": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+        "intro": "Gemini 4 Carbon 已对付费开发者与 AI Ultra 开放：做 Web 应用时会跑构建再验收循环，检查渲染界面而非只看代码。Antigravity 同步预览 /swarm 协调并行子代理与唱反调的验收代理。"
+      }
+    ]
+  },
+  "2026-11-13": {
+    "featured": "figma-3d-transforms",
+    "items": [
+      {
+        "id": "ink-sweater",
+        "category": "x",
+        "title": "ink sweater",
+        "author": "RaminNasibov",
+        "tweetId": "2120775859762057422",
+        "tweet": "https://x.com/RaminNasibov/status/2120775859762057422",
+        "intro": "肩头一枚倒出的墨水瓶，蓝墨水顺着织纹流满半边衣身。物件把「墨水侵染织物」做成可穿戴的视觉叙事。"
+      },
+      {
+        "id": "hedgehog-wallet",
+        "category": "x",
+        "title": "hedgehog wallet",
+        "author": "RaminNasibov",
+        "tweetId": "2120782403840917944",
+        "tweet": "https://x.com/RaminNasibov/status/2120782403840917944",
+        "intro": "刺猬的刺就是卡槽，抽出即是卡包。造型与功能合一，刺的形态直接承担收纳结构。"
+      },
+      {
+        "id": "ramin-aubergine-lamp",
+        "category": "x",
+        "title": "茄子灯产品卡",
+        "author": "RaminNasibov",
+        "tweetId": "2120885610088890410",
+        "tweet": "https://x.com/RaminNasibov/status/2120885610088890410",
+        "videoAutoplay": true,
+        "intro": "Aubi Lamp 产品卡：茄子灯的开关和亮度直接做进电商页。产品卡即操控界面，不另开设置层。"
+      },
+      {
+        "id": "nick-cognition",
+        "category": "x",
+        "title": "Cognition 海报探索",
+        "author": "nickbakeddesign",
+        "tweetId": "2121013058705445354",
+        "tweet": "https://x.com/nickbakeddesign/status/2121013058705445354",
+        "intro": "Devin 的六边形标志分别长进火箭引擎、奔驰星徽的投影，以及美钞折成的拼图。迟了八天仍是一组有力的海报探索。"
+      },
+      {
+        "id": "anagram-pact",
+        "category": "x",
+        "title": "Anagram 识别",
+        "author": "abduzeedo",
+        "tweetId": "2121006258115444919",
+        "tweet": "https://x.com/abduzeedo/status/2121006258115444919",
+        "intro": "abduzeedo 转 Pact 的 Anagram：一个方块符号不断重组，一直长到户外发光立方体，每个面一枚不同字形。"
+      },
+      {
+        "id": "zellerfeld-dumbar",
+        "category": "x",
+        "title": "Zellerfeld 品牌",
+        "author": "abduzeedo",
+        "tweetId": "2120716934828425415",
+        "tweet": "https://x.com/abduzeedo/status/2120716934828425415",
+        "intro": "Studio Dumbar/DEPT 为 3D 打印鞋品牌 Zellerfeld 重做识别：橙底海报里网格填充直接切进字母，一直做到胶带与包装细节。"
+      },
+      {
+        "id": "ahmed-atome",
+        "category": "x",
+        "title": "Atome 风格探索",
+        "author": "Ahmedcreatives",
+        "tweetId": "2120859335152824350",
+        "tweet": "https://x.com/Ahmedcreatives/status/2120859335152824350",
+        "intro": "Ahmed 探索 atome 品牌新风格：细胞感玻璃体压在浅黄底上，透明层次与色块对比很明确。"
+      },
+      {
+        "id": "ahmed-ripple-reject",
+        "category": "x",
+        "title": "Ripple 落选方向",
+        "author": "Ahmedcreatives",
+        "tweetId": "2120836684891996341",
+        "tweet": "https://x.com/Ahmedcreatives/status/2120836684891996341",
+        "intro": "Ripple 落选方向：粉橙渐变、大字拆行和创作者肖像，一套完整却没被采用的方案。"
+      },
+      {
+        "id": "penguindsgn-otherwise",
+        "category": "x",
+        "title": "Otherwise 决策 UI",
+        "author": "penguindsgn",
+        "tweetId": "2120844024818893068",
+        "tweet": "https://x.com/penguindsgn/status/2120844024818893068",
+        "intro": "Otherwise 决策 UI：侧栏、置信度曲线和洞察卡都收得很干净。信息层级把复杂决策收成可读面板。"
+      },
+      {
+        "id": "jhey-make-it-pop-002",
+        "category": "x",
+        "title": "make it pop: 002",
+        "author": "jh3yy",
+        "tweetId": "2120984619621269553",
+        "tweet": "https://x.com/jh3yy/status/2120984619621269553",
+        "videoAutoplay": true,
+        "intro": "make it pop: 002——标题里 pop 被挤成彩虹折射的字重动效。字重变化与色散同时发生。"
+      },
+      {
+        "id": "jhey-spoke-highlight",
+        "category": "x",
+        "title": "spoke highlight",
+        "author": "jh3yy",
+        "tweetId": "2120933642084012214",
+        "tweet": "https://x.com/jh3yy/status/2120933642084012214",
+        "videoAutoplay": true,
+        "intro": "editions scrapbook：从侧边刻度拉出细线，去点亮卡片上的某一块表面。小交互用来牵引视线到重点区域。"
+      },
+      {
+        "id": "miggi-3d-walkthrough",
+        "category": "x",
+        "title": "3D 社区文件走查",
+        "author": "miggi",
+        "tweetId": "2120961675209896009",
+        "tweet": "https://x.com/miggi/status/2120961675209896009",
+        "official": "https://www.figma.com/community/file/1697663412897353944",
+        "intro": "miggi 给 Kellay 的社区文件补了 Figma Motion 三维透视的时间轴演示，示范如何上手 3D 与 Motion。长走查以海报呈现。"
+      },
+      {
+        "id": "rettuce-relief-contour",
+        "category": "x",
+        "title": "Relief Contour",
+        "author": "rettuce",
+        "tweetId": "2120683237551100339",
+        "tweet": "https://x.com/rettuce/status/2120683237551100339",
+        "videoAutoplay": true,
+        "intro": "混凝土方块堆成会重组的浮雕地形，低光落深影，地形每 2 秒换阵；最上沿有一块会变成朱色，36 秒大范围重雕一次。"
+      },
+      {
+        "id": "meng-halden-heygen",
+        "category": "x",
+        "title": "Halden 滚动长镜头",
+        "author": "MengTo",
+        "tweetId": "2120896116711727557",
+        "tweet": "https://x.com/MengTo/status/2120896116711727557",
+        "intro": "用 HeyGen Video 1 做一条 30 秒 2K 长镜头，从平面到房子再升到天空，滚动时倒放。完整工作流见原帖。"
+      },
+      {
+        "id": "dmc5-creative-uncut",
+        "category": "x",
+        "title": "DMC5 角色设定",
+        "author": "creativeuncut",
+        "tweetId": "2120826436592542015",
+        "tweet": "https://x.com/creativeuncut/status/2120826436592542015",
+        "intro": "Creative Uncut 收录 Devil May Cry 5 的 Lady、Trish、Eva 和 J.D. Morrison 角色设定。"
+      },
+      {
+        "id": "ffxii-fran-balthier",
+        "category": "x",
+        "title": "FFXII Fran 与 Balthier",
+        "author": "creativeuncut",
+        "tweetId": "2120900151325987211",
+        "tweet": "https://x.com/creativeuncut/status/2120900151325987211",
+        "intro": "吉田明彦画的 Final Fantasy XII 的 Fran 与 Balthier Bunansa 角色图，造型线与服装细节完整。"
+      },
+      {
+        "id": "figma-3d-transforms",
+        "category": "ai",
+        "title": "Figma 3D Transforms",
+        "author": "Figma",
+        "tweetId": "2120926665790681354",
+        "tweet": "https://x.com/figma/status/2120926665790681354",
+        "official": "https://www.figma.com/blog/how-3d-transforms-and-figmas-agent-brought-a-launch-video-to-life/",
+        "deck": "开放测试含透视、Agent 排版与 Dev Mode / MCP 交付。",
+        "intro": "Figma 3D Transforms 对 Full 席位开放测试：沿 X/Y/Z 旋转，父级透视组成立体场景，可与着色器、Motion 叠用。Brand Studio 用 Agent 算间距或写生成式插件排版；Dev Mode 可复制 CSS，编码代理经 Figma MCP 读写 3D 设计。"
+      },
+      {
+        "id": "vercel-ui-sdk",
+        "category": "ai",
+        "title": "Vercel UI SDK",
+        "author": "Vercel",
+        "tweetId": "2120950020249895314",
+        "tweet": "https://x.com/vercel/status/2120950020249895314",
+        "official": "https://ui-sdk.dev/",
+        "intro": "Vercel 发布 UI SDK（beta）：把弹层、选择、键盘导航等拆成 50+ 可复用行为，让 Agent 组合成新控件；应用暴露 WebMCP，代理可直接操作界面。React、Vue、Svelte、Solid 与 Web Components 可用。"
+      },
+      {
+        "id": "copilotkit-open-intelligent-ui",
+        "category": "ai",
+        "title": "Open Intelligent UI",
+        "author": "CopilotKit",
+        "tweetId": "2120958749980639561",
+        "tweet": "https://x.com/CopilotKit/status/2120958749980639561",
+        "intro": "接 A2UI 1.0，CopilotKit 推出 Open Intelligent UI：两行代码即可在应用里用自有组件或目录做生成式界面，任意模型与 agent 栈可用。"
+      }
+    ]
+  },
+  "2026-11-16": {
+    "featured": "almeida-dale-porto-rocha",
+    "items": [
+      {
+        "id": "almeida-dale-porto-rocha",
+        "category": "x",
+        "title": "Almeida & Dale 识别",
+        "author": "abduzeedo",
+        "tweetId": "2121367149818323407",
+        "tweet": "https://x.com/abduzeedo/status/2121367149818323407",
+        "deck": "定制 Diakritik AD，葡语变音按全字重绘制，一记强蓝贯穿。",
+        "intro": "Porto Rocha 为巴西画廊 Almeida & Dale 做了定制字体 Diakritik AD，葡萄牙语变音符号按全字重画，整套识别只用一记强蓝。巴西本土画廊拿到完整识别很值得看。"
+      },
+      {
+        "id": "nubank-koto",
+        "category": "x",
+        "title": "Nubank 品牌刷新",
+        "author": "abduzeedo",
+        "tweetId": "2121302737719787866",
+        "tweet": "https://x.com/abduzeedo/status/2121302737719787866",
+        "intro": "Koto 刷新 Nubank：保留 logo 与紫色，补上第一套定制 Nu Sans；大号白字压在紫底上，nu 小方块像标点一样嵌进正文。"
+      },
+      {
+        "id": "tso-underline",
+        "category": "x",
+        "title": "TSO 识别",
+        "author": "abduzeedo",
+        "tweetId": "2121711976631988513",
+        "tweet": "https://x.com/abduzeedo/status/2121711976631988513",
+        "intro": "Underline Studio × Toronto Symphony Orchestra：TSO 字母组合里的 S 拆成一串像琴弦振动的回声曲线，季节配色也很干净。"
+      },
+      {
+        "id": "inventure-bedow",
+        "category": "x",
+        "title": "Inventure 识别",
+        "author": "abduzeedo",
+        "tweetId": "2121984708640739423",
+        "tweet": "https://x.com/abduzeedo/status/2121984708640739423",
+        "intro": "Bedow 为 Nordic 风投 Inventure 做识别：INVENTURE 字标先向外张开，再沿 30° 往上爬；红黄底上的斜体很利落。"
+      },
+      {
+        "id": "julia-hey-studio",
+        "category": "x",
+        "title": "Julia 丝带字标",
+        "author": "abduzeedo",
+        "tweetId": "2121730348237406649",
+        "tweet": "https://x.com/abduzeedo/status/2121730348237406649",
+        "intro": "Hey Studio 为 Poblenou 咖啡店 Julia 用真丝带折出字标再拍摄，褶皱都留在字形里；点心盒合上时是一个真实的蓝蝴蝶结。"
+      },
+      {
+        "id": "philadelphia-gretel",
+        "category": "x",
+        "title": "费城美术馆狮鹫",
+        "author": "abduzeedo",
+        "tweetId": "2121672195671835117",
+        "tweet": "https://x.com/abduzeedo/status/2121672195671835117",
+        "intro": "Gretel 重绘费城美术馆 1938 年狮鹫，字体取自费城店招和壁画；「HONK IF YOU LOVE ART」贴纸很出圈。"
+      },
+      {
+        "id": "nzz-unfolded",
+        "category": "x",
+        "title": "Die neue Polis 书系",
+        "author": "abduzeedo",
+        "tweetId": "2121638914863644999",
+        "tweet": "https://x.com/abduzeedo/status/2121638914863644999",
+        "intro": "unfolded 为 NZZ Libro《Die neue Polis》做全字体书系：简介直接印在白封面，书脊在架子上连成色谱。"
+      },
+      {
+        "id": "twice-shy-tula",
+        "category": "x",
+        "title": "Twice Shy 肥皂包装",
+        "author": "abduzeedo",
+        "tweetId": "2121259243534012508",
+        "tweet": "https://x.com/abduzeedo/status/2121259243534012508",
+        "intro": "Twice Shy × Tula Louise：半透明硫酸纸包装，12 个简单轮廓撑起整套识别，皂碟也跟形状走。"
+      },
+      {
+        "id": "ahmed-cowrk",
+        "category": "x",
+        "title": "Cowrk logo 探索",
+        "author": "Ahmedcreatives",
+        "tweetId": "2121217707005845963",
+        "tweet": "https://x.com/Ahmedcreatives/status/2121217707005845963",
+        "intro": "Ahmed 发布 Cowrk logo 探索，字形与协作工作场景的联想在同一稿里试探。"
+      },
+      {
+        "id": "jhey-impossible-toggle",
+        "category": "x",
+        "title": "the impossible toggle",
+        "author": "jh3yy",
+        "tweetId": "2121374199709052991",
+        "tweet": "https://x.com/jh3yy/status/2121374199709052991",
+        "videoAutoplay": true,
+        "intro": "jhey 周末先发 the impossible toggle：视觉悖论式开关动效，体态与遮挡关系玩得很细。"
+      },
+      {
+        "id": "jhey-make-it-pop-003",
+        "category": "x",
+        "title": "make it pop: 003 glazed",
+        "author": "jh3yy",
+        "tweetId": "2122118204667670621",
+        "tweet": "https://x.com/jh3yy/status/2122118204667670621",
+        "videoAutoplay": true,
+        "intro": "make it pop 系列更新到 003 glazed：在折射字重动效上叠加釉面质感，系列连贯推进。"
+      },
+      {
+        "id": "daniela-johnny-mnemonic",
+        "category": "x",
+        "title": "Johnny Mnemonic UI 实验",
+        "author": "daniela_muntyan",
+        "tweetId": "2122062763077910852",
+        "tweet": "https://x.com/daniela_muntyan/status/2122062763077910852",
+        "videoAutoplay": true,
+        "intro": "Daniela Muntyan 重看《Johnny Mnemonic》里的未来界面，用 Figma 新 3D Transforms 做了一组类似实验，立体界面感很强。"
+      },
+      {
+        "id": "miggi-shader-3d",
+        "category": "x",
+        "title": "3D 叠着色器动效",
+        "author": "miggi",
+        "tweetId": "2121731624790524068",
+        "tweet": "https://x.com/miggi/status/2121731624790524068",
+        "videoAutoplay": true,
+        "intro": "miggi 在 Figma 3D Transforms 上叠着色器做 Motion，质感与透视一起动，视觉上像「不该在 Figma 里能做成这样」。"
+      },
+      {
+        "id": "miggi-3d-array",
+        "category": "x",
+        "title": "Command+D 3D 阵列",
+        "author": "miggi",
+        "tweetId": "2121377261048021230",
+        "tweet": "https://x.com/miggi/status/2121377261048021230",
+        "intro": "演示用 Command+D 连续复制旋转，很快就能摆出复杂 3D 阵列与动画，新手也能快速搭立体构图。长演示以海报呈现。"
+      },
+      {
+        "id": "zazzy-superside-90s",
+        "category": "x",
+        "title": "Superside 90s spec 片",
+        "author": "zazzygfx",
+        "tweetId": "2121652119174353378",
+        "tweet": "https://x.com/zazzygfx/status/2121652119174353378",
+        "intro": "Zazzy 为 Superside 做 90s spec 动态片：每页在 Figma 设计，Figma Motion 动画，Claude 拼转场、客户素材与混音。整支流程横跨设计与 agent 剪辑。"
+      },
+      {
+        "id": "penguindsgn-web-components",
+        "category": "x",
+        "title": "Web components 设计",
+        "author": "penguindsgn",
+        "tweetId": "2121630160076304750",
+        "tweet": "https://x.com/penguindsgn/status/2121630160076304750",
+        "intro": "Alex 放出一组 Web components 设计稿，组件层级与暗色界面规范在同套稿里展开。"
+      },
+      {
+        "id": "penguindsgn-dark-mode-ui",
+        "category": "x",
+        "title": "暗色模式 UI 细节",
+        "author": "penguindsgn",
+        "tweetId": "2121275003467653336",
+        "tweet": "https://x.com/penguindsgn/status/2121275003467653336",
+        "typographic": true,
+        "intro": "Alex 分享的暗色模式 UI 细节原帖已无法取图；保留摘要措辞与原链跳转，不设想象配图。勿与 Web components 帖混为一作。"
+      },
+      {
+        "id": "rettuce-harmonic-tide",
+        "category": "x",
+        "title": "Harmonic Tide",
+        "author": "rettuce",
+        "tweetId": "2121045583423218033",
+        "tweet": "https://x.com/rettuce/status/2121045583423218033",
+        "videoAutoplay": true,
+        "intro": "Harmonic Tide 把真实分潮（M2、S2 等）做成带刻度的联结圆，红笔尖画出潮位曲线和花瓣轨迹，像 Kelvin 潮汐预测机；换观测地会重绘轨迹。"
+      },
+      {
+        "id": "rettuce-one-way-collapse",
+        "category": "x",
+        "title": "One-Way Collapse",
+        "author": "rettuce",
+        "tweetId": "2122133008732069940",
+        "tweet": "https://x.com/rettuce/status/2122133008732069940",
+        "videoAutoplay": true,
+        "intro": "One-Way Collapse：点流向圆心、触边停下再涨缩；满圆后从外周剥点缩回，偏流形状留在圆缘上。"
+      },
+      {
+        "id": "ramin-diamond-crow",
+        "category": "x",
+        "title": "Diamond Crow 识别",
+        "author": "RaminNasibov",
+        "tweetId": "2122000547381194819",
+        "tweet": "https://x.com/RaminNasibov/status/2122000547381194819",
+        "videoAutoplay": true,
+        "intro": "珠宝品牌 Diamond Crow 的识别与产品卡，细工贵金属店的气质落在字标与展示动效上。"
+      },
+      {
+        "id": "ramin-logo-55",
+        "category": "x",
+        "title": "55 logo",
+        "author": "RaminNasibov",
+        "tweetId": "2122025595466912231",
+        "tweet": "https://x.com/RaminNasibov/status/2122025595466912231",
+        "intro": "为「55」做的 logo 设计，数字形态与品牌个性在同一标记里收紧。"
+      },
+      {
+        "id": "ramin-bench-life",
+        "category": "x",
+        "title": "bench life",
+        "author": "RaminNasibov",
+        "tweetId": "2121674572873322907",
+        "tweet": "https://x.com/RaminNasibov/status/2121674572873322907",
+        "intro": "bench life 概念传播很广：长椅与街头生活的产品叙事做成系列视觉。动效较长，以海报为主。"
+      },
+      {
+        "id": "ramin-catzilla",
+        "category": "x",
+        "title": "catzilla",
+        "author": "RaminNasibov",
+        "tweetId": "2121770009726791876",
+        "tweet": "https://x.com/RaminNasibov/status/2121770009726791876",
+        "intro": "catzilla 物件概念：猫与怪兽尺度互换的趣味视觉，静态稿同样高传播。"
+      },
+      {
+        "id": "catherine-creative-uncut",
+        "category": "x",
+        "title": "《凯瑟琳》宣传图",
+        "author": "creativeuncut",
+        "tweetId": "2121863887628931203",
+        "tweet": "https://x.com/creativeuncut/status/2121863887628931203",
+        "intro": "Creative Uncut 收录副岛成记《凯瑟琳》宣传插画，角色张力与构图草稿一并放出。"
+      },
+      {
+        "id": "ffxiv-endwalker",
+        "category": "x",
+        "title": "FFXIV Endwalker 芝诺斯",
+        "author": "creativeuncut",
+        "tweetId": "2121592829520884210",
+        "tweet": "https://x.com/creativeuncut/status/2121592829520884210",
+        "intro": "Final Fantasy XIV: Endwalker 芝诺斯角色设定、收割者衣装与魔导镰刀，装备细节完整。"
+      },
+      {
+        "id": "persona-3-creative-uncut",
+        "category": "x",
+        "title": "P3 主视觉与 Orpheus",
+        "author": "creativeuncut",
+        "tweetId": "2121316975267942881",
+        "tweet": "https://x.com/creativeuncut/status/2121316975267942881",
+        "intro": "《女神异闻录 3》主视觉与主人公 / Orpheus，副岛成记绘制，关键视觉与合身剪影并列。"
+      },
+      {
+        "id": "framer-shader-generation",
+        "category": "ai",
+        "title": "Framer 图像与 Shader",
+        "author": "Framer",
+        "tweetId": "2122067743956459529",
+        "tweet": "https://x.com/framer/status/2122067743956459529",
+        "official": "https://www.framer.com/updates/image-shader-generation",
+        "intro": "Framer 上线 Image and Shader Generation：Agent 可生成贴合站点的图与 shader，选中画布元素即可改主体或一句话生成 halftone、CRT 等效果。官方演示用一条 skill 数分钟内把官网暗色切亮色并换图。"
+      },
+      {
+        "id": "sysgears-figma-playwright",
+        "category": "ai",
+        "title": "Figma + Playwright MCP",
+        "author": "SysGears",
+        "official": "https://sysgears.com/articles/close-enough-isnt-good-enough-making-ai-agents-build-ui-that-matches-the-design/",
+        "intro": "SysGears 对照实验：Figma MCP 与 Playwright MCP 合用后像素差异从 19.10% 降到 0.26%，工时与成本近乎减半。文章强调设计文件须有变量、组件与可读图层名，并用固定 agent 流程对照到看不见差异。"
+      },
+      {
+        "id": "a2ui-playground",
+        "category": "ai",
+        "title": "A2UI Playground",
+        "author": "Atai Barkai",
+        "tweetId": "2122034672448545148",
+        "tweet": "https://x.com/ataiiam/status/2122034672448545148",
+        "official": "https://a2ui.open.bot",
+        "intro": "CopilotKit 的 Atai Barkai 发布可交互 A2UI Playground：向 agent 要界面，可逐行看它写出的 A2UI 1.0，并用 shadcn、Material 或自有组件渲染同一份答案，还可复制 prompt 加进应用。"
+      }
+    ]
+  }
+}
