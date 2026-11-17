@@ -170,7 +170,7 @@ function buildFacts(facts) {
   const rows = facts
     .map(
       (f) =>
-        `<motion.div class="detail-facts__row"><dt>${escapeHtml(f.label)}</dt><dd>${escapeHtml(f.value)}</dd></motion.div>`
+        `<div class="detail-facts__row"><dt>${escapeHtml(f.label)}</dt><dd>${escapeHtml(f.value)}</dd></div>`
     )
     .join("");
   return `<dl class="detail-facts">${rows}</dl>`;
@@ -186,7 +186,7 @@ function buildGallery(images, title, skipFirst) {
         (src, i) =>
           `<figure><img src="${src}" alt="${escapeHtml(title)} ${i + 2}" loading="lazy" decoding="async"></figure>`
       )
-      .join("")}</motion.div>
+      .join("")}</div>
   </section>`;
 }
 
@@ -268,9 +268,9 @@ function buildDetailPage(detail, cardItem, meta, ordered) {
 
   let hero = "";
   if (isType) {
-    hero = `<motion.div class="detail-hero__type" role="img" aria-label="${escapeHtml(detail.title)}"><span>Aa</span><p>${escapeHtml(detail.title)}</p></div>`;
+    hero = `<div class="detail-hero__type" role="img" aria-label="${escapeHtml(detail.title)}"><span>Aa</span><p>${escapeHtml(detail.title)}</p></div>`;
   } else if (media.heroIsVideo) {
-    hero = `<div class="detail-hero">${renderVideo(media.videos[0])}</motion.div>`;
+    hero = `<div class="detail-hero">${renderVideo(media.videos[0])}</div>`;
   } else if (media.hero) {
     hero = `<div class="detail-hero"><figure class="detail-hero__image"><img src="${media.hero}" alt="${escapeHtml(detail.title)}" decoding="async" fetchpriority="high"></figure></div>`;
   }
@@ -307,7 +307,7 @@ function buildMagazineCard(item, media, date) {
   const aspect = item.cardAspect || "4/3";
   let visual = "";
   if (media.typographic) {
-    visual = `<div class="mag-card__visual mag-card__visual--type"><span aria-hidden="true">Aa</span></motion.div>`;
+    visual = `<div class="mag-card__visual mag-card__visual--type"><span aria-hidden="true">Aa</span></div>`;
   } else if (media.cover) {
     visual = `<div class="mag-card__visual" style="--ar:${aspect}"><img src="${media.cover}" alt="${escapeHtml(item.title)}" loading="lazy" decoding="async"></div>`;
   }
@@ -334,7 +334,7 @@ function buildFeatured(featured, media, date) {
   }
   return `<section class="feature-hero" data-category="${featured.category}">
     <a class="feature-hero__link" href="${href}">
-      <motion.div class="feature-hero__media">${mediaInner}</div>
+      <div class="feature-hero__media">${mediaInner}</div>
       <div class="feature-hero__text">
         <span class="mag-card__tick mag-card__tick--${featured.category}">今日主推 · ${SERIES_LABEL[featured.category]}</span>
         <h2 class="feature-hero__title">${escapeHtml(featured.title)}</h2>
@@ -356,11 +356,11 @@ function buildIndex(date, dayItems, meta) {
       <button type="button" class="is-active" data-filter="all">全部</button>
       <button type="button" data-filter="x">X 设计动态</button>
       <button type="button" data-filter="ai">AI 辅助设计日报</button>
-    </motion.div>
+    </nav>
     <section class="edition" data-date="${date}">
       <h2 class="edition__date"><a href="${BASE}/${date}/">${formatDateLabel(date)}</a> · <a href="${BASE}/${date}/x/">X</a> / <a href="${BASE}/${date}/ai/">AI</a></h2>
       ${hero}
-      <div class="mag-grid">${grid}</motion.div>
+      <div class="mag-grid">${grid}</div>
     </section>`;
   return layout({ title: "首页", body, extraScripts: `<script src="${BASE}/assets/home.js" defer></script>` });
 }

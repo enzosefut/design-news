@@ -8,6 +8,8 @@ deck: Kris Sowersby 首款零售可变 neo-grotesk，用 opsz 6–42 回应 Helv
 tweet: https://x.com/abduzeedo/status/2122436959574573204
 official: https://klim.co.nz/fonts/die-grotesk/
 tweetId: "2122436959574573204"
+gallery:
+  - extra-die-grotesk-social.jpg
 facts:
   - label: 设计
     value: Kris Sowersby

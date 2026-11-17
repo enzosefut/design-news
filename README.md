@@ -50,8 +50,14 @@ npx serve dist
 
 站点使用项目路径前缀 `/design-news/`（与 GitHub Pages 项目站一致）。本地用 `serve` 时需在能处理该 base 的方式下访问，或直接用构建产物中的路径结构打开 `dist/index.html` 做粗略检查。
 
+## 单条详情页
+
+每条作品在 `content/items/YYYY-MM-DD-{slug}.md` 写独立正文，YAML 至少包含：`date`、`slug`、`category`、`title`、`author`、`deck`、`tweet`、`official`、`tweetId`（可选）、`facts`、`sources`、`quote`；有额外图/视频时用 `gallery`、`extraVideos`。
+
+首页与主推卡片链到：`/design-news/YYYY-MM-DD/{slug}/`
+
 ## permalink
 
 - 首页：`/design-news/`
-- 某日 X 栏：`/design-news/YYYY-MM-DD/x/`
-- 某日 AI 栏：`/design-news/YYYY-MM-DD/ai/`
+- 单条：`/design-news/YYYY-MM-DD/{slug}/`
+- 当日目录：`/design-news/YYYY-MM-DD/x/`、`/design-news/YYYY-MM-DD/ai/`
