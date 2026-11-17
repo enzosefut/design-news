@@ -3,9 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "media": "node scripts/download-media.mjs"
   },
   "dependencies": {
+    "cheerio": "^1.0.0",
     "gray-matter": "^4.0.3",
     "marked": "^15.0.6"
   }

@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-17",
+  "featured": "allo",
+  "extras": {
+    "anima-cover": "https://animaapp.com/blog/wp-content/uploads/2026/11/agentic-canvas-blog-cover-approved-black-title.jpg"
+  },
+  "items": [
+    {
+      "id": "allo",
+      "category": "x",
+      "title": "Allo 开源可变字体",
+      "author": "joshpuckett",
+      "tweetId": "2122329345670988258",
+      "featured": true,
+      "cardAspect": "16/9",
+      "deck": "从 Inter 4.1 重绘的字形、可变字重与 roundness 轴；站点 logo 还是会互动的角色。"
+    },
+    {
+      "id": "die-grotesk",
+      "category": "x",
+      "title": "Die Grotesk",
+      "author": "Klim Type Foundry",
+      "tweetId": "2122436959574573204",
+      "cardAspect": "4/3"
+    },
+    {
+      "id": "mlb",
+      "category": "x",
+      "title": "MLB 品牌识别",
+      "author": "Mother Design",
+      "tweetId": "2122454342016111056",
+      "cardAspect": "4/3"
+    },
+    {
+      "id": "kuda",
+      "category": "x",
+      "title": "Kuda · More Life",
+      "author": "Barkas",
+      "tweetId": "2122394766725751255",
+      "cardAspect": "4/3"
+    },
+    {
+      "id": "olearius",
+      "category": "x",
+      "title": "Olearius 橄榄油",
+      "author": "vrai studio",
+      "tweetId": "2122498798681219334",
+      "cardAspect": "3/4"
+    },
+    {
+      "id": "likeweiss",
+      "category": "x",
+      "title": "Likeweiß Chardonnay",
+      "author": "OlssønBarbieri",
+      "tweetId": "2122291291237015576",
+      "cardAspect": "1/1",
+      "videoAutoplay": true
+    },
+    {
+      "id": "cannes",
+      "category": "x",
+      "title": "Cannes Royale",
+      "author": "tavern",
+      "tweetId": "2122359275972399474",
+      "cardAspect": "16/9",
+      "videoAutoplay": true
+    },
+    {
+      "id": "vsgoods",
+      "category": "x",
+      "title": "VS/Goods mockup 店",
+      "author": "@abduzeedo",
+      "tweetId": "2122409989289480480",
+      "cardAspect": "4/3"
+    },
+    {
+      "id": "miggi-iphone",
+      "category": "x",
+      "title": "iPhone 对开动画",
+      "author": "miggi",
+      "tweetId": "2122474018557350106",
+      "cardAspect": "1/1"
+    },
+    {
+      "id": "ramin-tickets",
+      "category": "x",
+      "title": "足球票务 App",
+      "author": "Ramin Nasibov",
+      "tweetId": "2122433340250718529",
+      "cardAspect": "9/16"
+    },
+    {
+      "id": "ramin-sweater",
+      "category": "x",
+      "title": "草皮毛衣系列",
+      "author": "Ramin Nasibov",
+      "tweetId": "2122408220685730098",
+      "cardAspect": "4/3"
+    },
+    {
+      "id": "marvel-app",
+      "category": "x",
+      "title": "Marvel Comics App",
+      "author": "Mondra",
+      "tweetId": "2122455327228469579",
+      "cardAspect": "9/16"
+    },
+    {
+      "id": "ahmed-metal",
+      "category": "x",
+      "title": "金属条形标志",
+      "author": "Ahmed",
+      "tweetId": "2122301528132460746",
+      "cardAspect": "4/3"
+    },
+    {
+      "id": "ahmed-nectai",
+      "category": "x",
+      "title": "NectAi 识别",
+      "author": "Ahmed",
+      "tweetId": "2122288482890699055",
+      "cardAspect": "4/3"
+    },
+    {
+      "id": "ahmed-spectr",
+      "category": "x",
+      "title": "spectr 珐琅徽章",
+      "author": "Ahmed",
+      "tweetId": "2122256336008442139",
+      "cardAspect": "4/3"
+    },
+    {
+      "id": "sheared-type",
+      "category": "x",
+      "title": "Sheared Type",
+      "author": "rettuce",
+      "tweetId": "2122495012223307797",
+      "cardAspect": "1/1",
+      "videoAutoplay": true
+    },
+    {
+      "id": "object-01",
+      "category": "x",
+      "title": "THE OBJECT 01 躺椅",
+      "author": "Nako Baev",
+      "tweetId": "2122485689090507211",
+      "cardAspect": "4/3"
+    },
+    {
+      "id": "fate-samurai",
+      "category": "x",
+      "title": "Fate/Samurai Remnant",
+      "author": "Creative Uncut",
+      "tweetId": "2122421840983543888",
+      "cardAspect": "4/3"
+    },
+    {
+      "id": "pokemon",
+      "category": "x",
+      "title": "宝可梦 太阳／月亮",
+      "author": "Creative Uncut",
+      "tweetId": "2122277246740185151",
+      "cardAspect": "4/3"
+    },
+    {
+      "id": "anima-canvas",
+      "category": "ai",
+      "title": "Agentic Canvas",
+      "author": "Anima",
+      "coverKey": "anima-cover",
+      "tweetId": null,
+      "cardAspect": "16/9",
+      "anchorMatch": "Agentic Canvas"
+    },
+    {
+      "id": "marcel-underlay",
+      "category": "ai",
+      "title": "Underlay · 490 屏 Figma 工作流",
+      "author": "Marcel",
+      "tweetId": "2122430710053019994",
+      "typographic": true,
+      "cardAspect": "4/3"
+    },
+    {
+      "id": "code2video",
+      "category": "ai",
+      "title": "Code2Video Arena",
+      "author": "Kaggle",
+      "tweetId": "2122495234646941744",
+      "cardAspect": "16/9",
+      "videoAutoplay": true
+    }
+  ]
+}

@@ -24,7 +24,12 @@ title: X 设计动态
 
 3. front matter 下方写正文（标准 Markdown，链接会原样保留）。
 
-4. 推送到 `main` 分支。GitHub Actions 会构建站点，并将静态文件推送到 `gh-pages` 分支。
+4. （有图片时）新增同日配套文件：
+   - `content/YYYY-MM-DD-items.json` — 每条作品的卡片元数据（`id`、`title`、`author`、`tweetId`、`category`、`cardAspect` 等；无图条目设 `typographic: true`）
+   - `content/media-manifest-YYYY-MM-DD.json` — 原帖媒体 URL 清单（供下载脚本使用）
+   - 运行 `npm run media`（或维护好 `media/YYYY-MM-DD/` 与 `media-meta.json`）
+
+5. 推送到 `main` 分支。GitHub Actions 会构建站点，并将静态文件推送到 `gh-pages` 分支。
 
 ## GitHub Pages 首次启用
 
