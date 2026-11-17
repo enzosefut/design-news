@@ -14,7 +14,9 @@
   --font-sans: "Noto Sans SC", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
   --font-serif: "Noto Serif SC", "Source Han Serif SC", Georgia, serif;
   --radius: 4px;
-  --home-sticky-top: 5.25rem;
+  --home-sticky-top: 6rem;
+  --edition-scroll-gap: 1rem;
+  --edition-scroll-gap-mobile: 3.75rem;
 }
 
 *,
@@ -263,8 +265,21 @@ video {
   }
 }
 
+.edition__mast {
+  scroll-margin-top: calc(var(--home-sticky-top) + var(--edition-scroll-gap));
+}
+
 .edition[id] {
-  scroll-margin-top: calc(var(--home-sticky-top) + 0.5rem);
+  scroll-margin-top: calc(var(--home-sticky-top) + var(--edition-scroll-gap));
+}
+
+@media (max-width: 959px) {
+  .edition__mast,
+  .edition[id] {
+    scroll-margin-top: calc(
+      var(--home-sticky-top) + var(--edition-scroll-gap-mobile) + var(--edition-scroll-gap)
+    );
+  }
 }
 
 .edition--muted {

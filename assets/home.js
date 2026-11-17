@@ -57,11 +57,27 @@
     });
   }
 
+  function getScrollOffsetPx() {
+    const header = document.querySelector(".site-header");
+    let offset = header ? header.getBoundingClientRect().height : 96;
+    const rail = document.querySelector(".home-main > .date-rail");
+    if (rail && window.matchMedia("(max-width: 959px)").matches) {
+      const rh = rail.getBoundingClientRect().height;
+      if (rh > 0) offset += rh;
+    }
+    const root = getComputedStyle(document.documentElement);
+    const gap = parseFloat(root.getPropertyValue("--edition-scroll-gap")) || 1;
+    offset += gap * 16;
+    return Math.ceil(offset);
+  }
+
   function scrollToEdition(date) {
     const el = document.getElementById(date);
     if (!el || el.hidden) return;
     history.replaceState(null, "", `#${date}`);
-    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    const target = el.querySelector(".edition__mast") || el;
+    const y = target.getBoundingClientRect().top + window.scrollY - getScrollOffsetPx();
+    window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
     setActiveDate(date);
   }
 
