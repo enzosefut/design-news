@@ -1,7 +1,7 @@
 ---
 date: '2026-11-12'
 slug: fantasian-kina
-category: x
+category: game
 title: Fantasian 角色：Kina、Cheryl 三视图与板垣伸线稿
 author: creativeuncut
 tweet: 'https://x.com/creativeuncut/status/2120612778792652817'

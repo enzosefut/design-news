@@ -1,7 +1,7 @@
 ---
 date: '2026-11-13'
 slug: ffxii-fran-balthier
-category: x
+category: game
 title: FFXII Fran 与 Balthier：吉田明彦角色图与服装细节
 author: creativeuncut
 tweet: 'https://x.com/creativeuncut/status/2120900151325987211'

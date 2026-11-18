@@ -1,7 +1,7 @@
 ---
 date: '2026-11-17'
 slug: fate-samurai
-category: x
+category: game
 title: Fate/Samurai Remnant：Rogue Saber 官方角色设定原画
 author: Creative Uncut
 deck: Rogue Saber 角色设定图，Creative Uncut 整理官方美术。

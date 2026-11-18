@@ -1,7 +1,7 @@
 ---
 date: '2026-11-16'
 slug: ffxiv-endwalker
-category: x
+category: game
 title: FFXIV Endwalker 芝诺斯：收割者衣装与魔导镰刀设定
 author: creativeuncut
 tweet: 'https://x.com/creativeuncut/status/2121592829520884210'

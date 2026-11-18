@@ -1,7 +1,7 @@
 ---
 date: '2026-11-11'
 slug: ffx2-creative-uncut
-category: x
+category: game
 title: FFX-2 角色图：野村哲也 Yuna、Rikku、Paine
 author: creativeuncut
 tweet: 'https://x.com/creativeuncut/status/2120162058864107577'

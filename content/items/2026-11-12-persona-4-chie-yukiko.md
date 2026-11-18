@@ -1,7 +1,7 @@
 ---
 date: '2026-11-12'
 slug: persona-4-chie-yukiko
-category: x
+category: game
 title: P4 雪子与千枝：副岛成记发型体态草稿
 author: creativeuncut
 tweet: 'https://x.com/creativeuncut/status/2120661349118169358'

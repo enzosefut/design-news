@@ -1,7 +1,7 @@
 ---
 date: '2026-11-12'
 slug: meng-fable-trailer
-category: x
+category: game
 title: Fable 游戏预告：Fable 5.2 把 three.js 游戏做成预告片
 author: MengTo
 tweet: 'https://x.com/MengTo/status/2120501283304153438'

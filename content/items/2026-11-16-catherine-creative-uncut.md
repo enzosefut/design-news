@@ -1,7 +1,7 @@
 ---
 date: '2026-11-16'
 slug: catherine-creative-uncut
-category: x
+category: game
 title: 《凯瑟琳》宣传图：副岛成记张力构图与草稿
 author: creativeuncut
 tweet: 'https://x.com/creativeuncut/status/2121863887628931203'

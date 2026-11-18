@@ -36,7 +36,11 @@ function assetQuery() {
 
 const ASSET_Q = assetQuery();
 
-const SERIES_LABEL = { x: "X 设计动态", ai: "AI 辅助设计日报" };
+const SERIES_LABEL = {
+  x: "X 设计动态",
+  game: "娱乐设计动态",
+  ai: "AI 辅助设计日报",
+};
 
 const X_LOGO_PATH =
   "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z";
@@ -558,6 +562,7 @@ function buildHomeIndex(visibleDates, loader, thumbRegistry) {
         <nav class="filter-bar" role="tablist" aria-label="栏目筛选">
           <button type="button" class="filter-tab is-active" role="tab" data-filter="all">全部</button>
           <button type="button" class="filter-tab" role="tab" data-filter="x">${xLogoSvg("filter-tab__x", 15)}<span>X 设计动态</span></button>
+          <button type="button" class="filter-tab" role="tab" data-filter="game">娱乐设计动态</button>
           <button type="button" class="filter-tab" role="tab" data-filter="ai">AI 辅助设计日报</button>
         </nav>
         ${sections}
@@ -676,6 +681,12 @@ async function main() {
         path.join(DIST, date, "ai", "index.html"),
         buildDigest(date, "ai", dayItems.items, details, meta, dayItems)
       );
+      if (dayItems.items.some((i) => i.category === "game")) {
+        writeFile(
+          path.join(DIST, date, "game", "index.html"),
+          buildDigest(date, "game", dayItems.items, details, meta, dayItems)
+        );
+      }
     }
 
     totalDetails += details.length;

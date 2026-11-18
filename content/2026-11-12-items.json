@@ -4,7 +4,7 @@
   "items": [
     {
       "id": "special-esc-menu",
-      "category": "x",
+      "category": "game",
       "title": "ESC 菜单与调酒 UI：俯视日期 HUD 克制，吧台动效明天试玩",
       "author": "SpecialS3241",
       "cardAspect": "4/3",
@@ -99,7 +99,7 @@
     },
     {
       "id": "ffxi-jobs",
-      "category": "x",
+      "category": "game",
       "title": "FFXI 职业设定：赤魔、骑士、盗贼、暗黑服装与武器",
       "author": "creativeuncut",
       "cardAspect": "4/3",
@@ -107,7 +107,7 @@
     },
     {
       "id": "fantasian-kina",
-      "category": "x",
+      "category": "game",
       "title": "Fantasian 角色：Kina、Cheryl 三视图与板垣伸线稿",
       "author": "creativeuncut",
       "cardAspect": "4/3",
@@ -115,7 +115,7 @@
     },
     {
       "id": "persona-4-chie-yukiko",
-      "category": "x",
+      "category": "game",
       "title": "P4 雪子与千枝：副岛成记发型体态草稿",
       "author": "creativeuncut",
       "cardAspect": "4/3",
@@ -123,7 +123,7 @@
     },
     {
       "id": "meng-fable-trailer",
-      "category": "x",
+      "category": "game",
       "title": "Fable 游戏预告：Fable 5.2 把 three.js 游戏做成预告片",
       "author": "MengTo",
       "cardAspect": "4/3",

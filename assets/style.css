@@ -9,6 +9,8 @@
   --accent: #1d9bf0;
   --accent-x: #1d9bf0;
   --accent-ai: #00ba7c;
+  --accent-game: #c084fc;
+  --series-game: #d8b4fe;
   --today: #f4212e;
   --series-x: #e7e9ea;
   --rule: #2f3336;
@@ -496,6 +498,24 @@ video {
   border-bottom: 1px solid var(--rule);
 }
 
+@media (max-width: 719px) {
+  .filter-bar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    margin-right: calc(-1 * var(--gutter));
+    padding-right: var(--gutter);
+  }
+
+  .filter-tab {
+    flex: 0 0 auto;
+    padding: 0.75rem 0.85rem 0.85rem;
+    font-size: 0.84rem;
+    white-space: nowrap;
+  }
+}
+
 .filter-tab {
   display: inline-flex;
   align-items: center;
@@ -770,6 +790,10 @@ video {
   color: var(--accent-ai);
 }
 
+.mag-card__tick--game {
+  color: var(--series-game);
+}
+
 .mag-card__title {
   margin: 0.35rem 0 0.15rem;
   font-size: 1rem;
@@ -813,6 +837,10 @@ video {
 
 .article-series--ai {
   color: var(--accent-ai);
+}
+
+.article-series--game {
+  color: var(--accent-game);
 }
 
 .article-date {
