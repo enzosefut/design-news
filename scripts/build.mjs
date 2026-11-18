@@ -35,6 +35,8 @@ const SERIES_LABEL = { x: "X 设计动态", ai: "AI 辅助设计日报" };
 
 const X_LOGO_PATH =
   "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z";
+/** Header X mark — explicit px for WebKit; pairs with `.site-logo__x` 2.75rem in CSS */
+const HEADER_X_LOGO_PX = 44;
 
 function xLogoSvg(className = "site-logo__x", size) {
   const sizeAttr = size != null ? ` width="${size}" height="${size}"` : "";
@@ -344,7 +346,7 @@ function layout({ title, body, extraScripts = "", headerAppend = "" }) {
 <body>
   <header class="${headerClass}">
     <div class="site-header__inner">
-      <h1 class="site-title"><a class="site-wordmark" href="${BASE}/">${xLogoSvg()}<span class="site-brand__text"><span class="site-wordmark__text">设计动态</span><span class="site-subtitle">探索前沿设计 ｜ AI 辅助设计</span></span></a></h1>
+      <h1 class="site-title"><a class="site-wordmark" href="${BASE}/">${xLogoSvg("site-logo__x", HEADER_X_LOGO_PX)}<span class="site-brand__text"><span class="site-wordmark__text">设计动态</span><span class="site-subtitle">探索前沿设计 ｜ AI 辅助设计</span></span></a></h1>
     </div>
     ${headerAppend}
   </header>

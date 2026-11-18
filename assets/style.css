@@ -97,7 +97,7 @@ video {
 
 .site-wordmark {
   display: inline-flex;
-  align-items: stretch;
+  align-items: center;
   gap: 0.55rem;
   text-decoration: none;
   color: var(--ink);
@@ -111,10 +111,9 @@ video {
 .site-logo__x {
   flex: 0 0 auto;
   display: block;
-  align-self: stretch;
-  height: auto;
-  width: auto;
-  aspect-ratio: 1;
+  width: 2.75rem;
+  height: 2.75rem;
+  max-width: 2.75rem;
   max-height: 2.75rem;
 }
 
