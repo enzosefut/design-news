@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: zazzy-superside-90s
 category: x
-title: Superside 90s spec 片
+title: Superside 90s spec 片：Figma 设计、Motion 动画、Claude 拼转场混音
 author: zazzygfx
 tweet: 'https://x.com/zazzygfx/status/2121652119174353378'
 tweetId: '2121652119174353378'

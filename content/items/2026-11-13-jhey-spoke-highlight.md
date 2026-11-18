@@ -2,7 +2,7 @@
 date: '2026-11-13'
 slug: jhey-spoke-highlight
 category: x
-title: spoke highlight
+title: spoke highlight：侧刻度拉细线点亮卡片表面重点区域
 author: jh3yy
 tweet: 'https://x.com/jh3yy/status/2120933642084012214'
 tweetId: '2120933642084012214'

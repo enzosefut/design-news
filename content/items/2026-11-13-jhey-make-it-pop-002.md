@@ -2,7 +2,7 @@
 date: '2026-11-13'
 slug: jhey-make-it-pop-002
 category: x
-title: 'make it pop: 002'
+title: 'make it pop: 002：pop 挤成彩虹折射字重动效'
 author: jh3yy
 tweet: 'https://x.com/jh3yy/status/2120984619621269553'
 tweetId: '2120984619621269553'

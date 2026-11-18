@@ -2,7 +2,7 @@
 date: '2026-11-13'
 slug: zellerfeld-dumbar
 category: x
-title: Zellerfeld 品牌
+title: Zellerfeld 品牌：橙底网格切进字母，胶带与包装细节
 author: abduzeedo
 tweet: 'https://x.com/abduzeedo/status/2120716934828425415'
 tweetId: '2120716934828425415'

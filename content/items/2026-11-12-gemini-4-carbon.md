@@ -2,10 +2,9 @@
 date: '2026-11-12'
 slug: gemini-4-carbon
 category: ai
-title: Gemini 4 Carbon
+title: Gemini 4 Carbon：构建验收看渲染界面，Antigravity /swarm 并行子代理
 author: Google
-official: >-
-  https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/
+official: 'https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/'
 primaryLabel: 打开官方项目
 preferStillHero: true
 gallery:

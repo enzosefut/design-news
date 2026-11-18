@@ -2,7 +2,7 @@
 date: '2026-11-11'
 slug: zap-energy-abduzeedo
 category: x
-title: Zap Energy 工艺
+title: Zap Energy 工艺：Manual 斜切字标、条纹系统与实验室导视
 author: abduzeedo
 tweet: 'https://x.com/abduzeedo/status/2120221074378117193'
 tweetId: '2120221074378117193'

@@ -2,7 +2,7 @@
 date: '2026-11-18'
 slug: jhey-editions
 category: x
-title: typography scrapbook
+title: typography scrapbook：巨无衬线字脚上小人行走
 author: jhey
 deck: 在字母的形状里找乐趣：小人沿着巨大无衬线字脚行走。
 tweet: 'https://x.com/jh3yy/status/2122855858854150197'

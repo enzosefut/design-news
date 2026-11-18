@@ -2,7 +2,7 @@
 date: '2026-11-12'
 slug: ramin-split-receipt
 category: x
-title: 撕开收据分账
+title: 撕开收据分账：撕裂手势把平分账单做成物理隐喻
 author: RaminNasibov
 tweet: 'https://x.com/RaminNasibov/status/2120479012409467168'
 tweetId: '2120479012409467168'

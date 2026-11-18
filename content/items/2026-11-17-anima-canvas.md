@@ -2,7 +2,7 @@
 date: '2026-11-17'
 slug: anima-canvas
 category: ai
-title: Agentic Canvas
+title: Agentic Canvas：免登录浏览器画布，人与 MCP 共编 HTML / CSS
 author: Anima
 deck: 免费免登录浏览器画布，人与 MCP 代理共编同一份 HTML/CSS。
 tweet: null

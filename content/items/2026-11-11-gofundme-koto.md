@@ -2,7 +2,7 @@
 date: '2026-11-11'
 slug: gofundme-koto
 category: x
-title: GoFundMe 重做
+title: GoFundMe 重做：放射进度环、GoFundMe Sans 沿径向曲线
 author: abduzeedo
 tweet: 'https://x.com/abduzeedo/status/2120294835538026908'
 tweetId: '2120294835538026908'

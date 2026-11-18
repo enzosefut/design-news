@@ -2,7 +2,7 @@
 date: '2026-11-13'
 slug: meng-halden-heygen
 category: x
-title: Halden 滚动长镜头
+title: Halden 滚动长镜头：HeyGen Video 1 三十秒 2K 滚动倒放
 author: MengTo
 tweet: 'https://x.com/MengTo/status/2120896116711727557'
 tweetId: '2120896116711727557'

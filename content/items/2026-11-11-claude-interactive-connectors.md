@@ -2,7 +2,7 @@
 date: '2026-11-11'
 slug: claude-interactive-connectors
 category: ai
-title: Interactive connectors 全工具
+title: Interactive connectors 全工具：完整应用嵌对话，Canva / Adobe / Webflow
 author: Anthropic
 tweet: 'https://x.com/claudeai/status/2120206365759094857'
 official: 'https://claude.com/resources/articles/interactive-connectors-full-tool'

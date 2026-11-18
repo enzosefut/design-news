@@ -2,7 +2,7 @@
 date: '2026-11-12'
 slug: ahmed-sigmaai
 category: x
-title: SigmaAi 品牌卡片
+title: SigmaAi 品牌卡片：同心圆框人物、Think deeper 编号系列
 author: Ahmedcreatives
 tweet: 'https://x.com/Ahmedcreatives/status/2120479427557752939'
 tweetId: '2120479427557752939'

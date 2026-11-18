@@ -2,7 +2,7 @@
 date: '2026-11-11'
 slug: cursor-identity-evolution
 category: x
-title: Cursor 进化识别
+title: Cursor 进化识别：PORTO ROCHA × Kimera、定制字体与 Engineered Ambition
 author: rebrandgallery
 tweet: 'https://x.com/rebrandgallery/status/2120245329312317616'
 tweetId: '2120245329312317616'

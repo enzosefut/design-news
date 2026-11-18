@@ -9,6 +9,11 @@ import {
   isWithinRetention,
   todayShanghai,
 } from "./lib/retention.mjs";
+import {
+  HomeThumbRegistry,
+  generateHomeThumbs,
+  homeThumbImgTag,
+} from "./lib/home-images.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
@@ -173,13 +178,16 @@ function resolveCardMedia(item, meta, date, dayItems) {
   if (item.coverKey && meta.extras?.[item.coverKey]) {
     const file = meta.extras[item.coverKey];
     const url = mediaUrl(date, file);
-    return { cover: url, images: [url] };
+    return { cover: url, coverFile: file, posterFile: null, images: [url] };
   }
   if (item.tweetId && meta.tweets?.[item.tweetId]) {
     const t = meta.tweets[item.tweetId];
-    const cover = mediaUrl(date, t.cover || t.poster || t.images?.[0]);
+    const coverFile = t.cover || t.poster || t.images?.[0];
+    const cover = mediaUrl(date, coverFile);
     return {
       cover,
+      coverFile: coverFile || null,
+      posterFile: t.poster || null,
       images: (t.images ?? []).map((f) => mediaUrl(date, f)),
       poster: t.poster ? mediaUrl(date, t.poster) : null,
       video: t.video ? mediaUrl(date, t.video) : null,
@@ -404,13 +412,20 @@ function buildDetailPage(detail, cardItem, meta, ordered, dayItems) {
   });
 }
 
-function buildMagazineCard(item, media, date) {
+function buildMagazineCard(item, media, date, thumbRegistry) {
   const href = itemPermalink(date, item.id);
   let visual = "";
   if (media.typographic) {
     visual = `<div class="mag-card__visual mag-card__visual--type"><span aria-hidden="true">Aa</span></div>`;
   } else if (media.cover) {
-    visual = `<div class="mag-card__visual"><img src="${media.cover}" alt="${escapeHtml(item.title)}" loading="lazy" decoding="async"></div>`;
+    const thumb =
+      thumbRegistry && media.coverFile
+        ? thumbRegistry.register(date, media.coverFile, "card")
+        : null;
+    const img = thumb
+      ? homeThumbImgTag(thumb, escapeHtml(item.title), { loading: "lazy" })
+      : `<img src="${media.cover}" alt="${escapeHtml(item.title)}" loading="lazy" decoding="async">`;
+    visual = `<div class="mag-card__visual">${img}</div>`;
   }
   return `<article class="mag-card" data-category="${item.category}">
     <a class="mag-card__link" href="${href}">
@@ -424,16 +439,24 @@ function buildMagazineCard(item, media, date) {
   </article>`;
 }
 
-function buildFeatured(featured, media, date) {
+function buildFeatured(featured, media, date, thumbRegistry) {
   const href = itemPermalink(date, featured.id);
   const deck = featured.deck ? `<p class="feature-hero__deck">${escapeHtml(featured.deck)}</p>` : "";
   let mediaInner = "";
+  const heroPosterFile = media.posterFile || media.coverFile;
+  const heroThumb =
+    thumbRegistry && heroPosterFile
+      ? thumbRegistry.register(date, heroPosterFile, "hero")
+      : null;
   if (media.archived) {
     mediaInner = `<div class="feature-hero__placeholder" aria-hidden="true"><span>Aa</span></div>`;
   } else if (media.video) {
-    mediaInner = `<video class="feature-hero__vid" poster="${media.poster || media.cover}" muted playsinline loop data-autoplay-loop playsinline><source src="${media.video}" type="video/mp4"></video>`;
+    const poster = heroThumb?.src || media.poster || media.cover;
+    mediaInner = `<video class="feature-hero__vid" poster="${poster}" muted playsinline loop data-autoplay-loop playsinline><source src="${media.video}" type="video/mp4"></video>`;
   } else if (media.cover) {
-    mediaInner = `<img src="${media.cover}" alt="" decoding="async">`;
+    mediaInner = heroThumb
+      ? homeThumbImgTag(heroThumb, "", { loading: "eager" })
+      : `<img src="${media.cover}" alt="" decoding="async" fetchpriority="high">`;
   }
   return `<section class="feature-hero" data-category="${featured.category}">
     <a class="feature-hero__link" href="${href}">
@@ -449,17 +472,32 @@ function buildFeatured(featured, media, date) {
   </section>`;
 }
 
-function buildEditionSection(date, dayItems, meta, { showFeatured = false, todayYmd } = {}) {
+function buildEditionSection(
+  date,
+  dayItems,
+  meta,
+  { showFeatured = false, todayYmd, thumbRegistry } = {}
+) {
   const featured = dayItems.items.find((i) => i.id === dayItems.featured);
   const rest = dayItems.items.filter((i) => i.id !== dayItems.featured);
   const grid = rest
     .map((item) =>
-      buildMagazineCard(item, resolveCardMedia(item, meta, date, dayItems), date)
+      buildMagazineCard(
+        item,
+        resolveCardMedia(item, meta, date, dayItems),
+        date,
+        thumbRegistry
+      )
     )
     .join("");
   const hero =
     showFeatured && featured
-      ? buildFeatured(featured, resolveCardMedia(featured, meta, date, dayItems), date)
+      ? buildFeatured(
+          featured,
+          resolveCardMedia(featured, meta, date, dayItems),
+          date,
+          thumbRegistry
+        )
       : "";
   const todayAttr = date === todayYmd ? ' data-is-today="true"' : "";
   return `
@@ -495,7 +533,7 @@ function buildDateSidebar(dates, todayYmd) {
   };
 }
 
-function buildHomeIndex(visibleDates, loader) {
+function buildHomeIndex(visibleDates, loader, thumbRegistry) {
   const retentionDays = getRetentionDays();
   const todayYmd = todayShanghai();
   const sections = visibleDates
@@ -506,6 +544,7 @@ function buildHomeIndex(visibleDates, loader) {
       return buildEditionSection(date, dayItems, meta, {
         showFeatured: index === 0,
         todayYmd,
+        thumbRegistry,
       });
     })
     .filter(Boolean)
@@ -593,7 +632,7 @@ function copyMediaForBuild() {
   }
 }
 
-function main() {
+async function main() {
   if (fs.existsSync(DIST)) fs.rmSync(DIST, { recursive: true, force: true });
   fs.mkdirSync(DIST, { recursive: true });
 
@@ -602,9 +641,13 @@ function main() {
   const allDates = discoverContentDates(CONTENT_DIR);
   const visibleDates = allDates.filter((d) => isWithinRetention(d, today, retentionDays));
 
+  const thumbRegistry = new HomeThumbRegistry();
   const loader = { loadDayItems, loadMediaMeta };
   if (visibleDates.length) {
-    writeFile(path.join(DIST, "index.html"), buildHomeIndex(visibleDates, loader));
+    writeFile(
+      path.join(DIST, "index.html"),
+      buildHomeIndex(visibleDates, loader, thumbRegistry)
+    );
   } else {
     writeFile(
       path.join(DIST, "index.html"),
@@ -651,10 +694,14 @@ function main() {
     fs.copyFileSync(path.join(ASSETS_SRC, file), path.join(assetsDest, file));
   }
   copyMediaForBuild();
+  await generateHomeThumbs(thumbRegistry, { mediaSrc: MEDIA_SRC, distDir: DIST });
 
   console.log(
     `Built detail pages (${totalDetails}), home editions (${visibleDates.length}) → ${DIST}`
   );
 }
 
-main();
+main().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});

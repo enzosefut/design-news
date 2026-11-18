@@ -2,7 +2,7 @@
 date: '2026-11-12'
 slug: rettuce-accordion-clock
 category: x
-title: Accordion Clock
+title: Accordion Clock：蛇腹纸每 15 秒折叠，数字斜线点圆重组合
 author: rettuce
 tweet: 'https://x.com/rettuce/status/2120320722723844458'
 tweetId: '2120320722723844458'

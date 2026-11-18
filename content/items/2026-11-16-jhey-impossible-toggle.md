@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: jhey-impossible-toggle
 category: x
-title: the impossible toggle
+title: the impossible toggle：视觉悖论开关，体态与遮挡关系
 author: jh3yy
 tweet: 'https://x.com/jh3yy/status/2121374199709052991'
 tweetId: '2121374199709052991'

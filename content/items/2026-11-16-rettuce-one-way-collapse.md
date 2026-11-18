@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: rettuce-one-way-collapse
 category: x
-title: One-Way Collapse
+title: One-Way Collapse：点流向圆心触边涨缩，满圆外周剥点留形
 author: rettuce
 tweet: 'https://x.com/rettuce/status/2122133008732069940'
 tweetId: '2122133008732069940'

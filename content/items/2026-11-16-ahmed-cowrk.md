@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: ahmed-cowrk
 category: x
-title: Cowrk logo 探索
+title: Cowrk logo 探索：字形与协作工作场景联想试探
 author: Ahmedcreatives
 tweet: 'https://x.com/Ahmedcreatives/status/2121217707005845963'
 tweetId: '2121217707005845963'

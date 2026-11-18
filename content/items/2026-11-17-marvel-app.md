@@ -2,7 +2,7 @@
 date: '2026-11-17'
 slug: marvel-app
 category: x
-title: Marvel Comics App
+title: Marvel Comics App：暗色阅读流 Home / Explore / Library / Account
 author: Mondra
 deck: 新版 Marvel Comics App UI 截图，暗色阅读流接近 Unlimited。
 tweet: 'https://x.com/gotenks2nd/status/2122455327228469579'

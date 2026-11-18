@@ -2,7 +2,7 @@
 date: '2026-11-18'
 slug: mamma-tiramisu
 category: x
-title: Mamma Tiramisù
+title: Mamma Tiramisù：手写字标压奶油勺，厨房记忆拼贴
 author: Brindo Studio
 deck: 不硬装当代感：奶油勺上的手写字标，和家庭厨房里的记忆拼贴。
 tweet: 'https://x.com/rebrandgallery/status/2122721627343405349'

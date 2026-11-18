@@ -2,7 +2,7 @@
 date: '2026-11-17'
 slug: sheared-type
 category: x
-title: Sheared Type
+title: Sheared Type：六块齐边面板、极强大小对比字周期性斜切硬影
 author: rettuce
 deck: 六块齐边面板收纳极强大小对比的字，周期性重拉斜切与硬影。
 tweet: 'https://x.com/rettuce/status/2122495012223307797'

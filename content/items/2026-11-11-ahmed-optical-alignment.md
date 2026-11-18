@@ -2,7 +2,7 @@
 date: '2026-11-11'
 slug: ahmed-optical-alignment
 category: x
-title: 光学对齐网格
+title: 光学对齐网格：符号数学居中与视觉平衡的偏差
 author: Ahmedcreatives
 tweet: 'https://x.com/Ahmedcreatives/status/2120188630425862614'
 tweetId: '2120188630425862614'

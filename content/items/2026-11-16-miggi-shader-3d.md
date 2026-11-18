@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: miggi-shader-3d
 category: x
-title: 3D 叠着色器动效
+title: 3D 叠着色器动效：Figma 3D Transforms 叠着色器与 Motion
 author: miggi
 tweet: 'https://x.com/miggi/status/2121731624790524068'
 tweetId: '2121731624790524068'

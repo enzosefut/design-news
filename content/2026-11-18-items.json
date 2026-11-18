@@ -11,7 +11,7 @@
     {
       "id": "snapple",
       "category": "x",
-      "title": "Snapple 2026 重绘",
+      "title": "Snapple 2026：90 年代 racetrack 标志重绘，按口味水果包装",
       "author": "Deutsch Design",
       "tweetId": "2122758164437516780",
       "featured": true,
@@ -21,7 +21,7 @@
     {
       "id": "keen",
       "category": "x",
-      "title": "Keen 品牌识别",
+      "title": "Keen 识别：圆形门洞裁切插画，字标双弯 E 骨架",
       "author": "Mother Design",
       "tweetId": "2122816275265019924",
       "cardAspect": "16/9"
@@ -29,7 +29,7 @@
     {
       "id": "lamm",
       "category": "x",
-      "title": "2026 世界最美的书图录",
+      "title": "2026 世界最美的书图录：切口竖排书名，内页把书拍成雕塑",
       "author": "Lamm & Kirch",
       "tweetId": "2122710057670566062",
       "cardAspect": "16/9"
@@ -37,7 +37,7 @@
     {
       "id": "xk-studio",
       "category": "x",
-      "title": "XK Studio 时间线作品集",
+      "title": "XK Studio 时间线作品集：底栏胶片轨，滚动刮时间线非翻页",
       "author": "Bureau Cool",
       "tweetId": "2122847612332064863",
       "cardAspect": "16/9"
@@ -45,7 +45,7 @@
     {
       "id": "outra-coisa",
       "category": "x",
-      "title": "Outra Coisa 黄罐识别",
+      "title": "Outra Coisa 黄罐识别：朗姆马黛菠萝，挤扁字标与粗线椅唇",
       "author": "Estúdio Caxa",
       "tweetId": "2122832142833164731",
       "cardAspect": "16/9"
@@ -53,7 +53,7 @@
     {
       "id": "mamma-tiramisu",
       "category": "x",
-      "title": "Mamma Tiramisù",
+      "title": "Mamma Tiramisù：手写字标压奶油勺，厨房记忆拼贴",
       "author": "Brindo Studio",
       "tweetId": "2122721627343405349",
       "cardAspect": "16/9",
@@ -62,7 +62,7 @@
     {
       "id": "bitty",
       "category": "x",
-      "title": "Bitty 零食识别",
+      "title": "Bitty 零食识别：霓虹黄字标、口味色编码健康巧克力",
       "author": "Centtral Design",
       "tweetId": "2122653686233010452",
       "cardAspect": "16/9",
@@ -71,7 +71,7 @@
     {
       "id": "ramin-007",
       "category": "x",
-      "title": "007 海报",
+      "title": "007 几何海报：枪管涟漪、Aston Martin 与大本钟色块拼贴",
       "author": "Ramin Nasibov",
       "tweetId": "2122580149434565069",
       "cardAspect": "16/9"
@@ -79,7 +79,7 @@
     {
       "id": "ramin-duck",
       "category": "x",
-      "title": "钩针鸭形包",
+      "title": "钩针鸭形包：肩带即鸭颈，米白钩针垂黄脚掌",
       "author": "Ramin Nasibov",
       "tweetId": "2122564565804179517",
       "cardAspect": "16/9"
@@ -87,7 +87,7 @@
     {
       "id": "ramin-crowned",
       "category": "x",
-      "title": "crowned lounge",
+      "title": "crowned lounge：蓝天鹅绒孔雀沙发，冠羽椅背爪瘦腿",
       "author": "Ramin Nasibov",
       "tweetId": "2122849989428699258",
       "cardAspect": "16/9"
@@ -95,7 +95,7 @@
     {
       "id": "agentic-fabriq",
       "category": "x",
-      "title": "Agentic Fabriq 识别",
+      "title": "Agentic Fabriq 识别：深色像素半调 Electric Cyan，AI agent 控制层",
       "author": "penguindsgn",
       "tweetId": "2122672612408959387",
       "cardAspect": "16/9"
@@ -103,7 +103,7 @@
     {
       "id": "jhey-editions",
       "category": "x",
-      "title": "typography scrapbook",
+      "title": "typography scrapbook：巨无衬线字脚上小人行走",
       "author": "jhey",
       "tweetId": "2122855858854150197",
       "cardAspect": "16/9",
@@ -112,7 +112,7 @@
     {
       "id": "survey-grid",
       "category": "x",
-      "title": "Survey Grid",
+      "title": "Survey Grid：航拍方眼测量图，扫描格内车与云影动",
       "author": "rettuce",
       "tweetId": "2122857557106790799",
       "cardAspect": "16/9",
@@ -121,7 +121,7 @@
     {
       "id": "meng-yoru-lab",
       "category": "x",
-      "title": "新宿夜景 three.js 站",
+      "title": "新宿夜景 three.js 站：单 HTML 可走动，切季节昼夜 Yoru Lab",
       "author": "Meng To",
       "tweetId": "2122730333682778289",
       "cardAspect": "16/9",
@@ -130,7 +130,7 @@
     {
       "id": "nick-devin-bots",
       "category": "x",
-      "title": "Devin Bots 海报",
+      "title": "Devin Bots 海报：F1 进站彩色方块机器人换胎",
       "author": "nickbakeddesign",
       "tweetId": "2122820317387374856",
       "cardAspect": "16/9",
@@ -139,7 +139,7 @@
     {
       "id": "nick-stoa",
       "category": "x",
-      "title": "Stoa 落地页实验",
+      "title": "Stoa 落地页实验：Flora × Claude，古典雕像托可拖拽体块",
       "author": "nickbakeddesign",
       "tweetId": "2122564715855651144",
       "cardAspect": "16/9",
@@ -148,7 +148,7 @@
     {
       "id": "ffx2-amano",
       "category": "x",
-      "title": "最终幻想 X-2 天野喜孝",
+      "title": "最终幻想 X-2 天野喜孝：飘带水色尤娜、莉克、佩恩宣传插画",
       "author": "Creative Uncut",
       "tweetId": "2122813530248495509",
       "cardAspect": "16/9"
@@ -156,7 +156,7 @@
     {
       "id": "antigravity-xr-teacher",
       "category": "ai",
-      "title": "Antigravity × Figma MCP",
+      "title": "Antigravity × Figma MCP：白板到离线 XR Language Teacher",
       "author": "Google Antigravity",
       "tweetId": "2122848700233925006",
       "cardAspect": "16/9",
@@ -166,7 +166,7 @@
     {
       "id": "details-mcp",
       "category": "ai",
-      "title": "Details MCP",
+      "title": "Details MCP：3500+ 站点细节，29 秒收干净 AI 味着陆页",
       "author": "kev",
       "tweetId": "2122633959888851130",
       "cardAspect": "16/9",
@@ -177,7 +177,7 @@
     {
       "id": "framer-gpt62",
       "category": "ai",
-      "title": "Framer Agent 加入 GPT-6.2",
+      "title": "Framer Agent 加入 GPT-6.2：Astra 与 Sol 进模型选择器",
       "author": "Framer",
       "tweetId": "2122783752556585466",
       "typographic": true,

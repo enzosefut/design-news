@@ -2,7 +2,7 @@
 date: '2026-11-12'
 slug: ramin-shredder
 category: x
-title: 桌面碎纸机
+title: 桌面碎纸机：拖文件进米色大圆即粉碎销毁
 author: RaminNasibov
 tweet: 'https://x.com/RaminNasibov/status/2120605025277800620'
 tweetId: '2120605025277800620'

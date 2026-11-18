@@ -2,7 +2,7 @@
 date: '2026-11-17'
 slug: die-grotesk
 category: x
-title: Die Grotesk
+title: Die Grotesk：Klim 首款零售可变 neo-grotesk，opsz 6–42 回应 Helvetica
 author: Klim Type Foundry
 deck: Kris Sowersby 首款零售可变 neo-grotesk，用 opsz 6–42 回应 Helvetica 七十年影子。
 tweet: 'https://x.com/abduzeedo/status/2122436959574573204'

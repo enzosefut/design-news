@@ -2,7 +2,7 @@
 date: '2026-11-13'
 slug: vercel-ui-sdk
 category: ai
-title: Vercel UI SDK
+title: Vercel UI SDK：50+ 行为拆给 Agent，WebMCP 直接操作界面
 author: Vercel
 tweet: 'https://x.com/vercel/status/2120950020249895314'
 official: 'https://ui-sdk.dev/'

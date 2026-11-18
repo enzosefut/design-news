@@ -2,7 +2,7 @@
 date: '2026-11-13'
 slug: ahmed-ripple-reject
 category: x
-title: Ripple 落选方向
+title: Ripple 落选方向：粉橙渐变大字拆行与创作者肖像
 author: Ahmedcreatives
 tweet: 'https://x.com/Ahmedcreatives/status/2120836684891996341'
 tweetId: '2120836684891996341'

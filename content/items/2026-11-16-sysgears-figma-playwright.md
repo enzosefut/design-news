@@ -2,10 +2,9 @@
 date: '2026-11-16'
 slug: sysgears-figma-playwright
 category: ai
-title: Figma + Playwright MCP
+title: Figma + Playwright MCP：像素差 19.10% 降至 0.26%
 author: SysGears
-official: >-
-  https://sysgears.com/articles/close-enough-isnt-good-enough-making-ai-agents-build-ui-that-matches-the-design/
+official: 'https://sysgears.com/articles/close-enough-isnt-good-enough-making-ai-agents-build-ui-that-matches-the-design/'
 primaryLabel: 打开官方项目
 preferStillHero: true
 gallery:

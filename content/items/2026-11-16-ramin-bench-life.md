@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: ramin-bench-life
 category: x
-title: bench life
+title: bench life：长椅与街头生活产品叙事系列视觉
 author: RaminNasibov
 tweet: 'https://x.com/RaminNasibov/status/2121674572873322907'
 tweetId: '2121674572873322907'

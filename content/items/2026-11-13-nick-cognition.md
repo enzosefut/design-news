@@ -2,7 +2,7 @@
 date: '2026-11-13'
 slug: nick-cognition
 category: x
-title: Cognition 海报探索
+title: Cognition 海报探索：六边形标长进火箭、奔驰星徽与美钞拼图
 author: nickbakeddesign
 tweet: 'https://x.com/nickbakeddesign/status/2121013058705445354'
 tweetId: '2121013058705445354'

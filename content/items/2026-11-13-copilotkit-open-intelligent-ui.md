@@ -2,7 +2,7 @@
 date: '2026-11-13'
 slug: copilotkit-open-intelligent-ui
 category: ai
-title: Open Intelligent UI
+title: Open Intelligent UI：接 A2UI 1.0，两行代码生成式界面
 author: CopilotKit
 tweet: 'https://x.com/CopilotKit/status/2120958749980639561'
 tweetId: '2120958749980639561'

@@ -2,7 +2,7 @@
 date: '2026-11-12'
 slug: nick-lab-posters
 category: x
-title: 实验室 AI 海报
+title: 实验室 AI 海报：基因组扫描与分子式叠人像轮廓
 author: nickbakeddesign
 tweet: 'https://x.com/nickbakeddesign/status/2120667287904759824'
 tweetId: '2120667287904759824'

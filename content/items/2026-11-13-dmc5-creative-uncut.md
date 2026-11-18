@@ -2,7 +2,7 @@
 date: '2026-11-13'
 slug: dmc5-creative-uncut
 category: x
-title: DMC5 角色设定
+title: DMC5 角色设定：Lady、Trish、Eva 与 J.D. Morrison
 author: creativeuncut
 tweet: 'https://x.com/creativeuncut/status/2120826436592542015'
 tweetId: '2120826436592542015'

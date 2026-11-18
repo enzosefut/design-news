@@ -8,7 +8,7 @@
     {
       "id": "allo",
       "category": "x",
-      "title": "Allo 开源可变字体",
+      "title": "Allo 开源可变字体：Inter 4.1 重绘、roundness 轴与互动角色 logo",
       "author": "joshpuckett",
       "tweetId": "2122329345670988258",
       "featured": true,
@@ -18,7 +18,7 @@
     {
       "id": "die-grotesk",
       "category": "x",
-      "title": "Die Grotesk",
+      "title": "Die Grotesk：Klim 首款零售可变 neo-grotesk，opsz 6–42 回应 Helvetica",
       "author": "Klim Type Foundry",
       "tweetId": "2122436959574573204",
       "cardAspect": "4/3"
@@ -26,7 +26,7 @@
     {
       "id": "mlb",
       "category": "x",
-      "title": "MLB 品牌识别",
+      "title": "MLB 品牌识别：Modernize Nostalgia，1968 击球员标与五套定制字体",
       "author": "Mother Design",
       "tweetId": "2122454342016111056",
       "cardAspect": "4/3"
@@ -34,7 +34,7 @@
     {
       "id": "kuda",
       "category": "x",
-      "title": "Kuda · More Life",
+      "title": "Kuda · More Life：Kuda Modena 定制字体与手绘奈拉符号",
       "author": "Barkas",
       "tweetId": "2122394766725751255",
       "cardAspect": "4/3"
@@ -42,7 +42,7 @@
     {
       "id": "olearius",
       "category": "x",
-      "title": "Olearius 橄榄油",
+      "title": "Olearius 橄榄油：深色无纸标、金色字标与瓶脊庄园 GPS",
       "author": "vrai studio",
       "tweetId": "2122498798681219334",
       "cardAspect": "3/4"
@@ -50,7 +50,7 @@
     {
       "id": "likeweiss",
       "category": "x",
-      "title": "Likeweiß Chardonnay",
+      "title": "Likeweiß Chardonnay：Pfalz 3L bag-in-box，Wine from a changing world",
       "author": "OlssønBarbieri",
       "tweetId": "2122291291237015576",
       "cardAspect": "1/1",
@@ -59,7 +59,7 @@
     {
       "id": "cannes",
       "category": "x",
-      "title": "Cannes Royale",
+      "title": "Cannes Royale：Kir Royale 222 mL 罐，Riviera 条纹与十字纹",
       "author": "tavern",
       "tweetId": "2122359275972399474",
       "cardAspect": "16/9",
@@ -68,7 +68,7 @@
     {
       "id": "vsgoods",
       "category": "x",
-      "title": "VS/Goods mockup 店",
+      "title": "VS/Goods mockup 店：Jitter 模板网店，亮白翻到暗色货架与旋转表盘",
       "author": "@abduzeedo",
       "tweetId": "2122409989289480480",
       "cardAspect": "4/3"
@@ -76,7 +76,7 @@
     {
       "id": "miggi-iphone",
       "category": "x",
-      "title": "iPhone 对开动画",
+      "title": "iPhone 对开动画：Figma 3D Transforms 与 Motion 复刻双机开合",
       "author": "miggi",
       "tweetId": "2122474018557350106",
       "cardAspect": "1/1"
@@ -84,7 +84,7 @@
     {
       "id": "ramin-tickets",
       "category": "x",
-      "title": "足球票务 App",
+      "title": "足球票务 App：下单前预览座位视角",
       "author": "Ramin Nasibov",
       "tweetId": "2122433340250718529",
       "cardAspect": "9/16"
@@ -92,7 +92,7 @@
     {
       "id": "ramin-sweater",
       "category": "x",
-      "title": "草皮毛衣系列",
+      "title": "草皮毛衣系列：下摆斜纹草坪、骑割草机小人绣花",
       "author": "Ramin Nasibov",
       "tweetId": "2122408220685730098",
       "cardAspect": "4/3"
@@ -100,7 +100,7 @@
     {
       "id": "marvel-app",
       "category": "x",
-      "title": "Marvel Comics App",
+      "title": "Marvel Comics App：暗色阅读流 Home / Explore / Library / Account",
       "author": "Mondra",
       "tweetId": "2122455327228469579",
       "cardAspect": "9/16"
@@ -108,7 +108,7 @@
     {
       "id": "ahmed-metal",
       "category": "x",
-      "title": "金属条形标志",
+      "title": "金属条形标志：进行中条形金属质感标志探索",
       "author": "Ahmed",
       "tweetId": "2122301528132460746",
       "cardAspect": "4/3"
@@ -116,7 +116,7 @@
     {
       "id": "ahmed-nectai",
       "category": "x",
-      "title": "NectAi 识别",
+      "title": "NectAi 识别：未采用绿字标半调海报，Every answer has a source",
       "author": "Ahmed",
       "tweetId": "2122288482890699055",
       "cardAspect": "4/3"
@@ -124,7 +124,7 @@
     {
       "id": "ahmed-spectr",
       "category": "x",
-      "title": "spectr 珐琅徽章",
+      "title": "spectr 珐琅徽章：粉橙几何珐琅户外，标志应先成立",
       "author": "Ahmed",
       "tweetId": "2122256336008442139",
       "cardAspect": "4/3"
@@ -132,7 +132,7 @@
     {
       "id": "sheared-type",
       "category": "x",
-      "title": "Sheared Type",
+      "title": "Sheared Type：六块齐边面板、极强大小对比字周期性斜切硬影",
       "author": "rettuce",
       "tweetId": "2122495012223307797",
       "cardAspect": "1/1",
@@ -141,7 +141,7 @@
     {
       "id": "object-01",
       "category": "x",
-      "title": "THE OBJECT 01 躺椅",
+      "title": "THE OBJECT 01 躺椅：回收 PETG 模块打印，混凝土观感约 20 kg Kyoto Fog",
       "author": "Nako Baev",
       "tweetId": "2122485689090507211",
       "cardAspect": "4/3"
@@ -149,7 +149,7 @@
     {
       "id": "fate-samurai",
       "category": "x",
-      "title": "Fate/Samurai Remnant",
+      "title": "Fate/Samurai Remnant：Rogue Saber 官方角色设定原画",
       "author": "Creative Uncut",
       "tweetId": "2122421840983543888",
       "cardAspect": "4/3"
@@ -157,7 +157,7 @@
     {
       "id": "pokemon",
       "category": "x",
-      "title": "宝可梦 太阳／月亮",
+      "title": "宝可梦 太阳／月亮：Lillie、Kiawe、Mallow、Guzma 概念图",
       "author": "Creative Uncut",
       "tweetId": "2122277246740185151",
       "cardAspect": "4/3"
@@ -165,7 +165,7 @@
     {
       "id": "anima-canvas",
       "category": "ai",
-      "title": "Agentic Canvas",
+      "title": "Agentic Canvas：免登录浏览器画布，人与 MCP 共编 HTML / CSS",
       "author": "Anima",
       "coverKey": "anima-cover",
       "tweetId": null,
@@ -175,7 +175,7 @@
     {
       "id": "marcel-underlay",
       "category": "ai",
-      "title": "Underlay · 490 屏 Figma 工作流",
+      "title": "Underlay · 490 屏 Figma 工作流：Claude Code 经 API 244 桌面 + 246 移动",
       "author": "Marcel",
       "tweetId": "2122430710053019994",
       "typographic": true,
@@ -184,7 +184,7 @@
     {
       "id": "code2video",
       "category": "ai",
-      "title": "Code2Video Arena",
+      "title": "Code2Video Arena：Kaggle × HeyGen 双视频盲投评 motion 代码",
       "author": "Kaggle",
       "tweetId": "2122495234646941744",
       "cardAspect": "16/9",

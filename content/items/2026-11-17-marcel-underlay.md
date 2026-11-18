@@ -2,7 +2,7 @@
 date: '2026-11-17'
 slug: marcel-underlay
 category: ai
-title: Underlay · 490 屏 Figma 工作流
+title: Underlay · 490 屏 Figma 工作流：Claude Code 经 API 244 桌面 + 246 移动
 author: Marcel
 deck: Claude Code 经 Figma API 直接改文件，244 桌面 + 246 移动，决策仍在人。
 tweet: 'https://x.com/marcelkargul/status/2122430710053019994'

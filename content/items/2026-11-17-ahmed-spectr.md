@@ -2,7 +2,7 @@
 date: '2026-11-17'
 slug: ahmed-spectr
 category: x
-title: spectr 珐琅徽章
+title: spectr 珐琅徽章：粉橙几何珐琅户外，标志应先成立
 author: Ahmed
 deck: 粉橙几何珐琅徽章与户外应用——标志应先成立，故事给追问的人。
 tweet: 'https://x.com/Ahmedcreatives/status/2122256336008442139'

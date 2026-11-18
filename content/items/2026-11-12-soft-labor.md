@@ -2,7 +2,7 @@
 date: '2026-11-12'
 slug: soft-labor
 category: x
-title: Soft Labor 网站
+title: Soft Labor 网站：桃底 SVG 磨砂字默认糊、悬停锐化
 author: abduzeedo
 tweet: 'https://x.com/abduzeedo/status/2120534426111140315'
 tweetId: '2120534426111140315'

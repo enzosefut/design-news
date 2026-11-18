@@ -2,7 +2,7 @@
 date: '2026-11-11'
 slug: adobe-max-creative-agent
 category: ai
-title: Adobe MAX 与本地 MCP
+title: Adobe MAX 与本地 MCP：Creative Agent 铺开，agent 改本机图层与序列
 author: Adobe
 official: 'https://news.adobe.com/news/2026/11/adobe-transforms-creative-cloud-tools'
 primaryLabel: 打开官方项目

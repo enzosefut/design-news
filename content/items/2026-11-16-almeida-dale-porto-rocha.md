@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: almeida-dale-porto-rocha
 category: x
-title: Almeida & Dale 识别
+title: Almeida & Dale 识别：定制 Diakritik AD 葡语变音全字重，一记强蓝
 author: abduzeedo
 tweet: 'https://x.com/abduzeedo/status/2121367149818323407'
 tweetId: '2121367149818323407'

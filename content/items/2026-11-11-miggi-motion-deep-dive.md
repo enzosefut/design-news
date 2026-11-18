@@ -2,7 +2,7 @@
 date: '2026-11-11'
 slug: miggi-motion-deep-dive
 category: x
-title: Motion 细节走查
+title: Motion 细节走查：iOS/Android 弹簧数值、delay offset、Lottie 预览
 author: miggi
 tweet: 'https://x.com/miggi/status/2120204778344947762'
 tweetId: '2120204778344947762'

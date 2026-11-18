@@ -2,7 +2,7 @@
 date: '2026-11-13'
 slug: ink-sweater
 category: x
-title: ink sweater
+title: ink sweater：肩头墨水瓶、蓝墨沿织纹流满半边衣身
 author: RaminNasibov
 tweet: 'https://x.com/RaminNasibov/status/2120775859762057422'
 tweetId: '2120775859762057422'

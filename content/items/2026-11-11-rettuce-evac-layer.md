@@ -2,7 +2,7 @@
 date: '2026-11-11'
 slug: rettuce-evac-layer
 category: x
-title: EVAC LAYER
+title: EVAC LAYER：装饰屏变救灾基础设施，3D 大厅粒子灾时播报
 author: rettuce
 tweet: 'https://x.com/rettuce/status/2120025032130978225'
 tweetId: '2120025032130978225'

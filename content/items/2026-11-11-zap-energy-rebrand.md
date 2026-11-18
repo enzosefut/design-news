@@ -2,7 +2,7 @@
 date: '2026-11-11'
 slug: zap-energy-rebrand
 category: x
-title: Zap Energy 识别
+title: Zap Energy 识别：ZAP 斜线切开延伸条纹，电黄配钢灰技术衬线
 author: rebrandgallery
 tweet: 'https://x.com/rebrandgallery/status/2120184918349062144'
 tweetId: '2120184918349062144'

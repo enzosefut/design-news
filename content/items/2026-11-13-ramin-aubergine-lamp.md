@@ -2,7 +2,7 @@
 date: '2026-11-13'
 slug: ramin-aubergine-lamp
 category: x
-title: 茄子灯产品卡
+title: 茄子灯产品卡：Aubi Lamp 开关亮度做进电商页
 author: RaminNasibov
 tweet: 'https://x.com/RaminNasibov/status/2120885610088890410'
 tweetId: '2120885610088890410'

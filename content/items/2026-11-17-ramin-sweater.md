@@ -2,7 +2,7 @@
 date: '2026-11-17'
 slug: ramin-sweater
 category: x
-title: 草皮毛衣系列
+title: 草皮毛衣系列：下摆斜纹草坪、骑割草机小人绣花
 author: Ramin Nasibov
 deck: 原帖仅「grass sweater」——草皮下摆斜纹与骑割草机小人绣花。
 tweet: 'https://x.com/RaminNasibov/status/2122408220685730098'

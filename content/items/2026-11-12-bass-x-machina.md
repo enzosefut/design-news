@@ -2,7 +2,7 @@
 date: '2026-11-12'
 slug: bass-x-machina
 category: x
-title: Bass X Machina 片头
+title: Bass X Machina 片头：BUCK 做旧字标被巨大 X 切开
 author: abduzeedo
 tweet: 'https://x.com/abduzeedo/status/2120582281765040368'
 tweetId: '2120582281765040368'

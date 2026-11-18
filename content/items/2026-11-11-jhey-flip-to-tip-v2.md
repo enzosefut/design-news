@@ -2,7 +2,7 @@
 date: '2026-11-11'
 slug: jhey-flip-to-tip-v2
 category: x
-title: flip to tip v2
+title: flip to tip v2：抛硬币靠 easing 停顿，不用慢放
 author: jh3yy
 tweet: 'https://x.com/jh3yy/status/2120243978679321060'
 tweetId: '2120243978679321060'

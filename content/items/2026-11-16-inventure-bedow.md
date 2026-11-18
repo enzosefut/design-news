@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: inventure-bedow
 category: x
-title: Inventure 识别
+title: Inventure 识别：INVENTURE 张开再沿 30° 上爬，红黄斜体
 author: abduzeedo
 tweet: 'https://x.com/abduzeedo/status/2121984708640739423'
 tweetId: '2121984708640739423'

@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: rettuce-harmonic-tide
 category: x
-title: Harmonic Tide
+title: Harmonic Tide：M2 / S2 分潮联结圆，红笔尖潮位与花瓣轨迹
 author: rettuce
 tweet: 'https://x.com/rettuce/status/2121045583423218033'
 tweetId: '2121045583423218033'

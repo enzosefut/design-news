@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: penguindsgn-dark-mode-ui
 category: x
-title: 暗色模式 UI 细节
+title: 暗色模式 UI 细节：原帖无法取图，保留摘要与原链跳转
 author: penguindsgn
 tweet: 'https://x.com/penguindsgn/status/2121275003467653336'
 tweetId: '2121275003467653336'

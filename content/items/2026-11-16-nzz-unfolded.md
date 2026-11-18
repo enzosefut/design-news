@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: nzz-unfolded
 category: x
-title: Die neue Polis 书系
+title: Die neue Polis 书系：简介印白封面，书脊架上连成色谱
 author: abduzeedo
 tweet: 'https://x.com/abduzeedo/status/2121638914863644999'
 tweetId: '2121638914863644999'

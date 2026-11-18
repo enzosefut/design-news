@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: philadelphia-gretel
 category: x
-title: 费城美术馆狮鹫
+title: 费城美术馆狮鹫：Gretel 重绘 1938 标志，HONK IF YOU LOVE ART
 author: abduzeedo
 tweet: 'https://x.com/abduzeedo/status/2121672195671835117'
 tweetId: '2121672195671835117'

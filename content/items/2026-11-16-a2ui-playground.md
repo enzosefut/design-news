@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: a2ui-playground
 category: ai
-title: A2UI Playground
+title: A2UI Playground：逐行看 A2UI 1.0，shadcn / Material 渲染同答案
 author: Atai Barkai
 tweet: 'https://x.com/ataiiam/status/2122034672448545148'
 official: 'https://a2ui.open.bot'

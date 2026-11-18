@@ -2,7 +2,7 @@
 date: '2026-11-11'
 slug: orven-identity
 category: x
-title: Orven 完整识别
+title: Orven 完整识别：撕裂地形字标、圆形网纹与 Ink / Parchment / Sage 配色
 author: penguindsgn
 tweet: 'https://x.com/penguindsgn/status/2117617801762640204'
 tweetId: '2117617801762640204'

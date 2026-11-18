@@ -2,7 +2,7 @@
 date: '2026-11-12'
 slug: special-esc-menu
 category: x
-title: ESC 菜单与调酒 UI
+title: ESC 菜单与调酒 UI：俯视日期 HUD 克制，吧台动效明天试玩
 author: SpecialS3241
 tweet: 'https://x.com/SpecialS3241/status/2120410249450701099'
 tweetId: '2120410249450701099'

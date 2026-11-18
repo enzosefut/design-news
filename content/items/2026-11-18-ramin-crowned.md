@@ -2,7 +2,7 @@
 date: '2026-11-18'
 slug: ramin-crowned
 category: x
-title: crowned lounge
+title: crowned lounge：蓝天鹅绒孔雀沙发，冠羽椅背爪瘦腿
 author: Ramin Nasibov
 deck: 蓝天鹅绒孔雀沙发：冠羽在椅背上，爪子就是椅腿。
 tweet: 'https://x.com/RaminNasibov/status/2122849989428699258'

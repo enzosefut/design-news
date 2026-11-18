@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: jhey-make-it-pop-003
 category: x
-title: 'make it pop: 003 glazed'
+title: 'make it pop: 003 glazed：折射字重动效叠釉面质感'
 author: jh3yy
 tweet: 'https://x.com/jh3yy/status/2122118204667670621'
 tweetId: '2122118204667670621'

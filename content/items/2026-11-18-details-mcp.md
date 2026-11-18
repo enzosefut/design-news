@@ -2,7 +2,7 @@
 date: '2026-11-18'
 slug: details-mcp
 category: ai
-title: Details MCP
+title: Details MCP：3500+ 站点细节，29 秒收干净 AI 味着陆页
 author: kev
 deck: 把代理接到 3500+ 条真实站点细节，29 秒演示把一份「AI 味」着陆页逐步收干净。
 tweet: 'https://x.com/koppkev/status/2122633959888851130'

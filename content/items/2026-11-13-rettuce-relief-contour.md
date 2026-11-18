@@ -2,7 +2,7 @@
 date: '2026-11-13'
 slug: rettuce-relief-contour
 category: x
-title: Relief Contour
+title: Relief Contour：混凝土方块浮雕每 2 秒换阵，上沿变朱色
 author: rettuce
 tweet: 'https://x.com/rettuce/status/2120683237551100339'
 tweetId: '2120683237551100339'

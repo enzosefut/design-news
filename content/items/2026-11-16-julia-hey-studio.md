@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: julia-hey-studio
 category: x
-title: Julia 丝带字标
+title: Julia 丝带字标：真丝带折字拍摄，点心盒合拢成蓝蝴蝶结
 author: abduzeedo
 tweet: 'https://x.com/abduzeedo/status/2121730348237406649'
 tweetId: '2121730348237406649'

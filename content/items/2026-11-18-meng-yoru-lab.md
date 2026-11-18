@@ -2,7 +2,7 @@
 date: '2026-11-18'
 slug: meng-yoru-lab
 category: x
-title: 新宿夜景 three.js 站
+title: 新宿夜景 three.js 站：单 HTML 可走动，切季节昼夜 Yoru Lab
 author: Meng To
 deck: 一份 HTML、不导入模型：可走动的新宿夜景，还能切季节和昼夜。
 tweet: 'https://x.com/MengTo/status/2122730333682778289'

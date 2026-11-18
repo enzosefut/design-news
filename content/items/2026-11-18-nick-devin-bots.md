@@ -2,7 +2,7 @@
 date: '2026-11-18'
 slug: nick-devin-bots
 category: x
-title: Devin Bots 海报
+title: Devin Bots 海报：F1 进站彩色方块机器人换胎
 author: nickbakeddesign
 deck: F1 进站里，彩色方块机器人头在换胎：自己会协作的车队。
 tweet: 'https://x.com/nickbakeddesign/status/2122820317387374856'

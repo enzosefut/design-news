@@ -2,7 +2,7 @@
 date: '2026-11-17'
 slug: likeweiss
 category: x
-title: Likeweiß Chardonnay
+title: Likeweiß Chardonnay：Pfalz 3L bag-in-box，Wine from a changing world
 author: OlssønBarbieri
 deck: Pfalz 3 升 bag-in-box，手写大字标把气候变化与风土写进酒盒。
 tweet: 'https://x.com/rebrandgallery/status/2122291291237015576'

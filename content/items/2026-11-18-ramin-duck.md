@@ -2,7 +2,7 @@
 date: '2026-11-18'
 slug: ramin-duck
 category: x
-title: 钩针鸭形包
+title: 钩针鸭形包：肩带即鸭颈，米白钩针垂黄脚掌
 author: Ramin Nasibov
 deck: 肩带就是脖子：米白钩针包做成一只垂着黄脚的鸭子。
 tweet: 'https://x.com/RaminNasibov/status/2122564565804179517'

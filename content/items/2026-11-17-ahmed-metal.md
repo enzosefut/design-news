@@ -2,7 +2,7 @@
 date: '2026-11-17'
 slug: ahmed-metal
 category: x
-title: 金属条形标志
+title: 金属条形标志：进行中条形金属质感标志探索
 author: Ahmed
 deck: 进行中：条形金属质感的标志探索，尚未定稿落地。
 tweet: 'https://x.com/Ahmedcreatives/status/2122301528132460746'

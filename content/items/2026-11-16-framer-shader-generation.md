@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: framer-shader-generation
 category: ai
-title: Framer 图像与 Shader
+title: Framer 图像与 Shader：Agent 生成站点图与 halftone、CRT 效果
 author: Framer
 tweet: 'https://x.com/framer/status/2122067743956459529'
 official: 'https://www.framer.com/updates/image-shader-generation'

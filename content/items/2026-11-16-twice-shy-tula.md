@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: twice-shy-tula
 category: x
-title: Twice Shy 肥皂包装
+title: Twice Shy 肥皂包装：半透明硫酸纸、12 轮廓与皂碟跟形走
 author: abduzeedo
 tweet: 'https://x.com/abduzeedo/status/2121259243534012508'
 tweetId: '2121259243534012508'

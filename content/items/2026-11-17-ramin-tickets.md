@@ -2,7 +2,7 @@
 date: '2026-11-17'
 slug: ramin-tickets
 category: x
-title: 足球票务 App
+title: 足球票务 App：下单前预览座位视角
 author: Ramin Nasibov
 deck: 下单前预览座位视角，把「看不见的风景」做成首要交互。
 tweet: 'https://x.com/RaminNasibov/status/2122433340250718529'

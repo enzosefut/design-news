@@ -2,7 +2,7 @@
 date: '2026-11-12'
 slug: dneg-designstudio
 category: x
-title: DNEG 识别刷新
+title: DNEG 识别刷新：Lift Type 切 DNEG Script，珊瑚红 BEYOND POSSIBLE
 author: abduzeedo
 tweet: 'https://x.com/abduzeedo/status/2120643591370637489'
 tweetId: '2120643591370637489'

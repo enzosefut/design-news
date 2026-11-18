@@ -2,7 +2,7 @@
 date: '2026-11-11'
 slug: ample-identity
 category: x
-title: Ample 视觉识别
+title: Ample 视觉识别：叶形闪电标、温暖插画与橙 / 奶油色体系
 author: rebrandgallery
 tweet: 'https://x.com/rebrandgallery/status/2120116970087407920'
 tweetId: '2120116970087407920'

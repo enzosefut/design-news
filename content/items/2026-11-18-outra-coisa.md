@@ -2,7 +2,7 @@
 date: '2026-11-18'
 slug: outra-coisa
 category: x
-title: Outra Coisa 黄罐识别
+title: Outra Coisa 黄罐识别：朗姆马黛菠萝，挤扁字标与粗线椅唇
 author: Estúdio Caxa
 deck: 朗姆酒加马黛茶和菠萝：挤扁拉长的字标，配粗线描的椅与吸管嘴唇。
 tweet: 'https://x.com/abduzeedo/status/2122832142833164731'

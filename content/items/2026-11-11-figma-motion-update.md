@@ -2,7 +2,7 @@
 date: '2026-11-11'
 slug: figma-motion-update
 category: x
-title: Figma Motion 更新
+title: Figma Motion 更新：样式预览、物理弹簧与 Lottie 导出预览
 author: figma
 tweet: 'https://x.com/figma/status/2120200083992105008'
 tweetId: '2120200083992105008'

@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: tso-underline
 category: x
-title: TSO 识别
+title: TSO 识别：Underline Studio 把 S 拆成琴弦振动回声曲线
 author: abduzeedo
 tweet: 'https://x.com/abduzeedo/status/2121711976631988513'
 tweetId: '2121711976631988513'

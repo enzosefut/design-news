@@ -2,7 +2,7 @@
 date: '2026-11-18'
 slug: antigravity-xr-teacher
 category: ai
-title: Antigravity × Figma MCP
+title: Antigravity × Figma MCP：白板到离线 XR Language Teacher
 author: Google Antigravity
 deck: 白板草图到离线 XR Language Teacher，官方称用 Figma MCP 把设计映成代码。
 tweet: 'https://x.com/antigravity/status/2122848700233925006'

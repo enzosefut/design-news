@@ -2,7 +2,7 @@
 date: '2026-11-18'
 slug: survey-grid
 category: x
-title: Survey Grid
+title: Survey Grid：航拍方眼测量图，扫描格内车与云影动
 author: rettuce
 deck: 航拍区画成方眼测量图，被扫描的一格里车和云影在动。
 tweet: 'https://x.com/rettuce/status/2122857557106790799'

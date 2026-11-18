@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: penguindsgn-web-components
 category: x
-title: Web components 设计
+title: Web components 设计：组件层级与暗色界面规范同套展开
 author: penguindsgn
 tweet: 'https://x.com/penguindsgn/status/2121630160076304750'
 tweetId: '2121630160076304750'

@@ -2,7 +2,7 @@
 date: '2026-11-13'
 slug: ahmed-atome
 category: x
-title: Atome 风格探索
+title: Atome 风格探索：细胞感玻璃体压浅黄底、透明层次对比
 author: Ahmedcreatives
 tweet: 'https://x.com/Ahmedcreatives/status/2120859335152824350'
 tweetId: '2120859335152824350'

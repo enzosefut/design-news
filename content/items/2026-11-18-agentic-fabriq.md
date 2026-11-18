@@ -2,7 +2,7 @@
 date: '2026-11-18'
 slug: agentic-fabriq
 category: x
-title: Agentic Fabriq 识别
+title: Agentic Fabriq 识别：深色像素半调 Electric Cyan，AI agent 控制层
 author: penguindsgn
 deck: 深色底、像素半调和 Electric Cyan，给 AI agent 控制层一套完整识别。
 tweet: 'https://x.com/penguindsgn/status/2122672612408959387'

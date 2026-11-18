@@ -5,7 +5,7 @@
     {
       "id": "ramin-meetup-spot",
       "category": "x",
-      "title": "群组碰面选点 App",
+      "title": "群组碰面选点 App：纽约地图投票 / 取中点 / 定地点，底栏 Pizza · Bar 卡片",
       "author": "RaminNasibov",
       "cardAspect": "4/3",
       "tweetId": "2120151222065692729",
@@ -14,7 +14,7 @@
     {
       "id": "figma-motion-update",
       "category": "x",
-      "title": "Figma Motion 更新",
+      "title": "Figma Motion 更新：样式预览、物理弹簧与 Lottie 导出预览",
       "author": "figma",
       "cardAspect": "4/3",
       "tweetId": "2120200083992105008"
@@ -22,7 +22,7 @@
     {
       "id": "miggi-motion-deep-dive",
       "category": "x",
-      "title": "Motion 细节走查",
+      "title": "Motion 细节走查：iOS/Android 弹簧数值、delay offset、Lottie 预览",
       "author": "miggi",
       "cardAspect": "4/3",
       "tweetId": "2120204778344947762"
@@ -30,7 +30,7 @@
     {
       "id": "zap-energy-rebrand",
       "category": "x",
-      "title": "Zap Energy 识别",
+      "title": "Zap Energy 识别：ZAP 斜线切开延伸条纹，电黄配钢灰技术衬线",
       "author": "rebrandgallery",
       "cardAspect": "4/3",
       "tweetId": "2120184918349062144"
@@ -38,7 +38,7 @@
     {
       "id": "zap-energy-abduzeedo",
       "category": "x",
-      "title": "Zap Energy 工艺",
+      "title": "Zap Energy 工艺：Manual 斜切字标、条纹系统与实验室导视",
       "author": "abduzeedo",
       "cardAspect": "4/3",
       "tweetId": "2120221074378117193"
@@ -46,7 +46,7 @@
     {
       "id": "ample-identity",
       "category": "x",
-      "title": "Ample 视觉识别",
+      "title": "Ample 视觉识别：叶形闪电标、温暖插画与橙 / 奶油色体系",
       "author": "rebrandgallery",
       "cardAspect": "4/3",
       "tweetId": "2120116970087407920",
@@ -55,7 +55,7 @@
     {
       "id": "orven-identity",
       "category": "x",
-      "title": "Orven 完整识别",
+      "title": "Orven 完整识别：撕裂地形字标、圆形网纹与 Ink / Parchment / Sage 配色",
       "author": "penguindsgn",
       "cardAspect": "4/3",
       "tweetId": "2117617801762640204"
@@ -63,7 +63,7 @@
     {
       "id": "ahmed-optical-alignment",
       "category": "x",
-      "title": "光学对齐网格",
+      "title": "光学对齐网格：符号数学居中与视觉平衡的偏差",
       "author": "Ahmedcreatives",
       "cardAspect": "4/3",
       "tweetId": "2120188630425862614"
@@ -71,7 +71,7 @@
     {
       "id": "gofundme-koto",
       "category": "x",
-      "title": "GoFundMe 重做",
+      "title": "GoFundMe 重做：放射进度环、GoFundMe Sans 沿径向曲线",
       "author": "abduzeedo",
       "cardAspect": "4/3",
       "tweetId": "2120294835538026908"
@@ -79,7 +79,7 @@
     {
       "id": "cursor-identity-evolution",
       "category": "x",
-      "title": "Cursor 进化识别",
+      "title": "Cursor 进化识别：PORTO ROCHA × Kimera、定制字体与 Engineered Ambition",
       "author": "rebrandgallery",
       "cardAspect": "4/3",
       "tweetId": "2120245329312317616",
@@ -88,7 +88,7 @@
     {
       "id": "jhey-flip-to-tip-v2",
       "category": "x",
-      "title": "flip to tip v2",
+      "title": "flip to tip v2：抛硬币靠 easing 停顿，不用慢放",
       "author": "jh3yy",
       "cardAspect": "4/3",
       "tweetId": "2120243978679321060",
@@ -97,7 +97,7 @@
     {
       "id": "rettuce-evac-layer",
       "category": "x",
-      "title": "EVAC LAYER",
+      "title": "EVAC LAYER：装饰屏变救灾基础设施，3D 大厅粒子灾时播报",
       "author": "rettuce",
       "cardAspect": "4/3",
       "tweetId": "2120025032130978225"
@@ -105,7 +105,7 @@
     {
       "id": "ffx2-creative-uncut",
       "category": "x",
-      "title": "FFX-2 角色图",
+      "title": "FFX-2 角色图：野村哲也 Yuna、Rikku、Paine",
       "author": "creativeuncut",
       "cardAspect": "4/3",
       "tweetId": "2120162058864107577"
@@ -113,7 +113,7 @@
     {
       "id": "claude-interactive-connectors",
       "category": "ai",
-      "title": "Interactive connectors 全工具",
+      "title": "Interactive connectors 全工具：完整应用嵌对话，Canva / Adobe / Webflow",
       "author": "Anthropic",
       "cardAspect": "4/3",
       "tweetId": "2120206365759094857",
@@ -122,7 +122,7 @@
     {
       "id": "adobe-max-creative-agent",
       "category": "ai",
-      "title": "Adobe MAX 与本地 MCP",
+      "title": "Adobe MAX 与本地 MCP：Creative Agent 铺开，agent 改本机图层与序列",
       "author": "Adobe",
       "cardAspect": "4/3",
       "coverKey": "adobe-max-creative-agent-og"
@@ -130,7 +130,7 @@
     {
       "id": "scenario-agent-skills",
       "category": "ai",
-      "title": "Scenario Agent Skills",
+      "title": "Scenario Agent Skills：经 Scenario MCP 生成图、视频、音频与 3D",
       "author": "DanKornas",
       "cardAspect": "4/3",
       "tweetId": "2120327150901289082",

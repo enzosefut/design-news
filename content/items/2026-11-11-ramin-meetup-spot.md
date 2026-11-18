@@ -2,7 +2,7 @@
 date: '2026-11-11'
 slug: ramin-meetup-spot
 category: x
-title: 群组碰面选点 App
+title: 群组碰面选点 App：纽约地图投票 / 取中点 / 定地点，底栏 Pizza · Bar 卡片
 author: RaminNasibov
 tweet: 'https://x.com/RaminNasibov/status/2120151222065692729'
 tweetId: '2120151222065692729'

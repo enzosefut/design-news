@@ -2,7 +2,7 @@
 date: '2026-11-13'
 slug: anagram-pact
 category: x
-title: Anagram 识别
+title: Anagram 识别：方块符号重组至户外发光立方体每面一字形
 author: abduzeedo
 tweet: 'https://x.com/abduzeedo/status/2121006258115444919'
 tweetId: '2121006258115444919'

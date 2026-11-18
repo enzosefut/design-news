@@ -2,11 +2,10 @@
 date: '2026-11-13'
 slug: figma-3d-transforms
 category: ai
-title: Figma 3D Transforms
+title: Figma 3D Transforms：透视组、Agent 排版与 Dev Mode / MCP 交付
 author: Figma
 tweet: 'https://x.com/figma/status/2120926665790681354'
-official: >-
-  https://www.figma.com/blog/how-3d-transforms-and-figmas-agent-brought-a-launch-video-to-life/
+official: 'https://www.figma.com/blog/how-3d-transforms-and-figmas-agent-brought-a-launch-video-to-life/'
 tweetId: '2120926665790681354'
 deck: 开放测试含透视、Agent 排版与 Dev Mode / MCP 交付。
 primaryLabel: 打开官方项目

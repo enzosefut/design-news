@@ -2,7 +2,7 @@
 date: '2026-11-11'
 slug: scenario-agent-skills
 category: ai
-title: Scenario Agent Skills
+title: Scenario Agent Skills：经 Scenario MCP 生成图、视频、音频与 3D
 author: DanKornas
 tweet: 'https://x.com/DanKornas/status/2120327150901289082'
 official: 'https://mcp.scenario.com/docs/resources/agent-skills'

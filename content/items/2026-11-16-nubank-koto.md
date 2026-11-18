@@ -2,7 +2,7 @@
 date: '2026-11-16'
 slug: nubank-koto
 category: x
-title: Nubank 品牌刷新
+title: Nubank 品牌刷新：保留紫标、首套 Nu Sans，nu 方块嵌正文
 author: abduzeedo
 tweet: 'https://x.com/abduzeedo/status/2121302737719787866'
 tweetId: '2121302737719787866'

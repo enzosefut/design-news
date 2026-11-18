@@ -2,7 +2,7 @@
 date: '2026-11-12'
 slug: ramin-hamster-wallet
 category: x
-title: 仓鼠零钱包
+title: 仓鼠零钱包：腮帮拉链开口，储存感做成小动物造型
 author: RaminNasibov
 tweet: 'https://x.com/RaminNasibov/status/2120317495869325570'
 tweetId: '2120317495869325570'
