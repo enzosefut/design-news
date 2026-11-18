@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-18",
+  "featured": "snapple",
+  "extras": {
+    "snapple-hero": "https://cms.abduzeedo.com/sites/default/files/originals/hero_1600_39.jpg",
+    "lamm-hero": "https://cms.abduzeedo.com/sites/default/files/originals/hero_best-book-design-from-all-over-world-fonts-use.jpg",
+    "lamm-stiftung": "https://www.stiftung-buchkunst.de/images/max/bbdw26_publ_img_2098_web.jpg",
+    "mamma-hero": "https://cdn.myportfolio.com/639f2398-dadf-476e-9875-2e0606b2b2e5/2ed2098a-4928-4112-a85f-02e89962a58a_rwc_540x0x2762x2160x2762.jpg?h=f79b6dbe312bd928074b0cc6bcbd728e"
+  },
+  "items": [
+    {
+      "id": "snapple",
+      "category": "x",
+      "title": "Snapple 2026 重绘",
+      "author": "Deutsch Design",
+      "tweetId": "2122758164437516780",
+      "featured": true,
+      "cardAspect": "16/9",
+      "deck": "90 年代 racetrack 标志从零重绘，卷曲 S 配按口味爆炸的水果包装。"
+    },
+    {
+      "id": "keen",
+      "category": "x",
+      "title": "Keen 品牌识别",
+      "author": "Mother Design",
+      "tweetId": "2122816275265019924",
+      "cardAspect": "16/9"
+    },
+    {
+      "id": "lamm",
+      "category": "x",
+      "title": "2026 世界最美的书图录",
+      "author": "Lamm & Kirch",
+      "tweetId": "2122710057670566062",
+      "cardAspect": "16/9"
+    },
+    {
+      "id": "xk-studio",
+      "category": "x",
+      "title": "XK Studio 时间线作品集",
+      "author": "Bureau Cool",
+      "tweetId": "2122847612332064863",
+      "cardAspect": "16/9"
+    },
+    {
+      "id": "outra-coisa",
+      "category": "x",
+      "title": "Outra Coisa 黄罐识别",
+      "author": "Estúdio Caxa",
+      "tweetId": "2122832142833164731",
+      "cardAspect": "16/9"
+    },
+    {
+      "id": "mamma-tiramisu",
+      "category": "x",
+      "title": "Mamma Tiramisù",
+      "author": "Brindo Studio",
+      "tweetId": "2122721627343405349",
+      "cardAspect": "16/9",
+      "videoAutoplay": true
+    },
+    {
+      "id": "bitty",
+      "category": "x",
+      "title": "Bitty 零食识别",
+      "author": "Centtral Design",
+      "tweetId": "2122653686233010452",
+      "cardAspect": "16/9",
+      "videoAutoplay": true
+    },
+    {
+      "id": "ramin-007",
+      "category": "x",
+      "title": "007 海报",
+      "author": "Ramin Nasibov",
+      "tweetId": "2122580149434565069",
+      "cardAspect": "16/9"
+    },
+    {
+      "id": "ramin-duck",
+      "category": "x",
+      "title": "钩针鸭形包",
+      "author": "Ramin Nasibov",
+      "tweetId": "2122564565804179517",
+      "cardAspect": "16/9"
+    },
+    {
+      "id": "ramin-crowned",
+      "category": "x",
+      "title": "crowned lounge",
+      "author": "Ramin Nasibov",
+      "tweetId": "2122849989428699258",
+      "cardAspect": "16/9"
+    },
+    {
+      "id": "agentic-fabriq",
+      "category": "x",
+      "title": "Agentic Fabriq 识别",
+      "author": "penguindsgn",
+      "tweetId": "2122672612408959387",
+      "cardAspect": "16/9"
+    },
+    {
+      "id": "jhey-editions",
+      "category": "x",
+      "title": "typography scrapbook",
+      "author": "jhey",
+      "tweetId": "2122855858854150197",
+      "cardAspect": "16/9",
+      "videoAutoplay": true
+    },
+    {
+      "id": "survey-grid",
+      "category": "x",
+      "title": "Survey Grid",
+      "author": "rettuce",
+      "tweetId": "2122857557106790799",
+      "cardAspect": "16/9",
+      "videoAutoplay": true
+    },
+    {
+      "id": "meng-yoru-lab",
+      "category": "x",
+      "title": "新宿夜景 three.js 站",
+      "author": "Meng To",
+      "tweetId": "2122730333682778289",
+      "cardAspect": "16/9",
+      "videoAutoplay": true
+    },
+    {
+      "id": "nick-devin-bots",
+      "category": "x",
+      "title": "Devin Bots 海报",
+      "author": "nickbakeddesign",
+      "tweetId": "2122820317387374856",
+      "cardAspect": "16/9",
+      "videoAutoplay": true
+    },
+    {
+      "id": "nick-stoa",
+      "category": "x",
+      "title": "Stoa 落地页实验",
+      "author": "nickbakeddesign",
+      "tweetId": "2122564715855651144",
+      "cardAspect": "16/9",
+      "videoAutoplay": true
+    },
+    {
+      "id": "ffx2-amano",
+      "category": "x",
+      "title": "最终幻想 X-2 天野喜孝",
+      "author": "Creative Uncut",
+      "tweetId": "2122813530248495509",
+      "cardAspect": "16/9"
+    }
+  ]
+}
