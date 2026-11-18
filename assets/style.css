@@ -78,6 +78,7 @@ video {
   position: sticky;
   top: 0;
   z-index: 20;
+  padding-top: env(safe-area-inset-top, 0);
 }
 
 .site-header__inner {
@@ -155,14 +156,10 @@ video {
   gap: 0.5rem;
   overflow-x: auto;
   padding: 0.4rem var(--gutter) 0.75rem;
-  margin: 0 calc(-1 * var(--gutter)) 0.5rem;
+  margin: 0;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
-  position: sticky;
-  top: var(--site-header-height, var(--home-sticky-top));
-  z-index: 19;
   background: #000000;
-  border-bottom: 1px solid var(--rule);
 }
 
 .date-rail__chip {
@@ -263,7 +260,7 @@ video {
     align-self: stretch;
   }
 
-  .home-main > .date-rail {
+  .site-header .date-rail {
     display: none;
   }
 
@@ -339,14 +336,29 @@ video {
     background: #000000;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
+    border-bottom: none;
+  }
+
+  .site-header--with-rail .site-header__inner {
+    border-bottom: none;
+    padding-bottom: 0.45rem;
+  }
+
+  .site-header .date-rail {
+    display: flex;
+    position: static;
+    top: auto;
+    margin: 0;
+    padding-bottom: 0.65rem;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    background: #000000;
   }
 
   .edition__mast,
   .edition[id] {
     scroll-margin-top: calc(
-      var(--site-header-height, var(--home-sticky-top))
-        + var(--date-rail-height, 2.75rem)
-        + var(--edition-scroll-gap)
+      var(--site-header-height, var(--home-sticky-top)) + var(--edition-scroll-gap)
     );
   }
 }

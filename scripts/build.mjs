@@ -20,6 +20,17 @@ const MEDIA_SRC = path.join(ROOT, "media");
 
 const BASE = "/design-news";
 
+function assetQuery() {
+  let max = 0;
+  for (const name of ["style.css", "home.js", "article.js"]) {
+    const p = path.join(ASSETS_SRC, name);
+    if (fs.existsSync(p)) max = Math.max(max, fs.statSync(p).mtimeMs);
+  }
+  return max ? `?v=${Math.floor(max).toString(36)}` : "";
+}
+
+const ASSET_Q = assetQuery();
+
 const SERIES_LABEL = { x: "X 设计动态", ai: "AI 辅助设计日报" };
 
 const X_LOGO_PATH =
@@ -319,21 +330,23 @@ function buildNav(date, slug, ordered) {
   </nav>`;
 }
 
-function layout({ title, body, extraScripts = "" }) {
+function layout({ title, body, extraScripts = "", headerAppend = "" }) {
+  const headerClass = headerAppend ? "site-header site-header--with-rail" : "site-header";
   return `<!DOCTYPE html>
 <html lang="zh-Hans">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>${escapeHtml(title)} · 设计动态</title>
-  <link rel="stylesheet" href="${BASE}/assets/style.css">
+  <link rel="stylesheet" href="${BASE}/assets/style.css${ASSET_Q}">
 </head>
 <body>
-  <header class="site-header">
+  <header class="${headerClass}">
     <div class="site-header__inner">
       <h1 class="site-title"><a class="site-wordmark" href="${BASE}/">${xLogoSvg()}<span class="site-wordmark__text">设计动态</span></a></h1>
       <p class="site-subtitle">前沿设计与 AI 辅助设计的工作日笔记</p>
     </div>
+    ${headerAppend}
   </header>
   <main class="site-main">${body}</main>
   <footer class="site-footer">工作日更新</footer>
@@ -387,7 +400,7 @@ function buildDetailPage(detail, cardItem, meta, ordered, dayItems) {
   return layout({
     title: detail.title,
     body,
-    extraScripts: `<script src="${BASE}/assets/article.js" defer></script>`,
+    extraScripts: `<script src="${BASE}/assets/article.js${ASSET_Q}" defer></script>`,
   });
 }
 
@@ -503,7 +516,6 @@ function buildHomeIndex(visibleDates, loader) {
     <div class="home-layout">
       ${aside}
       <div class="home-main">
-        ${rail}
         <nav class="filter-bar" role="tablist" aria-label="栏目筛选">
           <button type="button" class="filter-tab is-active" role="tab" data-filter="all">全部</button>
           <button type="button" class="filter-tab" role="tab" data-filter="x">${xLogoSvg("filter-tab__x", 15)}<span>X 设计动态</span></button>
@@ -512,7 +524,12 @@ function buildHomeIndex(visibleDates, loader) {
         ${sections}
       </div>
     </div>`;
-  return layout({ title: "首页", body, extraScripts: `<script src="${BASE}/assets/home.js" defer></script>` });
+  return layout({
+    title: "首页",
+    body,
+    headerAppend: rail,
+    extraScripts: `<script src="${BASE}/assets/home.js${ASSET_Q}" defer></script>`,
+  });
 }
 
 function buildDigest(date, category, items, details, meta, dayItems) {

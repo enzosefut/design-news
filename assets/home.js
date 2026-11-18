@@ -7,16 +7,7 @@
         `${Math.ceil(header.getBoundingClientRect().height)}px`
       );
     }
-    const rail = document.querySelector(".home-main > .date-rail");
-    const mobile = window.matchMedia("(max-width: 959px)").matches;
-    if (rail && mobile) {
-      document.documentElement.style.setProperty(
-        "--date-rail-height",
-        `${Math.ceil(rail.getBoundingClientRect().height)}px`
-      );
-    } else {
-      document.documentElement.style.removeProperty("--date-rail-height");
-    }
+    document.documentElement.style.removeProperty("--date-rail-height");
   }
 
   syncChromeHeights();
@@ -85,11 +76,6 @@
   function getScrollOffsetPx() {
     const header = document.querySelector(".site-header");
     let offset = header ? header.getBoundingClientRect().height : 96;
-    const rail = document.querySelector(".home-main > .date-rail");
-    if (rail && window.matchMedia("(max-width: 959px)").matches) {
-      const rh = rail.getBoundingClientRect().height;
-      if (rh > 0) offset += rh;
-    }
     const root = getComputedStyle(document.documentElement);
     const gap = parseFloat(root.getPropertyValue("--edition-scroll-gap")) || 1;
     offset += gap * 16;
