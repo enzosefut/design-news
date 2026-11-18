@@ -88,9 +88,7 @@ function buildEditionMast(date, todayYmd) {
   return `
     <header class="edition__mast${isToday ? " edition__mast--today" : ""}">
       ${todayMark}
-      <h2 class="edition__title">
-        <a class="edition__title-link" href="${BASE}/${date}/">${escapeHtml(`${m} 月 ${d} 日`)} · ${escapeHtml(wd)}</a>
-      </h2>
+      <h2 class="edition__title">${escapeHtml(`${m} 月 ${d} 日`)} · ${escapeHtml(wd)}</h2>
       <p class="edition__meta">
         <span class="edition__year">${y} 年</span>
         <span class="edition__sep" aria-hidden="true">·</span>

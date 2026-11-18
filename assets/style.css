@@ -498,15 +498,7 @@ video {
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: 0.02em;
-}
-
-.edition__title-link {
-  text-decoration: none;
   color: var(--ink);
-}
-
-.edition__title-link:hover {
-  color: var(--accent);
 }
 
 .edition__meta {
