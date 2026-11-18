@@ -1,4 +1,29 @@
 (function () {
+  function syncChromeHeights() {
+    const header = document.querySelector(".site-header");
+    if (header) {
+      document.documentElement.style.setProperty(
+        "--site-header-height",
+        `${Math.ceil(header.getBoundingClientRect().height)}px`
+      );
+    }
+    const rail = document.querySelector(".home-main > .date-rail");
+    const mobile = window.matchMedia("(max-width: 959px)").matches;
+    if (rail && mobile) {
+      document.documentElement.style.setProperty(
+        "--date-rail-height",
+        `${Math.ceil(rail.getBoundingClientRect().height)}px`
+      );
+    } else {
+      document.documentElement.style.removeProperty("--date-rail-height");
+    }
+  }
+
+  syncChromeHeights();
+  window.addEventListener("resize", syncChromeHeights);
+  window.addEventListener("orientationchange", syncChromeHeights);
+  if (document.fonts?.ready) document.fonts.ready.then(syncChromeHeights);
+
   const bar = document.querySelector(".filter-bar");
   const editions = () => document.querySelectorAll(".edition");
   const cards = () =>
