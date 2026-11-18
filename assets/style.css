@@ -115,7 +115,7 @@ video {
   height: auto;
   width: auto;
   aspect-ratio: 1;
-  max-height: 3.35rem;
+  max-height: 2.75rem;
 }
 
 .site-brand__text {
@@ -123,7 +123,9 @@ video {
   flex-direction: column;
   justify-content: center;
   gap: 0.14rem;
-  min-width: 0;
+  flex: 0 0 auto;
+  width: max-content;
+  min-width: max-content;
 }
 
 .site-wordmark__text {
