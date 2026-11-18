@@ -151,9 +151,10 @@ video {
 .date-rail {
   display: flex;
   flex-wrap: nowrap;
+  align-items: stretch;
   gap: 0.5rem;
   overflow-x: auto;
-  padding: 0.35rem var(--gutter) 0.75rem;
+  padding: 0.4rem var(--gutter) 0.75rem;
   margin: 0 calc(-1 * var(--gutter)) 0.5rem;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
@@ -166,22 +167,28 @@ video {
 
 .date-rail__chip {
   flex: 0 0 auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.65rem;
   font-size: 0.78rem;
-  padding: 0.35rem 0.85rem;
+  padding: 0.4rem 0.9rem;
   border-radius: var(--radius-pill);
-  border: 1px solid var(--rule);
-  background: var(--page);
-  color: var(--ink-muted);
+  border: 1px solid #536471;
+  background: var(--surface);
+  color: #e7e9ea;
   text-decoration: none;
   font-family: var(--font-sans);
   letter-spacing: 0.02em;
+  text-align: center;
   transition: border-color 0.15s, color 0.15s, background 0.15s;
 }
 
 .date-rail__chip:hover {
-  border-color: #536471;
+  border-color: #71767b;
   color: var(--ink);
-  background: var(--surface);
+  background: #1c1f23;
 }
 
 .date-rail__chip.is-active {
@@ -190,12 +197,17 @@ video {
   color: var(--page);
 }
 
+.date-rail__chip.is-active .date-nav__text {
+  color: var(--page);
+  font-weight: 700;
+}
+
 .date-rail__chip.is-active .date-nav__today {
-  color: rgba(255, 255, 255, 0.92);
+  color: var(--today);
 }
 
 .date-rail__chip--today {
-  border-color: #d8d6d0;
+  border-color: #6b7075;
 }
 
 .date-nav__today {
@@ -209,19 +221,33 @@ video {
 }
 
 .date-rail__chip .date-nav__today {
-  display: inline;
-  margin-right: 0.2rem;
-  margin-bottom: 0;
-  font-size: 0.72rem;
+  display: block;
+  margin: 0 0 0.12rem;
+  font-size: 0.68rem;
+  line-height: 1.15;
 }
 
 .date-nav__text {
   display: block;
-  line-height: 1.35;
+  line-height: 1.25;
+  font-weight: 500;
+  color: #d1d9de;
 }
 
-.date-rail__chip.date-nav__link--muted {
-  opacity: 0.45;
+.date-rail__chip:hover .date-nav__text {
+  color: var(--ink);
+}
+
+.date-rail__chip:not(.is-active) .date-nav__text {
+  color: #d1d9de;
+}
+
+.date-rail__chip.date-nav__link--muted:not(.is-active) {
+  opacity: 0.72;
+}
+
+.date-rail__chip.date-nav__link--muted:not(.is-active) .date-nav__text {
+  color: #aeb4b8;
 }
 
 @media (min-width: 960px) {
