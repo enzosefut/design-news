@@ -344,7 +344,7 @@ function layout({ title, body, extraScripts = "", headerAppend = "" }) {
   <header class="${headerClass}">
     <div class="site-header__inner">
       <h1 class="site-title"><a class="site-wordmark" href="${BASE}/">${xLogoSvg()}<span class="site-wordmark__text">设计动态</span></a></h1>
-      <p class="site-subtitle">前沿设计与 AI 辅助设计的工作日笔记</p>
+      <p class="site-subtitle">探索前沿设计 ｜ AI 辅助设计</p>
     </div>
     ${headerAppend}
   </header>
