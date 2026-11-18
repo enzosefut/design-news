@@ -152,6 +152,36 @@
       "author": "Creative Uncut",
       "tweetId": "2122813530248495509",
       "cardAspect": "16/9"
+    },
+    {
+      "id": "antigravity-xr-teacher",
+      "category": "ai",
+      "title": "Antigravity × Figma MCP",
+      "author": "Google Antigravity",
+      "tweetId": "2122848700233925006",
+      "cardAspect": "16/9",
+      "preferStillHero": true,
+      "deck": "白板草图到离线 XR Language Teacher，官方称用 Figma MCP 把设计映成代码。"
+    },
+    {
+      "id": "details-mcp",
+      "category": "ai",
+      "title": "Details MCP",
+      "author": "kev",
+      "tweetId": "2122633959888851130",
+      "cardAspect": "16/9",
+      "videoAutoplay": true,
+      "preferStillHero": true,
+      "deck": "把代理接到 3500+ 条真实站点细节，29 秒演示把一份「AI 味」着陆页逐步收干净。"
+    },
+    {
+      "id": "framer-gpt62",
+      "category": "ai",
+      "title": "Framer Agent 加入 GPT-6.2",
+      "author": "Framer",
+      "tweetId": "2122783752556585466",
+      "typographic": true,
+      "cardAspect": "4/3"
     }
   ]
 }

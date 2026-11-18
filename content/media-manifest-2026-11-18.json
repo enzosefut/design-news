@@ -248,5 +248,37 @@
     "links": [
       "https://www.creativeuncut.com/art_final-fantasy-10-2_a.html"
     ]
+  },
+  {
+    "id": "2122848700233925006",
+    "url": "https://x.com/antigravity/status/2122848700233925006",
+    "user": "antigravity",
+    "photos": [],
+    "posters": [
+      "https://pbs.twimg.com/amplify_video_thumb/2122848582684270594/img/Pcusy_qGXi8QSvjQ.jpg"
+    ],
+    "videos": [],
+    "link_imgs": [],
+    "links": [
+      "https://github.com/google-ai-edge/gallery/"
+    ]
+  },
+  {
+    "id": "2122633959888851130",
+    "url": "https://x.com/koppkev/status/2122633959888851130",
+    "user": "koppkev",
+    "photos": [],
+    "posters": [
+      "https://pbs.twimg.com/ext_tw_video_thumb/2122633876153716736/pu/img/ciKF3Iv8FChIknr1.jpg"
+    ],
+    "videos": [
+      "https://video.twimg.com/ext_tw_video/2122633876153716736/pu/vid/avc1/960x720/baATWxvmztd1BWU5.mp4?tag=12"
+    ],
+    "link_imgs": [
+      "https://www.details.so/og-inspo.png"
+    ],
+    "links": [
+      "https://www.details.so/mcp"
+    ]
   }
 ]

@@ -135,12 +135,38 @@
       ],
       "poster": null,
       "video": null
+    },
+    "2122848700233925006": {
+      "cover": "2122848700233925006-poster.jpg",
+      "images": [
+        "2122848700233925006-poster.jpg",
+        "gallery-antigravity-figma.jpg",
+        "gallery-antigravity-quiz.jpg",
+        "gallery-antigravity-xr.jpg",
+        "gallery-antigravity-whiteboard.jpg"
+      ],
+      "poster": "2122848700233925006-poster.jpg",
+      "video": null
+    },
+    "2122633959888851130": {
+      "cover": "2122633959888851130-poster.jpg",
+      "images": [
+        "2122633959888851130-poster.jpg",
+        "gallery-details-before.jpg",
+        "gallery-details-spacing.jpg",
+        "gallery-details-imagery.jpg",
+        "gallery-details-after.jpg",
+        "extra-details-og.png"
+      ],
+      "poster": "2122633959888851130-poster.jpg",
+      "video": "2122633959888851130-video.mp4"
     }
   },
   "extras": {
     "snapple-hero": "extra-snapple-hero.jpg",
     "lamm-hero": "extra-lamm-hero.jpg",
     "lamm-stiftung": "extra-lamm-stiftung.jpg",
-    "mamma-hero": "extra-mamma-hero.jpg"
+    "mamma-hero": "extra-mamma-hero.jpg",
+    "details-og": "extra-details-og.png"
   }
 }
