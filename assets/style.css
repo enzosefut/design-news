@@ -139,6 +139,7 @@ video {
   color: var(--ink-muted);
   font-weight: 400;
   line-height: 1.25;
+  white-space: nowrap;
 }
 
 .site-main {
