@@ -187,9 +187,9 @@ video {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 2.75rem;
+  min-height: 2.85rem;
   font-size: 0.78rem;
-  padding: 0.45rem 0.95rem;
+  padding: 0.5rem 0.95rem;
   border-radius: var(--radius-pill);
   border: 1px solid #536471;
   background: var(--surface);
@@ -210,16 +210,25 @@ video {
 .date-rail__chip.is-active {
   background: var(--ink);
   border-color: var(--ink);
-  color: var(--page);
+  color: #0f1419;
+  color-scheme: light;
 }
 
 .date-rail__chip.is-active .date-nav__text {
-  color: var(--page);
+  color: #0f1419;
   font-weight: 700;
+  -webkit-text-fill-color: #0f1419;
 }
 
 .date-rail__chip.is-active .date-nav__today {
   color: var(--today);
+  -webkit-text-fill-color: var(--today);
+}
+
+.date-rail__chip--today.is-active {
+  min-height: 3.15rem;
+  padding-top: 0.52rem;
+  padding-bottom: 0.52rem;
 }
 
 .date-rail__chip--today {
