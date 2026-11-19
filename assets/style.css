@@ -201,28 +201,18 @@ video {
   transition: border-color 0.15s, color 0.15s, background 0.15s;
 }
 
-.date-rail__chip:hover {
+.date-rail__chip:not(.is-active):hover {
   border-color: #71767b;
   color: var(--ink);
   background: #1c1f23;
 }
 
-.date-rail__chip.is-active {
+.date-rail__chip.is-active,
+.date-rail__chip.is-active:hover {
   background: var(--ink);
   border-color: var(--ink);
   color: #0f1419;
   color-scheme: light;
-}
-
-.date-rail__chip.is-active .date-nav__text {
-  color: #0f1419;
-  font-weight: 700;
-  -webkit-text-fill-color: #0f1419;
-}
-
-.date-rail__chip.is-active .date-nav__today {
-  color: var(--today);
-  -webkit-text-fill-color: var(--today);
 }
 
 .date-rail__chip--today.is-active {
@@ -259,12 +249,25 @@ video {
   color: #d1d9de;
 }
 
-.date-rail__chip:hover .date-nav__text {
+.date-rail__chip:not(.is-active):hover .date-nav__text {
   color: var(--ink);
 }
 
 .date-rail__chip:not(.is-active) .date-nav__text {
   color: #d1d9de;
+}
+
+.date-rail__chip.is-active .date-nav__text,
+.date-rail__chip.is-active:hover .date-nav__text {
+  color: #0f1419;
+  font-weight: 700;
+  -webkit-text-fill-color: #0f1419;
+}
+
+.date-rail__chip.is-active .date-nav__today,
+.date-rail__chip.is-active:hover .date-nav__today {
+  color: var(--today);
+  -webkit-text-fill-color: var(--today);
 }
 
 .date-rail__chip.date-nav__link--muted:not(.is-active) {
