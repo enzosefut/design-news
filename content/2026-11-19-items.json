@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-19",
+  "featured": "hyundai-card",
+  "extras": {
+    "hyundai-hero": "https://images.ctfassets.net/4rnblstkg79m/7wsg3V5G2FvgPIFrxW0hY8/5bf8e13a4fa30f443cef233438651063/1_Hyundai_Card.jpg",
+    "hyundai-abd": "https://cms.abduzeedo.com/sites/default/files/originals/hero_1600_41.jpg",
+    "hyundai-cards": "https://images.ctfassets.net/4rnblstkg79m/7xZ1vUWsydky1XUsxo6sI4/ed2ebc6e023347f00d185827d192999e/3_Hyundai_Card.jpg",
+    "hyundai-pack": "https://images.ctfassets.net/4rnblstkg79m/5ENOThNlRsmLSbtimG16ci/c7b6fd4e8d759bba72d4deeb87150d47/6_Hyundai_Card.jpg",
+    "parniera-hero": "https://cms.abduzeedo.com/sites/default/files/originals/hero_1600_42.jpg",
+    "fractional-hero": "https://cms.abduzeedo.com/sites/default/files/originals/hero_fractional-mano-mano.jpg",
+    "museum-hero": "https://cms.abduzeedo.com/sites/default/files/originals/hero_from-form-s-amsterdam-museum-night-campaign-it-s-nice-that.jpg",
+    "gaidelis-hero": "https://sonsdaughtersid.com/wp-content/uploads/2026/11/Gaidelis-case_3000x2000_Intro.jpg",
+    "gaidelis-type": "https://sonsdaughtersid.com/wp-content/uploads/2026/11/Gaidelis-case_3000x2000_character-alternates_02.jpg",
+    "gaidelis-pack": "https://sonsdaughtersid.com/wp-content/uploads/2026/11/Gaidelis-case_1650x2200_boxes_02.jpg",
+    "barq-app": "https://cdn.prod.website-files.com/69b28632290efb3291c4c945/6ab51794ffd83f8ffbf8081e_barqq.jpg",
+    "barq-tote": "https://cdn.prod.website-files.com/69b28632290efb3291c4c945/6aaa6e239badaa24cca906ce_9_Barq.jpg",
+    "cardnexus-02": "https://cdn.prod.website-files.com/6a3152d3b989219ad5647986/6abbc5b19709a16ffffa18b1_Cardnexus-02.avif",
+    "cardnexus-03": "https://cdn.prod.website-files.com/6a3152d3b989219ad5647986/6abbc66a608ae8bd9f9a8787_Cardnexus-03.avif",
+    "cardnexus-11": "https://cdn.prod.website-files.com/6a3152d3b989219ad5647986/6abbc810ab77e73746338569_Cardnexus-11.avif"
+  },
+  "items": [
+    {
+      "id": "hyundai-card",
+      "category": "x",
+      "title": "Hyundai Card 识别：固定括号字标，每张卡一套生成式色彩世界",
+      "author": "Wolff Olins",
+      "tweetId": "2123119807948341537",
+      "featured": true,
+      "cardAspect": "16/9",
+      "deck": "括号字标位置不动，每张卡长出自己的色彩世界；The Purple 是整面深紫半调。"
+    },
+    {
+      "id": "parniera",
+      "category": "x",
+      "title": "Parniera 识别：四环蚕蛾标志，连笔如丝的定制字体",
+      "author": "Igor Nora",
+      "tweetId": "2123178425280344099",
+      "cardAspect": "16/9"
+    },
+    {
+      "id": "museum-nacht",
+      "category": "x",
+      "title": "Amsterdam Museum Night 2026：花边袖口打手电筒，静帧拼成 17 世纪西洋镜",
+      "author": "From Form",
+      "tweetId": "2123105100755526127",
+      "cardAspect": "16/9"
+    },
+    {
+      "id": "gaidelis",
+      "category": "x",
+      "title": "Gaidelis 再设计：从饼干压纹重绘公鸡，可变字体切换风格",
+      "author": "Sons & Daughters ID",
+      "tweetId": "2123053816660533753",
+      "cardAspect": "16/9",
+      "videoAutoplay": true
+    },
+    {
+      "id": "barq",
+      "category": "x",
+      "title": "Barq 识别：四向星标，乌德琴与手鼓插画配沙漠界面",
+      "author": "BOND",
+      "tweetId": "2123016075600110072",
+      "cardAspect": "16/9",
+      "videoAutoplay": true
+    },
+    {
+      "id": "cardnexus",
+      "category": "x",
+      "title": "CardNexus 识别：紫黄粉爆炸星形，把卡牌圈做成平台品牌",
+      "author": "LORD",
+      "tweetId": "2123084024201556437",
+      "cardAspect": "16/9",
+      "videoAutoplay": true
+    },
+    {
+      "id": "fractional",
+      "category": "x",
+      "title": "Fractional：枯山水网格与 Barnum 衬线的冷静 AI 产品界面",
+      "author": "Mano a Mano",
+      "tweetId": "2123161012559917281",
+      "cardAspect": "16/9"
+    },
+    {
+      "id": "miggi-3d",
+      "category": "x",
+      "title": "Figma 3D Transforms：复制变换后再刮混合值，立体场景直接能用",
+      "author": "miggi",
+      "tweetId": "2123111273491562988",
+      "cardAspect": "16/9",
+      "videoAutoplay": true
+    },
+    {
+      "id": "bsp-glyph",
+      "category": "x",
+      "title": "BSP Glyph：轴平行切割矩形，网点浓淡里读出一字",
+      "author": "rettuce",
+      "tweetId": "2123219850906751383",
+      "cardAspect": "16/9",
+      "videoAutoplay": true
+    },
+    {
+      "id": "ramin-hidden-denmark",
+      "category": "x",
+      "title": "Hidden Denmark 字标：红底两行叠 DEN，一次实心一次空心",
+      "author": "Ramin Nasibov",
+      "tweetId": "2123152771129937925",
+      "cardAspect": "16/9"
+    },
+    {
+      "id": "ramin-duo",
+      "category": "x",
+      "title": "duo 海报：厚底靴双人站在装饰艺术几何色块里",
+      "author": "Ramin Nasibov",
+      "tweetId": "2123059931553165797",
+      "cardAspect": "16/9"
+    },
+    {
+      "id": "ramin-desk-puffer",
+      "category": "x",
+      "title": "desk puffer：迷你羽绒服笔筒，帽兜里插铅笔和剪刀",
+      "author": "Ramin Nasibov",
+      "tweetId": "2123103990980157597",
+      "cardAspect": "16/9"
+    },
+    {
+      "id": "ff7-remake",
+      "category": "game",
+      "title": "最终幻想 VII Remake 角色设定：Rude、Reno 与神罗部队线稿成稿",
+      "author": "Creative Uncut",
+      "tweetId": "2123173149759967653",
+      "cardAspect": "16/9"
+    },
+    {
+      "id": "ffxiv-bard",
+      "category": "game",
+      "title": "FFXIV 风暴血 Storyteller's Attire：羽饰宽沿帽、风笛与裤装变体",
+      "author": "Creative Uncut",
+      "tweetId": "2123155281957863647",
+      "cardAspect": "16/9"
+    }
+  ]
+}
