@@ -209,5 +209,51 @@
     "links": [
       "https://www.creativeuncut.com/art_final-fantasy-14-stormblood_a.html"
     ]
+  },
+  {
+    "id": "2123170145120260545",
+    "url": "https://x.com/figma/status/2123170145120260545",
+    "user": "figma",
+    "photos": [],
+    "posters": [
+      "https://pbs.twimg.com/amplify_video_thumb/2123169737178042368/img/4fABGhf2yuSukxb0.jpg"
+    ],
+    "videos": [
+      "https://video.twimg.com/amplify_video/2123169737178042368/vid/avc1/1920x1080/TLPD2wsp0McxJcBd.mp4"
+    ],
+    "link_imgs": [],
+    "links": [
+      "https://help.figma.com/hc/en-us/articles/24004542669463-Generate-and-edit-images-with-Figma-AI"
+    ]
+  },
+  {
+    "id": "2123157136351904114",
+    "url": "https://x.com/framer/status/2123157136351904114",
+    "user": "framer",
+    "photos": [],
+    "posters": [
+      "https://pbs.twimg.com/media/HXb3nHxXoAAZd7l.jpg"
+    ],
+    "videos": [],
+    "link_imgs": [],
+    "links": [
+      "https://www.framer.com/mcp/"
+    ]
+  },
+  {
+    "id": "2123176067380711725",
+    "url": "https://x.com/antigravity/status/2123176067380711725",
+    "user": "antigravity",
+    "photos": [],
+    "posters": [
+      "https://pbs.twimg.com/amplify_video_thumb/2123176009205686272/img/FNQUqWUxTGhkw3WY.jpg"
+    ],
+    "videos": [],
+    "link_imgs": [
+      "https://antigravity.google/og/blog/gemini-4-neon-in-google-antigravity.png"
+    ],
+    "links": [
+      "https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/"
+    ]
   }
 ]

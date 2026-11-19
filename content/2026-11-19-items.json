@@ -137,6 +137,36 @@
       "author": "Creative Uncut",
       "tweetId": "2123155281957863647",
       "cardAspect": "16/9"
+    },
+    {
+      "id": "figma-multi-image",
+      "category": "ai",
+      "title": "Figma Make / Edit Image：一条提示词可出多图，最多同时跑三个图像模型",
+      "author": "Figma",
+      "tweetId": "2123170145120260545",
+      "cardAspect": "16/9",
+      "preferStillHero": true,
+      "deck": "同一条提示词可一次出 2、4 或 6 张变体，也可并排比较最多三个图像模型。"
+    },
+    {
+      "id": "framer-plain-mcp",
+      "category": "ai",
+      "title": "Framer MCP × Claude：Plain 品牌从导出 MP4 改成响应式代码动效",
+      "author": "Framer",
+      "tweetId": "2123157136351904114",
+      "cardAspect": "16/9",
+      "preferStillHero": true,
+      "deck": "Plain 品牌负责人 Belle 用 Claude 与 Framer MCP，把导出 MP4 换成可响应的代码动效。"
+    },
+    {
+      "id": "antigravity-gemini-4-neon",
+      "category": "ai",
+      "title": "Gemini 4 Neon 登陆 Antigravity：Orchestrator 可把 Neon 规划与 Hydrogen 执行配对",
+      "author": "Google Antigravity",
+      "tweetId": "2123176067380711725",
+      "cardAspect": "16/9",
+      "preferStillHero": true,
+      "deck": "Neon 进入 Antigravity 桌面、CLI 与 IDE 扩展；Orchestrator 可用 Neon 规划、Hydrogen 执行。"
     }
   ]
 }
