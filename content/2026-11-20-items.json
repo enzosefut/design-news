@@ -1,0 +1,182 @@
+{
+  "date": "2026-11-20",
+  "featured": "makers-mark",
+  "extras": {
+    "makers-hero": "https://turnerduckworth.co.uk/wp-content/uploads/2026/11/MM_1.jpg",
+    "makers-marks": "https://www.suntoryglobalspirits.com/sites/default/files/2026-11/Makers-Mark-Vis-ID-2026.jpg",
+    "makers-type": "https://cms.abduzeedo.com/sites/default/files/originals/gallery-03_56.jpg",
+    "eurostar-train": "https://cdn.prod.website-files.com/6849da698cb78e39e81215c3/686be91c336756e5de231509_FeatureImage1_Eurostar_DesignStudio.jpg",
+    "wyllow-hero": "https://cdn.prod.website-files.com/63e1de3af3a25a838d463d7c/69d386c14996b3e18de3de82_OG-Wyllow.png",
+    "wyllow-system": "https://cdn.prod.website-files.com/63e1de3af3a25a838d463d7c/69d337ce7a7a6244dd74f5a4_03.avif",
+    "docker-logo": "https://www.docker.com/app/uploads/2026/11/blog-frame-2320x957.png",
+    "lemonade-hero": "https://cms.abduzeedo.com/sites/default/files/originals/hero_1600_43.jpg",
+    "coop-range": "https://a.storyblok.com/f/69091/2880x2160/5c9efb7132/bedow-coop-near-food-packaging-design-0.jpg",
+    "coop-paste": "https://a.storyblok.com/f/69091/2880x2880/3f4856458e/bedow-coop-near-food-packaging-design-6.jpg",
+    "sugarspark-up": "https://pbs.twimg.com/media/HXge9tBXYAAtmqc.jpg?name=orig",
+    "sugarspark-wordmark": "https://intervaltype.com/app/uploads/2026/03/Sugarspark-Web-6.jpg"
+  },
+  "items": [
+    {
+      "id": "makers-mark",
+      "category": "x",
+      "title": "Maker's Mark 识别：红蜡铸成植物与瓶口印记，字体来自 Margie 手写",
+      "author": "Turner Duckworth",
+      "tweetId": "2123484334510240139",
+      "cardAspect": "16/9",
+      "featured": true,
+      "preferStillHero": true,
+      "deck": "手浸红蜡仍在瓶口正中，麦穗、橡木年轮和植物被铸成同一套印记；字体来自 Margie Samuels 的手写。"
+    },
+    {
+      "id": "eurostar",
+      "category": "x",
+      "title": "Eurostar 识别：星星从 e 里走出来，变成车头上的巨型 Spark",
+      "author": "Further",
+      "tweetId": "2123434481961037923",
+      "cardAspect": "16/9",
+      "preferStillHero": true,
+      "deck": "六角星从圆形 e 里走出来，变成 4014 号车头上贯穿黄鼻子的浅蓝色巨型 Spark。"
+    },
+    {
+      "id": "the-cookies",
+      "category": "x",
+      "title": "The Cookies 再设计：三枚斜向交叠椭圆，酸绿配森林绿",
+      "author": "Reliquia Studio",
+      "tweetId": "2123378455592960377",
+      "cardAspect": "16/9",
+      "videoAutoplay": true,
+      "deck": "三枚斜向交叠的椭圆组成标志，Melun Display 配 Messina Sans，口号是 A Cookie, for your Thoughts。"
+    },
+    {
+      "id": "wyllow",
+      "category": "x",
+      "title": "Wyllow 识别：W 形软体角色当标志，口号是 Just a matter of practice",
+      "author": "Feely Studio",
+      "tweetId": "2123446408304889878",
+      "cardAspect": "16/9",
+      "videoAutoplay": true,
+      "deck": "面试练习产品不走激励口号；标志是一只 W 形软体角色，手写字体故意写得不均匀。"
+    },
+    {
+      "id": "docker",
+      "category": "x",
+      "title": "Docker 再设计：Motto 把 Moby 收成一枚黑色鲸标，铺在 Base Blue 上",
+      "author": "Motto",
+      "tweetId": "2123506823302881642",
+      "cardAspect": "16/9",
+      "preferStillHero": true,
+      "videoAutoplay": true,
+      "deck": "Moby 被收成黑色侧影鲸标，身体是圆角方块、尾巴一点即出，字标是小写 docker。"
+    },
+    {
+      "id": "lemonade",
+      "category": "x",
+      "title": "Lemonade Global Ventures：金色柠檬既是地球仪，也拼出巴西地图",
+      "author": "Discircle",
+      "tweetId": "2123450686536839550",
+      "cardAspect": "16/9",
+      "preferStillHero": true,
+      "deck": "一颗金色柠檬做成地球仪，也做成识别核心；无数小金柠檬在黑底上拼出巴西地图。"
+    },
+    {
+      "id": "coop-household",
+      "category": "x",
+      "title": "Coop 日用包装：一半是真电池，一半印在托盘上，色弧区分规格",
+      "author": "Bedow",
+      "tweetId": "2123466739925110818",
+      "cardAspect": "16/9",
+      "preferStillHero": true,
+      "deck": "AA 电池托盘里一半是真电池，一半是印在纸板上的灰色剪影；黄、橙、蓝、绿色弧区分规格。"
+    },
+    {
+      "id": "sugarspark",
+      "category": "x",
+      "title": "Sugarspark / Sugarswift：太空时代显示字体，空心环当 umlaut",
+      "author": "Interval Type",
+      "tweetId": "2123481294034362615",
+      "cardAspect": "16/9",
+      "preferStillHero": true,
+      "deck": "从 ITC Bauhaus、Kabel 和 Avant Garde 长出的显示字体；ÜP 海报上 U 与 P 共用竖笔，umlaut 是两个空心环。"
+    },
+    {
+      "id": "miggi-perspective",
+      "category": "x",
+      "title": "Figma 3D Transforms：用组件实例换一个透视，动画跟着一起转",
+      "author": "miggi",
+      "tweetId": "2123513135864730031",
+      "cardAspect": "16/9",
+      "videoAutoplay": true,
+      "deck": "同一组圆角方块既能铺成放射透视，也能转成侧向层叠；动画做一次，转实例时动作还在。"
+    },
+    {
+      "id": "pixel-cascade",
+      "category": "x",
+      "title": "Pixel Cascade：十六进制报文从黑屏降落，崩解带把字拉出竖纹",
+      "author": "rettuce",
+      "tweetId": "2123582210985152688",
+      "cardAspect": "16/9",
+      "videoAutoplay": true,
+      "deck": "黑底点阵终端上往下灌 16 进制报文，崩解带吞掉的字会拉出一条竖纹。"
+    },
+    {
+      "id": "ramin-icons",
+      "category": "x",
+      "title": "icons in motion：黑底细线图标整屏铺开，再一起动起来",
+      "author": "Ramin Nasibov",
+      "tweetId": "2123517838518255644",
+      "cardAspect": "16/9",
+      "videoAutoplay": true,
+      "deck": "一整屏黑底细线图标，从箭头、音量和天气到开关和表情，随后一起动起来。"
+    },
+    {
+      "id": "ramin-burgers",
+      "category": "x",
+      "title": "Lou's Burgers：红白格纸巾上自己配料，点两下就是双层",
+      "author": "Ramin Nasibov",
+      "tweetId": "2123479565636968825",
+      "cardAspect": "16/9",
+      "videoAutoplay": true,
+      "deck": "奶油色点餐界面，红白格纸巾铺在屏幕中间，配料可以点两下做成双层。"
+    },
+    {
+      "id": "ramin-ancestral",
+      "category": "x",
+      "title": "ancestral：毛利武士几何拼贴，斗篷纤维和文身被切成色块",
+      "author": "Ramin Nasibov",
+      "tweetId": "2123441201609052235",
+      "cardAspect": "16/9",
+      "preferStillHero": true,
+      "deck": "毛利武士侧身持杖，斗篷的纤维、文身和背景被切成几何色块，月亮停在左上角。"
+    },
+    {
+      "id": "power-stone",
+      "category": "game",
+      "title": "Power Stone 角色设定：Bengus 宣传画，Akiman 与石川秀树的角色设计",
+      "author": "Creative Uncut",
+      "tweetId": "2123508956320649511",
+      "cardAspect": "16/9",
+      "preferStillHero": true,
+      "deck": "新上架 36 张图库，含爱德华·猎鹰红夹克的前后视图，以及 Bengus 的角色宣传画。"
+    },
+    {
+      "id": "drakengard",
+      "category": "game",
+      "title": "Drakengard：藤坂公彦绘制的 Manah 与 Seere，设定稿与完成插画",
+      "author": "Creative Uncut",
+      "tweetId": "2123378386697621925",
+      "cardAspect": "16/9",
+      "preferStillHero": true,
+      "deck": "金发红瞳的 Manah 有前后视图和面部特写，也有神殿走廊里回身的完成插画。"
+    },
+    {
+      "id": "palia",
+      "category": "game",
+      "title": "Palia 场景概念：Jeremy Fenske 的伞状林木，落叶小路上的驮兽",
+      "author": "Creative Uncut",
+      "tweetId": "2123543339161059478",
+      "cardAspect": "16/9",
+      "preferStillHero": true,
+      "deck": "伞状林木撑起橙色树冠，落叶小路上走着行人和驮着货物的兽。"
+    }
+  ]
+}

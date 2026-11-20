@@ -216,7 +216,10 @@ function resolveDetailMedia(detail, meta, date, cardItem, dayItems) {
     if (f && !order.includes(f)) order.push(f);
   };
 
-  (detail.gallery ?? []).forEach(add);
+  (detail.gallery ?? []).forEach((file) => {
+    if (typeof file === "string" && /\.(mp4|webm|mov)$/i.test(file)) return;
+    add(file);
+  });
 
   if (detail.tweetId && meta.tweets[detail.tweetId]) {
     const t = meta.tweets[detail.tweetId];
