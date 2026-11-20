@@ -246,5 +246,56 @@
     "links": [
       "https://www.creativeuncut.com/art_palia_a.html"
     ]
+  },
+  {
+    "id": "2123513203745538423",
+    "url": "https://x.com/GeminiApp/status/2123513203745538423",
+    "user": "GeminiApp",
+    "photos": [],
+    "posters": [
+      "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/video_6251_wagtailvideo-jrku7afu.width-1200.format-webp.webp"
+    ],
+    "videos": [
+      "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_videos/butterfly_16x9_261116b_g7DrxbI.mp4"
+    ],
+    "link_imgs": [
+      "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/hero_header_CU_copy.width-1300.png"
+    ],
+    "links": [
+      "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/",
+      "https://gemini.google/mac"
+    ]
+  },
+  {
+    "id": "2123461101224624402",
+    "url": "https://x.com/ideogram_ai/status/2123461101224624402",
+    "user": "ideogram_ai",
+    "photos": [],
+    "posters": [
+      "https://pbs.twimg.com/amplify_video_thumb/2123453315035824128/img/ZR6NkZ-4nv0Y253_.jpg"
+    ],
+    "videos": [
+      "https://video.twimg.com/amplify_video/2123453315035824128/vid/avc1/1920x1080/efXtg8M2HYZnYJBv.mp4"
+    ],
+    "link_imgs": [],
+    "links": [
+      "https://ideogram.ai/models/4.6/"
+    ]
+  },
+  {
+    "id": "2123461108543725741",
+    "url": "https://x.com/ideogram_ai/status/2123461108543725741",
+    "user": "ideogram_ai",
+    "photos": [],
+    "posters": [
+      "https://pbs.twimg.com/amplify_video_thumb/2123456099042881536/img/rqTzagd9KSeTHZb7.jpg"
+    ],
+    "videos": [
+      "https://video.twimg.com/amplify_video/2123456099042881536/vid/avc1/1312x1312/QnmlOJ0YDk2HR1ge.mp4"
+    ],
+    "link_imgs": [],
+    "links": [
+      "https://ideogram.ai/models/4.6/"
+    ]
   }
 ]

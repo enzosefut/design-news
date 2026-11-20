@@ -177,6 +177,34 @@
       "cardAspect": "16/9",
       "preferStillHero": true,
       "deck": "伞状林木撑起橙色树冠，落叶小路上走着行人和驮着货物的兽。"
+    },
+    {
+      "id": "figma-agent-dev-mode",
+      "category": "ai",
+      "title": "Figma Agent 进入 Dev Mode：看懂设计、对比版本、要代码片段，并生成批量下载链接",
+      "author": "Figma",
+      "cardAspect": "16/9",
+      "deck": "在 Dev Mode 里调用 Figma agent，可检查设计、对比版本、要代码片段，并生成资源下载链接。"
+    },
+    {
+      "id": "gemini-mac-computer-use",
+      "category": "ai",
+      "title": "Gemini Mac 应用上线 computer use：后台窗口把草图做成 Blender 里绑好骨骼的 3D 模型",
+      "author": "Google Gemini",
+      "tweetId": "2123513203745538423",
+      "cardAspect": "16/9",
+      "preferStillHero": true,
+      "deck": "Gemini 在独立后台窗口里操作应用和网页，官方演示是把草图做成 Blender 里绑好骨骼的 3D 模型。"
+    },
+    {
+      "id": "ideogram-4-6",
+      "category": "ai",
+      "title": "Ideogram 4.6：原生 4K，主打精确改图（品牌 hex、产品细节、遮罩编辑）",
+      "author": "Ideogram",
+      "tweetId": "2123461101224624402",
+      "cardAspect": "16/9",
+      "preferStillHero": true,
+      "deck": "原生 4K 出图，官方对比 4.5 后称指定区域以外更少漂移，品牌 hex 与产品细节改图更准。"
     }
   ]
 }
