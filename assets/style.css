@@ -701,13 +701,13 @@ html.cards-visible .feature-hero {
 
 @property --edge-on {
   syntax: "<number>";
-  inherits: false;
+  inherits: true;
   initial-value: 0;
 }
 
 @property --edge-shine {
   syntax: "<angle>";
-  inherits: false;
+  inherits: true;
   initial-value: 180deg;
 }
 
