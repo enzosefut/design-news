@@ -699,6 +699,18 @@ html.cards-visible .feature-hero {
   margin-bottom: 2rem;
 }
 
+@property --edge-on {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+@property --edge-shine {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 180deg;
+}
+
 .feature-hero__link,
 .mag-card__link {
   position: relative;
@@ -712,6 +724,7 @@ html.cards-visible .feature-hero {
   overflow: hidden;
   clip-path: inset(0 round var(--radius));
   isolation: isolate;
+  transition: --edge-on 0.4s ease;
 }
 
 .feature-hero__link {
@@ -731,7 +744,26 @@ html.cards-visible .feature-hero {
   z-index: 3;
   pointer-events: none;
   border-radius: inherit;
-  box-shadow: inset 0 0 0 1px rgba(236, 240, 244, 0.1);
+  padding: 1px;
+  background:
+    linear-gradient(rgba(236, 240, 244, 0.1), rgba(236, 240, 244, 0.1)),
+    conic-gradient(
+      from var(--edge-shine, 180deg),
+      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.55)) 0deg,
+      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.2)) 18deg,
+      transparent 46deg,
+      transparent 314deg,
+      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.2)) 342deg,
+      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.55)) 360deg
+    );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
 }
 
 .feature-hero__link::after,
@@ -761,12 +793,51 @@ html.cards-visible .feature-hero {
 
 .feature-hero__pan img,
 .feature-hero__pan video,
-.mag-card__pan img {
+.mag-card__pan img,
+.card-blur img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+/* Blurred copy of the cover, masked to the lower half, under the veil. */
+.card-blur {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  filter: blur(8px);
+  transform: scale(1.14);
+  -webkit-mask-image: linear-gradient(
+    to top,
+    #000 0%,
+    #000 20%,
+    rgba(0, 0, 0, 0.72) 36%,
+    rgba(0, 0, 0, 0.28) 48%,
+    transparent 58%
+  );
+  mask-image: linear-gradient(
+    to top,
+    #000 0%,
+    #000 20%,
+    rgba(0, 0, 0, 0.72) 36%,
+    rgba(0, 0, 0, 0.28) 48%,
+    transparent 58%
+  );
+}
+
+.feature-hero .card-blur {
+  filter: blur(12px);
+}
+
+.mag-card__visual--type .card-blur {
+  display: grid;
+  place-items: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6b7c8f;
 }
 
 .feature-hero__placeholder {

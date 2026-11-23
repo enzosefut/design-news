@@ -419,11 +419,23 @@ function buildDetailPage(detail, cardItem, meta, ordered, dayItems) {
   });
 }
 
+function thumbSmallSrc(thumb) {
+  if (!thumb?.srcset) return thumb?.src || "";
+  const first = thumb.srcset.split(",")[0].trim();
+  const space = first.lastIndexOf(" ");
+  return space > 0 ? first.slice(0, space) : thumb.src;
+}
+
+function cardBlurWrap(innerHtml) {
+  if (!innerHtml) return "";
+  return `<div class="card-blur" aria-hidden="true">${innerHtml}</div>`;
+}
+
 function buildMagazineCard(item, media, date, thumbRegistry) {
   const href = itemPermalink(date, item.id);
   let visual = "";
   if (media.typographic) {
-    visual = `<div class="mag-card__visual mag-card__visual--type"><div class="mag-card__pan"><span aria-hidden="true">Aa</span></div></div>`;
+    visual = `<div class="mag-card__visual mag-card__visual--type"><div class="mag-card__pan"><span aria-hidden="true">Aa</span>${cardBlurWrap(`<span aria-hidden="true">Aa</span>`)}</div></div>`;
   } else if (media.cover) {
     const thumb =
       thumbRegistry && media.coverFile
@@ -432,7 +444,11 @@ function buildMagazineCard(item, media, date, thumbRegistry) {
     const img = thumb
       ? homeThumbImgTag(thumb, escapeHtml(item.title), { loading: "lazy" })
       : `<img src="${media.cover}" alt="${escapeHtml(item.title)}" loading="lazy" decoding="async">`;
-    visual = `<div class="mag-card__visual"><div class="mag-card__pan">${img}</div></div>`;
+    const blurSrc = thumb ? thumbSmallSrc(thumb) : media.cover;
+    const blurImg = blurSrc
+      ? `<img src="${blurSrc}" alt="" loading="lazy" decoding="async">`
+      : "";
+    visual = `<div class="mag-card__visual"><div class="mag-card__pan">${img}${cardBlurWrap(blurImg)}</div></div>`;
   }
   return `<article class="mag-card" data-category="${item.category}">
     <a class="mag-card__link" href="${href}">
@@ -455,18 +471,23 @@ function buildFeatured(featured, media, date, thumbRegistry) {
     thumbRegistry && heroPosterFile
       ? thumbRegistry.register(date, heroPosterFile, "hero")
       : null;
+  let blurInner = "";
   if (media.archived) {
     mediaInner = `<div class="feature-hero__placeholder" aria-hidden="true"><span>Aa</span></div>`;
   } else if (media.video) {
     const poster = heroThumb?.src || media.poster || media.cover;
     mediaInner = `<video class="feature-hero__vid" poster="${poster}" muted playsinline loop data-autoplay-loop playsinline><source src="${media.video}" type="video/mp4"></video>`;
+    const blurSrc = heroThumb ? thumbSmallSrc(heroThumb) : poster;
+    if (blurSrc) blurInner = `<img src="${blurSrc}" alt="" decoding="async">`;
   } else if (media.cover) {
     mediaInner = heroThumb
       ? homeThumbImgTag(heroThumb, "", { loading: "eager" })
       : `<img src="${media.cover}" alt="" decoding="async" fetchpriority="high">`;
+    const blurSrc = heroThumb ? thumbSmallSrc(heroThumb) : media.cover;
+    if (blurSrc) blurInner = `<img src="${blurSrc}" alt="" decoding="async">`;
   }
   const mediaWrapped = mediaInner
-    ? `<div class="feature-hero__media"><div class="feature-hero__pan">${mediaInner}</div></div>`
+    ? `<div class="feature-hero__media"><div class="feature-hero__pan">${mediaInner}${cardBlurWrap(blurInner)}</div></div>`
     : "";
   return `<section class="feature-hero" data-category="${featured.category}">
     <a class="feature-hero__link" href="${href}">

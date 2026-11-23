@@ -121,11 +121,17 @@
     return card.querySelector(".mag-card__pan");
   }
 
+  function setEdgeShine(link, on, angleDeg) {
+    link.style.setProperty("--edge-on", on ? "1" : "0");
+    if (on) link.style.setProperty("--edge-shine", `${angleDeg}deg`);
+  }
+
   function resetCardHoverController(c) {
     c.rotX(0);
     c.rotY(0);
     if (c.innerX) c.innerX(0);
     if (c.innerY) c.innerY(0);
+    setEdgeShine(c.link, false);
     c.inZone = false;
   }
 
@@ -223,6 +229,11 @@
         c.rotY(gsap.utils.interpolate(-rot, rot, nx));
         if (c.innerX) c.innerX(gsap.utils.interpolate(-para, para, nx));
         if (c.innerY) c.innerY(gsap.utils.interpolate(-para, para, ny));
+        const deg =
+          Math.atan2(py - (r.top + r.height / 2), px - (r.left + r.width / 2)) *
+            (180 / Math.PI) +
+          90;
+        setEdgeShine(c.link, true, deg);
       });
     };
 
