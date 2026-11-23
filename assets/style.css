@@ -744,17 +744,17 @@ html.cards-visible .feature-hero {
   z-index: 3;
   pointer-events: none;
   border-radius: inherit;
-  padding: 1px;
+  padding: 2px;
   background:
     linear-gradient(rgba(236, 240, 244, 0.1), rgba(236, 240, 244, 0.1)),
     conic-gradient(
       from var(--edge-shine, 180deg),
-      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.55)) 0deg,
-      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.2)) 18deg,
-      transparent 46deg,
-      transparent 314deg,
-      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.2)) 342deg,
-      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.55)) 360deg
+      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.92)) 0deg,
+      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.48)) 28deg,
+      transparent 78deg,
+      transparent 282deg,
+      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.48)) 332deg,
+      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.92)) 360deg
     );
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
@@ -808,28 +808,28 @@ html.cards-visible .feature-hero {
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  filter: blur(8px);
-  transform: scale(1.14);
+  filter: blur(22px);
+  transform: scale(1.32);
   -webkit-mask-image: linear-gradient(
     to top,
     #000 0%,
-    #000 20%,
-    rgba(0, 0, 0, 0.72) 36%,
-    rgba(0, 0, 0, 0.28) 48%,
-    transparent 58%
+    #000 26%,
+    rgba(0, 0, 0, 0.9) 40%,
+    rgba(0, 0, 0, 0.4) 52%,
+    transparent 60%
   );
   mask-image: linear-gradient(
     to top,
     #000 0%,
-    #000 20%,
-    rgba(0, 0, 0, 0.72) 36%,
-    rgba(0, 0, 0, 0.28) 48%,
-    transparent 58%
+    #000 26%,
+    rgba(0, 0, 0, 0.9) 40%,
+    rgba(0, 0, 0, 0.4) 52%,
+    transparent 60%
   );
 }
 
 .feature-hero .card-blur {
-  filter: blur(12px);
+  filter: blur(34px);
 }
 
 .mag-card__visual--type .card-blur {
