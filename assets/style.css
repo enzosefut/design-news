@@ -654,6 +654,33 @@ video {
   display: none !important;
 }
 
+/* Homepage scroll-reveal (GSAP ScrollTrigger.batch); fallback via html.cards-visible */
+.mag-card:not([hidden]),
+.feature-hero:not([hidden]) {
+  opacity: 0;
+  will-change: transform;
+}
+
+.mag-card.is-revealed,
+.feature-hero.is-revealed {
+  opacity: 1;
+  will-change: auto;
+}
+
+html.cards-visible .mag-card,
+html.cards-visible .feature-hero {
+  opacity: 1 !important;
+  will-change: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mag-card,
+  .feature-hero {
+    opacity: 1 !important;
+    will-change: auto;
+  }
+}
+
 /* Feature hero */
 .feature-hero {
   margin-bottom: 2rem;

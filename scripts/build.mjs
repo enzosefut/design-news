@@ -575,7 +575,9 @@ function buildHomeIndex(visibleDates, loader, thumbRegistry) {
     title: "首页",
     body,
     headerAppend: rail,
-    extraScripts: `<script src="${BASE}/assets/home.js${ASSET_Q}" defer></script>`,
+    extraScripts: `<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="${BASE}/assets/home.js${ASSET_Q}" defer></script>`,
   });
 }
 

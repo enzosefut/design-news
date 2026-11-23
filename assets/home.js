@@ -22,6 +22,80 @@
   const navLinks = () =>
     document.querySelectorAll(".date-nav__link, .date-rail__chip");
 
+  const REVEAL_SELECTOR =
+    ".mag-card[data-category]:not([hidden]), .feature-hero[data-category]:not([hidden])";
+
+  let revealTriggers = [];
+
+  function prefersReducedMotion() {
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+
+  function showAllCardsImmediately() {
+    document.documentElement.classList.add("cards-visible");
+    document.querySelectorAll(".mag-card, .feature-hero").forEach((el) => {
+      el.classList.add("is-revealed");
+    });
+  }
+
+  function teardownReveal() {
+    revealTriggers.forEach((st) => st.kill());
+    revealTriggers = [];
+  }
+
+  function markRevealed(elements) {
+    elements.forEach((el) => el.classList.add("is-revealed"));
+  }
+
+  function initScrollReveal() {
+    teardownReveal();
+
+    if (prefersReducedMotion()) {
+      showAllCardsImmediately();
+      return;
+    }
+
+    if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
+      showAllCardsImmediately();
+      return;
+    }
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    document.querySelectorAll(REVEAL_SELECTOR).forEach((el) => {
+      if (!el.classList.contains("is-revealed")) {
+        gsap.set(el, { autoAlpha: 0 });
+      }
+    });
+
+    revealTriggers = ScrollTrigger.batch(REVEAL_SELECTOR, {
+      onEnter: (batch) => {
+        const todo = batch.filter((el) => !el.classList.contains("is-revealed"));
+        if (!todo.length) return;
+        gsap.to(todo, {
+          autoAlpha: 1,
+          stagger: 0.2,
+          duration: 1,
+          ease: "sine.out",
+          onComplete: () => markRevealed(todo),
+        });
+      },
+    });
+
+    ScrollTrigger.refresh();
+  }
+
+  function refreshScrollReveal() {
+    if (
+      prefersReducedMotion() ||
+      document.documentElement.classList.contains("cards-visible")
+    ) {
+      return;
+    }
+    if (typeof ScrollTrigger === "undefined") return;
+    initScrollReveal();
+  }
+
   function applyFilter(filter) {
     if (!bar) return;
     const buttons = bar.querySelectorAll("button[data-filter]");
@@ -46,6 +120,7 @@
     });
 
     syncNavFromVisibility();
+    requestAnimationFrame(() => refreshScrollReveal());
   }
 
   function editionHasVisible(date) {
@@ -90,6 +165,9 @@
     const y = target.getBoundingClientRect().top + window.scrollY - getScrollOffsetPx();
     window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
     setActiveDate(date);
+    window.setTimeout(() => {
+      if (typeof ScrollTrigger !== "undefined") ScrollTrigger.refresh();
+    }, 450);
   }
 
   if (bar) {
@@ -98,6 +176,8 @@
       btn.addEventListener("click", () => applyFilter(btn.dataset.filter));
     });
     applyFilter("all");
+  } else {
+    initScrollReveal();
   }
 
   navLinks().forEach((link) => {
@@ -123,6 +203,15 @@
     );
     editions().forEach((ed) => observer.observe(ed));
   }
+
+  window.setTimeout(() => {
+    if (
+      !document.documentElement.classList.contains("cards-visible") &&
+      (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined")
+    ) {
+      showAllCardsImmediately();
+    }
+  }, 4000);
 
   const hash = window.location.hash.replace(/^#/, "");
   if (hash && document.getElementById(hash)) {
