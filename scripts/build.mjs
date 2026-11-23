@@ -519,7 +519,7 @@ function buildEditionSection(
     if (leadIndex < 0) leadIndex = 0;
     lead = items[leadIndex];
     const others = items.slice(leadIndex + 1).concat(items.slice(0, leadIndex));
-    companions = others.slice(0, 2);
+    companions = others.slice(0, 1);
     const used = new Set([lead.id, ...companions.map((item) => item.id)]);
     rest = items.filter((item) => !used.has(item.id));
   }
