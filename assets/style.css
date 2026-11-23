@@ -681,42 +681,83 @@ html.cards-visible .feature-hero {
   }
 }
 
-/* Feature hero */
+/* Homepage overlay cards (mag grid + feature hero) */
+:root {
+  --card-pan-inset: -16px;
+  --card-veil-gradient: linear-gradient(
+    to top,
+    rgba(6, 8, 10, 0.94) 0%,
+    rgba(6, 8, 10, 0.62) 36%,
+    rgba(6, 8, 10, 0.22) 52%,
+    transparent 58%
+  );
+}
+
 .feature-hero {
   margin-bottom: 2rem;
 }
 
-.feature-hero__link {
-  display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: clamp(1rem, 2vw, 2rem);
+.feature-hero__link,
+.mag-card__link {
+  position: relative;
+  display: block;
   text-decoration: none;
-  background: var(--surface);
+  background: #06080a;
   border: 1px solid var(--rule);
   border-radius: var(--radius);
   overflow: hidden;
   transform-style: preserve-3d;
+  transition: border-color 0.15s;
 }
 
-.feature-hero__media {
+.feature-hero__link {
   aspect-ratio: 16 / 10;
-  overflow: hidden;
-  background: var(--surface);
-  min-height: 0;
 }
 
-.feature-hero__media .story-figure--hero {
+.mag-card__link {
+  aspect-ratio: 3 / 4;
   height: 100%;
 }
 
-.feature-hero__media img,
-.feature-hero__media video {
+.mag-card__link:hover,
+.feature-hero__link:hover {
+  border-color: #3d4144;
+}
+
+.feature-hero__link::after,
+.mag-card__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  border-radius: inherit;
+  background: var(--card-veil-gradient);
+}
+
+.feature-hero__media,
+.mag-card__visual {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #06080a;
+}
+
+.feature-hero__pan,
+.mag-card__pan {
+  position: absolute;
+  inset: var(--card-pan-inset);
+  will-change: transform;
+}
+
+.feature-hero__pan img,
+.feature-hero__pan video,
+.mag-card__pan img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
-  will-change: transform;
 }
 
 .feature-hero__placeholder {
@@ -731,39 +772,70 @@ html.cards-visible .feature-hero {
   font-family: var(--font-serif);
 }
 
-.feature-hero__text {
-  padding: clamp(1.25rem, 2vw, 2rem);
+.mag-card__visual--type {
+  background: linear-gradient(145deg, #16181c 0%, #0d0f10 100%);
+}
+
+.mag-card__visual--type .mag-card__pan {
+  display: grid;
+  place-items: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6b7c8f;
+}
+
+.feature-hero__text,
+.mag-card__meta {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: clamp(0.85rem, 2vw, 1.15rem);
+  padding-top: clamp(2.5rem, 18%, 3.5rem);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  pointer-events: none;
+}
+
+.feature-hero__text {
+  padding: clamp(1rem, 2.5vw, 1.65rem);
+  padding-top: clamp(3rem, 22%, 4.5rem);
 }
 
 .feature-hero__title {
-  margin: 0.5rem 0 0.25rem;
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin: 0.45rem 0 0.2rem;
+  font-size: clamp(1.35rem, 2.6vw, 1.85rem);
   font-weight: 700;
   line-height: 1.25;
+  color: #f3f5f7;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
 }
 
 .feature-hero__author {
   margin: 0;
-  color: var(--ink-muted);
+  color: rgba(236, 240, 244, 0.82);
   font-size: 0.9rem;
 }
 
 .feature-hero__deck {
-  margin: 0.85rem 0 0;
-  color: var(--ink-muted);
+  margin: 0.65rem 0 0;
+  color: rgba(230, 236, 242, 0.78);
   font-family: var(--font-sans);
-  font-size: 0.92rem;
-  line-height: 1.55;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .feature-hero__cta {
-  margin-top: 1.25rem;
+  margin-top: 0.85rem;
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--accent);
+  color: #8ec8ff;
 }
 
 /* Magazine grid */
@@ -773,77 +845,23 @@ html.cards-visible .feature-hero {
   gap: clamp(0.85rem, 1.5vw, 1.35rem);
 }
 
-.mag-card__link {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
-  overflow: hidden;
-  height: 100%;
-  transition: border-color 0.15s, background-color 0.15s;
-  transform-style: preserve-3d;
-}
-
-.mag-card__link:hover {
-  border-color: #3d4144;
-  background: #0a0a0a;
-}
-
-.mag-card__visual {
-  aspect-ratio: 4 / 3;
-  background: var(--surface);
-  overflow: hidden;
-  border-radius: var(--radius) var(--radius) 0 0;
-}
-
-.mag-card__visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  will-change: transform;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .mag-card__visual img,
-  .feature-hero__media img,
-  .feature-hero__media video {
-    will-change: auto;
-  }
-}
-
-.mag-card__visual--type {
-  display: grid;
-  place-items: center;
-  background: linear-gradient(145deg, #16181c 0%, #0d0f10 100%);
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #536471;
-}
-
-.mag-card__meta {
-  padding: 0.85rem 1rem 1rem;
-}
-
 .mag-card__tick {
   font-size: 0.65rem;
   font-weight: 600;
   letter-spacing: 0.04em;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
 }
 
 .mag-card__tick--x {
-  color: var(--series-x);
+  color: #8bb8f8;
 }
 
 .mag-card__tick--ai {
-  color: var(--accent-ai);
+  color: #7ee0b8;
 }
 
 .mag-card__tick--game {
-  color: var(--series-game);
+  color: #e8b4ff;
 }
 
 .mag-card__title {
@@ -851,12 +869,21 @@ html.cards-visible .feature-hero {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.35;
+  color: #f2f4f6;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
 }
 
 .mag-card__author {
   margin: 0;
   font-size: 0.78rem;
-  color: var(--ink-faint);
+  color: rgba(232, 236, 240, 0.8);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mag-card__pan,
+  .feature-hero__pan {
+    will-change: auto;
+  }
 }
 
 /* Article */
@@ -1032,10 +1059,6 @@ html.cards-visible .feature-hero {
 }
 
 @media (max-width: 900px) {
-  .feature-hero__link {
-    grid-template-columns: 1fr;
-  }
-
   .mag-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1394,4 +1417,5 @@ html.cards-visible .feature-hero {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  display: block;
 }

@@ -423,7 +423,7 @@ function buildMagazineCard(item, media, date, thumbRegistry) {
   const href = itemPermalink(date, item.id);
   let visual = "";
   if (media.typographic) {
-    visual = `<div class="mag-card__visual mag-card__visual--type"><span aria-hidden="true">Aa</span></div>`;
+    visual = `<div class="mag-card__visual mag-card__visual--type"><div class="mag-card__pan"><span aria-hidden="true">Aa</span></div></div>`;
   } else if (media.cover) {
     const thumb =
       thumbRegistry && media.coverFile
@@ -432,7 +432,7 @@ function buildMagazineCard(item, media, date, thumbRegistry) {
     const img = thumb
       ? homeThumbImgTag(thumb, escapeHtml(item.title), { loading: "lazy" })
       : `<img src="${media.cover}" alt="${escapeHtml(item.title)}" loading="lazy" decoding="async">`;
-    visual = `<div class="mag-card__visual">${img}</div>`;
+    visual = `<div class="mag-card__visual"><div class="mag-card__pan">${img}</div></div>`;
   }
   return `<article class="mag-card" data-category="${item.category}">
     <a class="mag-card__link" href="${href}">
@@ -465,9 +465,12 @@ function buildFeatured(featured, media, date, thumbRegistry) {
       ? homeThumbImgTag(heroThumb, "", { loading: "eager" })
       : `<img src="${media.cover}" alt="" decoding="async" fetchpriority="high">`;
   }
+  const mediaWrapped = mediaInner
+    ? `<div class="feature-hero__media"><div class="feature-hero__pan">${mediaInner}</div></div>`
+    : "";
   return `<section class="feature-hero" data-category="${featured.category}">
     <a class="feature-hero__link" href="${href}">
-      <div class="feature-hero__media">${mediaInner}</div>
+      ${mediaWrapped}
       <div class="feature-hero__text">
         <span class="mag-card__tick mag-card__tick--${featured.category}">今日主推 · ${SERIES_LABEL[featured.category]}</span>
         <h2 class="feature-hero__title">${escapeHtml(featured.title)}</h2>

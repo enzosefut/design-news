@@ -32,8 +32,8 @@
   const HOVER_PERSPECTIVE = 650;
   const HOVER_QUICK_OPTS = { duration: 0.45, ease: "power3" };
   const HOVER_AMP = {
-    card: { rot: 10, para: 16 },
-    hero: { rot: 12, para: 20 },
+    card: { rot: 3.5, para: 5 },
+    hero: { rot: 4, para: 7 },
   };
 
   let revealTriggers = [];
@@ -116,11 +116,9 @@
 
   function cardHoverInner(card) {
     if (card.classList.contains("feature-hero")) {
-      return card.querySelector(
-        ".feature-hero__media img, .feature-hero__media video"
-      );
+      return card.querySelector(".feature-hero__pan");
     }
-    return card.querySelector(".mag-card__visual img, .mag-card__visual--type span");
+    return card.querySelector(".mag-card__pan");
   }
 
   function resetCardHoverController(c) {
