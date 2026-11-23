@@ -695,6 +695,7 @@ html.cards-visible .feature-hero {
   border: 1px solid var(--rule);
   border-radius: var(--radius);
   overflow: hidden;
+  transform-style: preserve-3d;
 }
 
 .feature-hero__media {
@@ -715,6 +716,7 @@ html.cards-visible .feature-hero {
   object-fit: cover;
   object-position: center;
   display: block;
+  will-change: transform;
 }
 
 .feature-hero__placeholder {
@@ -780,7 +782,8 @@ html.cards-visible .feature-hero {
   border-radius: var(--radius);
   overflow: hidden;
   height: 100%;
-  transition: border-color 0.15s, transform 0.15s;
+  transition: border-color 0.15s, background-color 0.15s;
+  transform-style: preserve-3d;
 }
 
 .mag-card__link:hover {
@@ -801,6 +804,15 @@ html.cards-visible .feature-hero {
   object-fit: cover;
   object-position: center;
   display: block;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mag-card__visual img,
+  .feature-hero__media img,
+  .feature-hero__media video {
+    will-change: auto;
+  }
 }
 
 .mag-card__visual--type {
