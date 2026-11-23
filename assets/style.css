@@ -744,7 +744,7 @@ html.cards-visible .feature-hero {
   z-index: 3;
   pointer-events: none;
   border-radius: inherit;
-  padding: 4px;
+  padding: 2px;
   background:
     linear-gradient(rgba(236, 240, 244, 0.1), rgba(236, 240, 244, 0.1)),
     conic-gradient(
