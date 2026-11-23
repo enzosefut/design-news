@@ -148,7 +148,8 @@
     "alpha-bank-off7": "https://pentagram-production.imgix.net/15a9674d-6cc2-4596-ae42-4c40ebf37845/DL_AlphaBank_10.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=0%2C0%2C960%2C960&w=960&s=1d50f95d75f867b9fa8a245e1a3ec240",
     "juana-off0": "https://madethought.com/wp-content/uploads/2026/07/MADE_THOUGHT_JUANA_HERO-1.jpg",
     "juana-off1": "https://madethought.com/wp-content/uploads/2026/07/MADE_THOUGHT_JUANA_HERO_MOBILE.jpg",
-    "juana-off2": "https://madethought.com/wp-content/uploads/2026/07/MADE_THOUGHT_JUANA_1_COVER.jpg"
+    "juana-off2": "https://madethought.com/wp-content/uploads/2026/07/MADE_THOUGHT_JUANA_1_COVER.jpg",
+    "figma-specs-hero": "https://cdn.sanity.io/images/599r6htc/regionalized/2ca1e62056e0643145440afac47fe74aac4957ea-1056x704.jpg"
   },
   "items": [
     {
@@ -325,6 +326,15 @@
       "cardAspect": "16/9",
       "preferStillHero": true,
       "deck": "Stormblood 职业插画，茂木佑介绘制的赤魔法师、武士与青魔法师。"
+    },
+    {
+      "id": "figma-specs-workflow-lab",
+      "category": "ai",
+      "title": "Figma Workflow Lab：用 Specs 与 Figma agent 把 PRD、设计稿和 code layers 收成实施计划，再经 MCP 交给 Codex",
+      "author": "Figma",
+      "cardAspect": "16/9",
+      "coverKey": "figma-specs-hero",
+      "deck": "官方 Workflow Lab：在画布上汇总上下文，用 agent 生成实施计划，审核后把一条链接经 Figma MCP 交给 Codex。"
     }
   ]
 }
