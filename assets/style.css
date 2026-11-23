@@ -89,6 +89,11 @@ video {
   padding: 0.55rem var(--gutter) 0.65rem;
 }
 
+/* Homepage header tracks the full-width grid. Detail pages stay on --max. */
+.site-header--with-rail .site-header__inner {
+  max-width: none;
+}
+
 .site-title {
   margin: 0;
   font-size: clamp(1.15rem, 2.5vw, 1.4rem);
@@ -147,6 +152,10 @@ video {
   max-width: var(--max);
   margin: 0 auto;
   padding: 1.5rem var(--gutter) 4rem;
+}
+
+.site-main:has(.home-layout) {
+  max-width: none;
 }
 
 .home-layout {
@@ -1148,6 +1157,12 @@ html.cards-visible .feature-hero {
 @media (max-width: 560px) {
   .mag-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1680px) {
+  .mag-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
