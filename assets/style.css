@@ -744,18 +744,19 @@ html.cards-visible .feature-hero {
   z-index: 3;
   pointer-events: none;
   border-radius: inherit;
-  padding: 2px;
+  padding: 4px;
   background:
     linear-gradient(rgba(236, 240, 244, 0.1), rgba(236, 240, 244, 0.1)),
     conic-gradient(
       from var(--edge-shine, 180deg),
-      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.92)) 0deg,
-      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.48)) 28deg,
-      transparent 78deg,
-      transparent 282deg,
-      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.48)) 332deg,
-      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.92)) 360deg
+      rgba(255, 255, 255, var(--edge-on, 0)) 0deg,
+      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.72)) 40deg,
+      transparent 120deg,
+      transparent 240deg,
+      rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.72)) 320deg,
+      rgba(255, 255, 255, var(--edge-on, 0)) 360deg
     );
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, calc(var(--edge-on, 0) * 0.95)));
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
