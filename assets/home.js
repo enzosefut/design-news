@@ -32,8 +32,8 @@
   const HOVER_PERSPECTIVE = 650;
   const HOVER_QUICK_OPTS = { duration: 0.45, ease: "power3" };
   const HOVER_AMP = {
-    card: { rot: 3.5, para: 5 },
-    hero: { rot: 4, para: 7 },
+    card: { rot: 6.5, para: 8 },
+    hero: { rot: 2, para: 3 },
   };
 
   let revealTriggers = [];
