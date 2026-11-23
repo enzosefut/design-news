@@ -684,13 +684,13 @@ html.cards-visible .feature-hero {
 /* Homepage overlay cards (mag grid + feature hero) */
 :root {
   --card-pan-inset: -16px;
-  /* Between the 6f9d9e9 charcoal (too light) and the 1bb8500 pure black. */
+  /* Black, not charcoal — the gray stops read as dirty over the photo. */
   --card-veil-gradient: linear-gradient(
     to top,
-    rgba(18, 20, 24, 0.94) 0%,
-    rgba(12, 14, 17, 0.86) 20%,
-    rgba(8, 9, 12, 0.66) 38%,
-    rgba(4, 5, 7, 0.32) 52%,
+    rgba(0, 0, 0, 0.94) 0%,
+    rgba(0, 0, 0, 0.86) 20%,
+    rgba(0, 0, 0, 0.66) 38%,
+    rgba(0, 0, 0, 0.32) 52%,
     transparent 67%
   );
 }
