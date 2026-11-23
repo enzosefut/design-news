@@ -509,32 +509,46 @@ function buildEditionSection(
   meta,
   { showFeatured = false, todayYmd, thumbRegistry } = {}
 ) {
-  const featured = dayItems.items.find((i) => i.id === dayItems.featured);
-  const rest = dayItems.items.filter((i) => i.id !== dayItems.featured);
-  const grid = rest
-    .map((item) =>
-      buildMagazineCard(
-        item,
-        resolveCardMedia(item, meta, date, dayItems),
-        date,
-        thumbRegistry
-      )
-    )
-    .join("");
-  const hero =
-    showFeatured && featured
-      ? buildFeatured(
-          featured,
-          resolveCardMedia(featured, meta, date, dayItems),
-          date,
-          thumbRegistry
-        )
-      : "";
+  const items = dayItems.items;
+  let lead = null;
+  let companions = [];
+  let rest = items.filter((i) => i.id !== dayItems.featured);
+
+  if (showFeatured && items.length) {
+    let leadIndex = items.findIndex((i) => i.id === dayItems.featured);
+    if (leadIndex < 0) leadIndex = 0;
+    lead = items[leadIndex];
+    const others = items.slice(leadIndex + 1).concat(items.slice(0, leadIndex));
+    companions = others.slice(0, 2);
+    const used = new Set([lead.id, ...companions.map((item) => item.id)]);
+    rest = items.filter((item) => !used.has(item.id));
+  }
+
+  const cardHtml = (item) =>
+    buildMagazineCard(
+      item,
+      resolveCardMedia(item, meta, date, dayItems),
+      date,
+      thumbRegistry
+    );
+  const grid = rest.map(cardHtml).join("");
+  let featureRow = "";
+  if (lead) {
+    const hero = buildFeatured(
+      lead,
+      resolveCardMedia(lead, meta, date, dayItems),
+      date,
+      thumbRegistry
+    );
+    const side = companions.map(cardHtml).join("");
+    const sideHtml = side ? `<div class="feature-row__side">${side}</div>` : "";
+    featureRow = `<div class="feature-row feature-row--n${1 + companions.length}">${hero}${sideHtml}</div>`;
+  }
   const todayAttr = date === todayYmd ? ' data-is-today="true"' : "";
   return `
     <section class="edition" id="${date}" data-date="${date}"${todayAttr}>
       ${buildEditionMast(date, todayYmd)}
-      ${hero}
+      ${featureRow}
       <div class="mag-grid">${grid}</div>
     </section>`;
 }

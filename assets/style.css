@@ -708,6 +708,63 @@ html.cards-visible .feature-hero {
   margin-bottom: 2rem;
 }
 
+/* Lead row: one large card beside up to two stacked 3:4 cards. */
+.feature-row {
+  --feature-row-gap: clamp(0.85rem, 1.5vw, 1.35rem);
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: var(--feature-row-gap);
+  align-items: stretch;
+  margin-bottom: var(--feature-row-gap);
+}
+
+.feature-row .feature-hero {
+  margin-bottom: 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+.feature-row .feature-hero__link {
+  aspect-ratio: auto;
+  height: 100%;
+  min-height: 0;
+}
+
+.feature-row__side {
+  display: flex;
+  flex-direction: column;
+  gap: var(--feature-row-gap);
+  min-width: 0;
+}
+
+.feature-row__side .mag-card__link {
+  height: auto;
+}
+
+.feature-row--n1,
+.feature-row:not(:has(.mag-card:not([hidden]))) {
+  grid-template-columns: minmax(0, min(100%, 42rem));
+}
+
+.feature-row--n1 .feature-hero__link,
+.feature-row:not(:has(.mag-card:not([hidden]))) .feature-hero__link {
+  aspect-ratio: 3 / 4;
+  height: auto;
+}
+
+.feature-row__side:not(:has(.mag-card:not([hidden]))) {
+  display: none;
+}
+
+.feature-row:not(:has(.feature-hero:not([hidden]))) {
+  grid-template-columns: 1fr;
+}
+
+.feature-row:not(:has(.feature-hero:not([hidden]))) .feature-row__side {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 @property --edge-on {
   syntax: "<number>";
   inherits: true;
@@ -1152,10 +1209,35 @@ html.cards-visible .feature-hero {
   .mag-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .feature-row,
+  .feature-row--n1,
+  .feature-row:not(:has(.mag-card:not([hidden]))),
+  .feature-row:not(:has(.feature-hero:not([hidden]))) {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-row .feature-hero__link,
+  .feature-row--n1 .feature-hero__link,
+  .feature-row:not(:has(.mag-card:not([hidden]))) .feature-hero__link {
+    aspect-ratio: 16 / 10;
+    height: auto;
+  }
+
+  .feature-row__side,
+  .feature-row:not(:has(.feature-hero:not([hidden]))) .feature-row__side {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 560px) {
   .mag-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-row__side,
+  .feature-row:not(:has(.feature-hero:not([hidden]))) .feature-row__side {
     grid-template-columns: 1fr;
   }
 }
