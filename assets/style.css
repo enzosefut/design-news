@@ -686,10 +686,12 @@ html.cards-visible .feature-hero {
   --card-pan-inset: -16px;
   --card-veil-gradient: linear-gradient(
     to top,
-    rgba(6, 8, 10, 0.94) 0%,
-    rgba(6, 8, 10, 0.62) 36%,
-    rgba(6, 8, 10, 0.22) 52%,
-    transparent 58%
+    #000 0%,
+    rgba(0, 0, 0, 0.96) 16%,
+    rgba(0, 0, 0, 0.84) 34%,
+    rgba(0, 0, 0, 0.48) 48%,
+    rgba(0, 0, 0, 0.16) 58%,
+    transparent 68%
   );
 }
 
@@ -702,12 +704,15 @@ html.cards-visible .feature-hero {
   position: relative;
   display: block;
   text-decoration: none;
-  background: #06080a;
-  border: 1px solid var(--rule);
+  background: #000;
+  border: 0;
   border-radius: var(--radius);
+  /* Hard clip. A 1px border plus preserve-3d antialiases a light
+     fringe along the curve when the cover is bright. */
   overflow: hidden;
-  transform-style: preserve-3d;
-  transition: border-color 0.15s;
+  clip-path: inset(0 round var(--radius));
+  isolation: isolate;
+  box-shadow: inset 0 0 0 1px #000;
 }
 
 .feature-hero__link {
@@ -719,19 +724,13 @@ html.cards-visible .feature-hero {
   height: 100%;
 }
 
-.mag-card__link:hover,
-.feature-hero__link:hover {
-  border-color: #3d4144;
-}
-
 .feature-hero__link::after,
 .mag-card__link::after {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: -2px;
   z-index: 1;
   pointer-events: none;
-  border-radius: inherit;
   background: var(--card-veil-gradient);
 }
 

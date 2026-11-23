@@ -164,10 +164,7 @@
         : HOVER_AMP.card;
 
       gsap.set(card, { perspective: HOVER_PERSPECTIVE });
-      gsap.set(link, {
-        transformOrigin: "center center",
-        transformPerspective: HOVER_PERSPECTIVE,
-      });
+      gsap.set(link, { transformOrigin: "center center" });
 
       const rotX = gsap.quickTo(link, "rotationX", HOVER_QUICK_OPTS);
       const rotY = gsap.quickTo(link, "rotationY", HOVER_QUICK_OPTS);
