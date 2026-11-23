@@ -684,14 +684,15 @@ html.cards-visible .feature-hero {
 /* Homepage overlay cards (mag grid + feature hero) */
 :root {
   --card-pan-inset: -16px;
+  /* Charcoal, not #000 — dark enough to hold type, light enough that the
+     card bottom stays separate from the page background. */
   --card-veil-gradient: linear-gradient(
     to top,
-    #000 0%,
-    rgba(0, 0, 0, 0.96) 16%,
-    rgba(0, 0, 0, 0.84) 34%,
-    rgba(0, 0, 0, 0.48) 48%,
-    rgba(0, 0, 0, 0.16) 58%,
-    transparent 68%
+    rgba(38, 43, 50, 0.9) 0%,
+    rgba(26, 30, 36, 0.78) 24%,
+    rgba(16, 18, 22, 0.5) 44%,
+    rgba(8, 10, 12, 0.18) 56%,
+    transparent 66%
   );
 }
 
@@ -704,7 +705,7 @@ html.cards-visible .feature-hero {
   position: relative;
   display: block;
   text-decoration: none;
-  background: #000;
+  background: #1a1e24;
   border: 0;
   border-radius: var(--radius);
   /* Hard clip. A 1px border plus preserve-3d antialiases a light
@@ -712,7 +713,6 @@ html.cards-visible .feature-hero {
   overflow: hidden;
   clip-path: inset(0 round var(--radius));
   isolation: isolate;
-  box-shadow: inset 0 0 0 1px #000;
 }
 
 .feature-hero__link {
@@ -722,6 +722,17 @@ html.cards-visible .feature-hero {
 .mag-card__link {
   aspect-ratio: 3 / 4;
   height: 100%;
+}
+
+.feature-hero__link::before,
+.mag-card__link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px rgba(236, 240, 244, 0.16);
 }
 
 .feature-hero__link::after,
@@ -739,7 +750,7 @@ html.cards-visible .feature-hero {
   position: absolute;
   inset: 0;
   overflow: hidden;
-  background: #06080a;
+  background: #1a1e24;
 }
 
 .feature-hero__pan,
