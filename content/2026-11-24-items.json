@@ -140,7 +140,8 @@
     "layton-ace-attorney-off3": "https://cucdn.creativeuncut.com/gallery-28/art/plvpr-lettie-mailer.jpg",
     "layton-ace-attorney-off4": "https://cucdn.creativeuncut.com/gallery-28/art/plvpr-darklaw-and-espella.jpg",
     "layton-ace-attorney-off5": "https://cucdn.creativeuncut.com/gallery-28/art/plvpr-phoenix-wright.jpg",
-    "layton-ace-attorney-off6": "https://cucdn.creativeuncut.com/gallery-28/art/plvpr-professor-hershel-layton.jpg"
+    "layton-ace-attorney-off6": "https://cucdn.creativeuncut.com/gallery-28/art/plvpr-professor-hershel-layton.jpg",
+    "figma-agent-figjam-still": "https://cdn.sanity.io/images/599r6htc/regionalized/788c8b94cba16df5c795728f974aca117a196962-1694x948.png"
   },
   "items": [
     {
@@ -266,6 +267,15 @@
       "cardAspect": "16/9",
       "preferStillHero": true,
       "deck": "High Inquisitor Darklaw、Espella Cantabella、Lettie Mailer 与主要角色设定，由 Kazuya Nuri 绘制。"
+    },
+    {
+      "id": "figma-agent-figjam-slides",
+      "category": "ai",
+      "title": "Figma agent 正式进入 FigJam 与 Slides：用连接器和附件把材料收上画布，再把讨论收成 Spec 或演示稿",
+      "author": "Figma",
+      "cardAspect": "16/9",
+      "coverKey": "figma-agent-figjam-still",
+      "deck": "11 月 23 日起在 Professional、Organization、Enterprise 全面开放。FigJam 里可把讨论收成 Spec，Slides 里可从讲稿或模板生成演示稿。"
     }
   ]
 }
