@@ -360,7 +360,8 @@
     "tiger-dingsun-g6": "https://cms.abduzeedo.com/sites/default/files/originals/gallery_tiger-dingsun-hover-states_6.jpg",
     "tiger-dingsun-g7": "https://cms.abduzeedo.com/sites/default/files/originals/gallery_tiger-dingsun-hover-states_7.jpg",
     "fate-samurai-rogue-caster-off0": "https://cucdn.creativeuncut.com/gallery-45/art/fsr-rogue-caster.jpg",
-    "fate-samurai-rogue-caster-off1": "https://cucdn.creativeuncut.com/gallery-45/art/fsr-rogue-lancer.jpg"
+    "fate-samurai-rogue-caster-off1": "https://cucdn.creativeuncut.com/gallery-45/art/fsr-rogue-lancer.jpg",
+    "framer-automations-weekly": "https://framerusercontent.com/images/sdwZJoA5efRozZNcYG5rHIr2Rk.png?width=1280&height=720"
   },
   "items": [
     {
@@ -506,6 +507,15 @@
       "cardAspect": "16/9",
       "preferStillHero": true,
       "deck": "图库新放出 Rogue Caster 与 Rogue Lancer 的角色设定。此前已介绍过同一图库里的 Rogue Saber。"
+    },
+    {
+      "id": "framer-automations-connectors-slack-agent",
+      "category": "ai",
+      "title": "Framer 推出 Automations、Connectors 与 Slack Agent：把 Agent 工作流挂到发布和表单上，也可在 Slack 里改站点",
+      "author": "Framer",
+      "cardAspect": "16/9",
+      "coverKey": "framer-automations-weekly",
+      "deck": "11 月 24 日官方更新。Automations 可按日程或发布、表单等事件无人值守运行；Connectors 把 Notion、Slack、Ahrefs 等接进对话和自动化；Slack 里 @Framer 提问、看数据或改内容，改动先落在分支上。"
     }
   ]
 }
