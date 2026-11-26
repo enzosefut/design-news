@@ -192,7 +192,12 @@
     "whisky-exchange-press1": "https://bpando.org/wp-content/uploads/whisky-exchange-otherway-brand-identity-design-bpo-review-logo-wordmark.jpeg",
     "whisky-exchange-press2": "https://bpando.org/wp-content/uploads/the-whisky-exchange-otherway-brand-identity-design-bpo-review-trio.png",
     "whisky-exchange-press3": "https://bpando.org/wp-content/uploads/whisky-exchange-otherway-brand-identity-design-bpo-review-signage.jpeg",
-    "whisky-exchange-press4": "https://bpando.org/wp-content/uploads/whisky-exchange-otherway-brand-identity-design-bpo-review-logo-copy.webp"
+    "whisky-exchange-press4": "https://bpando.org/wp-content/uploads/whisky-exchange-otherway-brand-identity-design-bpo-review-logo-copy.webp",
+    "canva-mcp-videogen": "https://content-management-files.canva.com/5e23f0a8-126b-4970-b7ad-83b6ba9fe488/Canva_VideoGen_Newsroom_Thumbnail_1920x1080_A.jpg",
+    "canva-mcp-ga-banner": "https://content-management-files.canva.com/2ba5ed0b-fb50-4b28-b485-2104e0f2db67/Canva_MCP_Newsroom_Banner_2880x880_A_centre-safe.png",
+    "canva-mcp-ga-still": "https://pbs.twimg.com/amplify_video_thumb/2124923758079287296/img/9JaOw2vMOEYyN8lv.jpg",
+    "canva-mcp-tools-still": "https://pbs.twimg.com/amplify_video_thumb/2124924187261460480/img/d_fhxSfV1xP0QyOl.jpg",
+    "canva-mcp-video-still": "https://pbs.twimg.com/amplify_video_thumb/2125329977734533120/img/3qsJlIey36oOWAXV.jpg"
   },
   "items": [
     {
@@ -305,6 +310,15 @@
       "cardAspect": "16/9",
       "preferStillHero": true,
       "deck": "Kimihiko Fujisaka 的 Amazora Λ，以及 The Ethereal、The Dancer、The Airy 等职业设定。"
+    },
+    {
+      "id": "canva-mcp-ga",
+      "category": "ai",
+      "title": "Canva MCP 正式开放：重建了给 Agent 用的工具层，并加上视频生成、Magic Layers、REST API 与 CLI",
+      "author": "Canva",
+      "cardAspect": "16/9",
+      "coverKey": "canva-mcp-videogen",
+      "deck": "11 月 24 日凌晨官方宣布不再排队。MCP 工具层做了合并，Agent 可生成可编辑设计、图片和视频，也可用 Magic Layers 把平面图拆成图层；同时开放 REST API、扩展 CLI，并新增 service accounts。"
     }
   ]
 }
