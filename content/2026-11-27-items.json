@@ -207,7 +207,19 @@
     "darkstalkers-3-off14": "https://www.creativeuncut.com/gallery-50/art/ds3-sasquatch.jpg",
     "darkstalkers-3-off15": "https://www.creativeuncut.com/gallery-50/art/ds3-victor-von-gerdenheim.jpg",
     "darkstalkers-3-off16": "https://www.creativeuncut.com/gallery-50/art/ds3-huitzil.jpg",
-    "darkstalkers-3-off17": "https://www.creativeuncut.com/gallery-50/art/ds3-pyron.jpg"
+    "darkstalkers-3-off17": "https://www.creativeuncut.com/gallery-50/art/ds3-pyron.jpg",
+    "ming-image-02-announce": "https://pbs.twimg.com/media/HYC3lC7b0AAKgrl.jpg?name=orig",
+    "ming-image-02-web": "https://raw.githubusercontent.com/inclusionAI/Ming-Image/main/assets/model_cards/ming-image-0.2-design-web-design.webp",
+    "ming-image-02-ecommerce": "https://raw.githubusercontent.com/inclusionAI/Ming-Image/main/assets/model_cards/ming-image-0.2-design-ecommerce.webp",
+    "ming-image-02-spatial": "https://raw.githubusercontent.com/inclusionAI/Ming-Image/main/assets/model_cards/ming-image-0.2-design-spatial-design.webp",
+    "ming-image-02-hero": "https://pbs.twimg.com/amplify_video_thumb/2125916074776645632/img/oja0wwkNQIbgbavQ.jpg",
+    "ming-image-02-museum": "https://pbs.twimg.com/amplify_video_thumb/2125916101658005504/img/WIf-he-YiKqEetxE.jpg",
+    "ming-image-02-studio": "https://pbs.twimg.com/amplify_video_thumb/2125916121207554049/img/W_beFM5xIy9dda9m.jpg",
+    "ming-image-02-orbit": "https://pbs.twimg.com/amplify_video_thumb/2125902528596615168/img/WCXf9DZGFfZYu86z.jpg",
+    "ming-image-02-altissima": "https://pbs.twimg.com/amplify_video_thumb/2125902596171014145/img/E1ZHG5BjMDzGkLjy.jpg",
+    "ming-image-02-layer-parts": "https://pbs.twimg.com/tweet_video_thumb/HYC4wwqaYAAO_Og.jpg",
+    "ming-image-02-layer-stack": "https://pbs.twimg.com/tweet_video_thumb/HYC44STbQAAvTju.jpg",
+    "ming-image-02-layer-edit": "https://pbs.twimg.com/amplify_video_thumb/2125915716339806208/img/6eTP8ONL9cCmJjBm.jpg"
   },
   "items": [
     {
@@ -311,6 +323,15 @@
       "cardAspect": "16/9",
       "preferStillHero": true,
       "deck": "图库一次放了 40 张官方图，其中包括 Bengus 的角色宣传设定。"
+    },
+    {
+      "id": "ming-image-02-design",
+      "category": "ai",
+      "title": "蚂蚁百灵开源 Ming-Image-0.2-Design：面向电商主图、UI 草稿和空间效果图，并可用 Design Skill 把概念做成可交互页面",
+      "author": "Ant Ling",
+      "cardAspect": "16/9",
+      "coverKey": "ming-image-02-orbit",
+      "deck": "11 月 26 日傍晚以 MIT 开源 60 亿参数的设计生图模型。官方称改进了构图、光线和文字，可做电商主图、UI 草稿和空间效果图；演示里再用 Ling-3.2-flash 与 Design Skill 做成可交互页面。Layer 版预告下周开源。"
     }
   ]
 }
